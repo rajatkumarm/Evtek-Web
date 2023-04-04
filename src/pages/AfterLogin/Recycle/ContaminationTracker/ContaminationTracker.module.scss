@@ -1,0 +1,109 @@
+@import '../../../../assets//scss//variables.scss';
+@import '../../../../assets//scss/mixins.scss';
+
+.Tracker {
+     .container {
+        margin: 84px 0px 0px 64px;
+
+        .itemheading {
+            @include flex;
+            .itemhead {
+                @include flex;
+                justify-content: center;
+                width: 28px;
+                height: 28px;
+                background-color:$redColor;
+                color: $whiteColor;
+                border-radius: 3px;
+
+            }
+
+            .text {
+                margin-left: 5px;
+                color: $redColor;
+                font-family: $sansPro, 'sans-serif';
+                font-size: $font-xx3;
+            }
+        }
+
+        .itembox {
+            @include flex;
+            align-items: center;
+            width: 452px;
+            height: 122px;
+            background-color:$boxColor;
+            padding: 24px;
+            margin-top: 19px;
+            border-radius: 13px;
+
+            .itemtext {
+                font-size: $font-xxl;
+                font-family: $sansPro, 'sans-serif';
+                color: $redColor;
+            }
+        }
+
+       .bagsection{
+            margin-top: 19px;
+
+            @include imagesection;
+            .imghead{
+                cursor: pointer;
+            }
+            .imgtext{
+                cursor: pointer;
+            }
+        }
+
+        .blanketsection {
+            margin-top: 19px;
+            @include imagesection;
+            .imghead{
+                cursor: pointer;
+            }
+            .imgtext{
+                cursor: pointer;
+            }
+         }
+
+        .info{
+            margin: 106px 0px 23px 0px;
+            font-size:$font-xxxl;
+            color:$tertiaryColor01;
+            font-weight:500;
+            font-family: "Raleway";
+            
+        }
+
+        .textinfo{
+            display: flex;
+            align-items: center;
+            margin-bottom:6px;
+            cursor: pointer;
+           
+          .textinfo01{
+                color: $textPrimary;
+                font-size: $font-md;
+                font-family: "Raleway";
+                font-weight: 500;
+
+            }
+            .iconinfo{
+                color: $textPrimary;
+                font-size: $font-md; 
+                margin-left: 20px;
+               
+            }
+        }
+
+        .textinfo01{
+           @extend .textinfo;
+           .iconinfo01{
+            @extend .iconinfo;
+            margin-left:143px;
+           cursor: pointer;
+           }                           
+        }
+    }
+
+}

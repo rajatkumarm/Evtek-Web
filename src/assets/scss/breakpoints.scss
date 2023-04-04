@@ -1,0 +1,13 @@
+@import './variables.scss';
+
+@mixin md {
+    @media (max-width: #{$screen-md}) {
+        @content;
+    }
+}
+
+@mixin xmd {
+    @media (max-width: #{$screen-xmd}) {
+        @content;
+    }
+}

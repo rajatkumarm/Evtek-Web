@@ -1,0 +1,58 @@
+@import '../../../assets//scss/variables.scss';
+@import '../../../assets//scss/mixins.scss';
+
+
+
+.Input {
+    @include fonts-property;
+    width: 100%;
+    height: 43px;
+    max-width: 395px;
+    font-size: $font-xxl;
+    color: $SeondaryTextColor;
+    background: $input-bg;
+    border: $border;
+    border-radius: 8px;
+    padding: 0 12px;
+    &:focus {
+        background: $textWhite;
+    }
+}
+.radioInput {
+    // @include fonts-property;
+    width: 100%;
+    height: 43px;
+    max-width: 174px;
+    font-size: $font-xxl;
+    color: $SeondaryTextColor;
+    background-color:$whiteColor;
+    padding: 0 12px;
+    box-shadow: 0px 0px 6px rgba(186, 186, 186, 0.35);
+    border: none;
+    border-radius: 0px;
+}
+.faqInput{
+    @include fonts-property;
+    width: 100%;
+    height: 28px;
+    max-width: 344px;
+    font-size: $font-xxl;
+    color: $SeondaryTextColor;
+    background-color:$whiteColor;
+    padding: 0 12px;
+    box-shadow: 0px 0px 6px rgba(186, 186, 186, 0.35);
+    border: $border;
+    border-radius: 8px;
+}
+.textInput{
+    @include fonts-property;
+    width: 100%;
+    height: 50px;
+    max-width: 377px;
+    font-size: $font-xxl;
+    color: $SeondaryTextColor;
+    background-color:$whiteColor;
+    padding: 0 12px;
+    border: 1px solid $bgStateBorder;
+    border-radius: 8px;
+}

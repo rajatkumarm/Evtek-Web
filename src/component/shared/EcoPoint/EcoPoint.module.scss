@@ -1,0 +1,108 @@
+@import "../../../assets/scss/variables.scss";
+@import "../../../assets/scss/mixins.scss";
+
+.progressEco {
+  box-sizing: border-box;
+  width: 577px;
+  height: 90px;
+  position: relative;
+  border: 1px dashed $aluminium-color;
+  border-radius: 22px;
+
+  .ecoText {
+    margin-left: 170px;
+    margin-top: 12px;
+
+    .positionText {
+      @include raleway;
+      font-weight: 800;
+
+    }
+
+    .positioText {
+      font-size: 33px;
+      @include raleway;
+      font-weight: 500;
+    }
+  }
+
+  .strOne {
+    position: absolute;
+    left: 11px;
+    top: 10px;
+    color: $aluminium-color;
+  }
+
+  .strTwo {
+    position: absolute;
+    left: 18px;
+    bottom: 3px;
+    color: $aluminium-color;
+  }
+
+  .strThree {
+    position: absolute;
+    left: 73px;
+    top: 23px;
+    color: $aluminium-color;
+    font-size: 20px;
+  }
+
+  .strFour {
+    position: absolute;
+    left: 134px;
+    bottom: 7px;
+    color: $aluminium-color;
+    font-size: 20px;
+  }
+
+  .strFive {
+    position: absolute;
+    left: 230px;
+    bottom: 6px;
+    color: $aluminium-color;
+    font-size: 12px;
+  }
+
+  .strSix {
+    position: absolute;
+    left: 295px;
+    top: 6px;
+    color: $aluminium-color;
+    font-size: 20px;
+  }
+
+  .strSeven {
+    position: absolute;
+    right: 276px;
+    bottom: 7px;
+    color: $aluminium-color;
+    font-size: 12px;
+  }
+
+  .strEight {
+    position: absolute;
+    right: 140px;
+    bottom: 44px;
+    color: $aluminium-color;
+    font-size: 17px;
+  }
+
+  .strNine {
+    position: absolute;
+    right: 11px;
+    bottom: 11px;
+    color: $aluminium-color;
+    font-size: 20px;
+  }
+
+  .strTen {
+    position: absolute;
+    right: 22px;
+    top: 11px;
+    color: $aluminium-color;
+    font-size: 12px;
+    transform: rotate(-15deg);
+  }
+
+}

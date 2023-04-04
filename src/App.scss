@@ -1,0 +1,88 @@
+@import "./assets/scss/icon.scss";
+@import './assets//scss/styles.scss';
+@import './assets/scss/variables.scss';
+
+*{
+    box-sizing: border-box;
+}
+
+//-----Calendar css start -------//
+
+.react-calendar {
+  padding: 20px 25px;
+  max-width: 569px !important;
+  width: 100% !important;
+  border: $border-color !important;
+  box-shadow: 0px 17.5758px 35.1515px $calendar-boxShadowColor;
+  border-radius: 27px;
+}
+.react-calendar__navigation__next2-button , .react-calendar__navigation__prev2-button  {
+  display: none;
+  
+}
+.react-calendar__navigation__prev-button , .react-calendar__navigation__next-button {
+  width: 45px;
+  background: $bgAlertSecondary !important;
+  border-radius: 5px;
+  color: $textPrimary !important;
+  font-size: $font-xtraBig;
+}
+.react-calendar__navigation__label{
+  background-color: $calendarBgWhite !important;
+}
+.react-calendar__tile {
+  font-family: $sansPro;
+  font-style: normal;
+  font-weight: 400;
+  font-size: $font-lg;
+  line-height: $font-xx5;
+  text-align: center;
+  color: $tertiaryColor;
+  padding: 10px 20px !important;
+  max-width: 73px !important;
+  width: 100% !important;
+  max-height: 50px !important;
+  height: 100% !important;
+  
+}
+.react-calendar__navigation {
+  align-items: center !important;
+}
+// .react-calendar__tile:hover {
+  // background-color: #F5FAF4 !important;
+// }
+.react-calendar__tile--now {
+  background: $bgAlertSecondary !important;
+  color: $tertiaryColor !important;
+  font-weight: 700;
+  border: 1.68827px solid $Arc-border !important;
+  border-radius: 9.87948px !important;
+}
+.react-calendar__month-view__days__day--weekend {
+ color: $tertiaryColor !important;
+
+}
+.react-calendar__navigation__label__labelText--from {
+ color: $tertiaryColor !important;
+  font-size: $font-xxxl;
+  line-height: $font-xxxl;
+  font-weight: 600;
+
+}
+.react-calendar__tile--active {
+  background-color: $textPrimary !important;
+  border-radius: 7.1233px;
+  color: $whiteColor !important;
+}
+.highlight abbr {
+  border-bottom: 5px solid $orangeColor;
+}
+.highlight1 abbr {
+  border-bottom: 5px solid $textPrimaryBlue;
+}
+.highlight2 abbr {
+  border-bottom: 5px solid $carbonColor;
+  // border-radius: 100px;
+}
+
+//-----Calendar css end -------//

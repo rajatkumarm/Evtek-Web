@@ -1,0 +1,35 @@
+@import "../../../assets/scss/variables.scss";
+
+.mainTitle {
+    display: flex;
+    align-items: center;
+    padding-top: 35px;
+   
+
+    .iconMain {
+        color: $textPrimary;
+        height: 28px;
+        font-size: $font-xx6;
+        cursor: pointer;
+        .iconSize{
+            font-size: 40px;
+            width: 40px;
+        }
+    }
+    .mainText {
+        margin-left: 14px;
+        .pageName {
+            color: $textPrimary;
+            font-weight: 700;
+            font-size: $font-xxl;
+            font-family: 'Raleway';
+        }
+        .moduleName {
+            color: $SeondaryTextColor;
+            font-weight: 500;
+            font-size: 36px;
+            margin-top: 5px;
+            font-family: 'Raleway';
+        }
+    }
+}

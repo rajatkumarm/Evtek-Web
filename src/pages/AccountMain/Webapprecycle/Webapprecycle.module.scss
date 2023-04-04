@@ -1,0 +1,167 @@
+@import "../../../assets/scss/variables.scss";
+@import "../../../assets/scss/mixins.scss";
+
+.webMainrecycle {
+    display: flex;
+    justify-content: space-between;
+    .inputTextWeb {
+        @include fonts-property;
+        color: $placeholderColor;
+        font-size: 12px;
+        line-height: 14px;
+        width:100%;
+        border:none;
+        max-width: 344px;
+        padding:7px 0px 8px 7px;
+        background: $bgColor;
+        border-radius: 5px;
+
+      }
+      .reycleHead {
+          font-weight: 700;
+      }
+    .webDetail {
+        margin-top: 70px;
+        padding-bottom: 42px;
+        border-bottom: 1px solid $darkGray;
+        
+        .webContainer {
+            margin-top: 5px;
+            width: 430px;
+            height: 60px;
+            background-color: $bgBorder;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+           padding: 4px 15px;
+            cursor: pointer;
+            position: relative;
+            .appImg{
+                position: absolute;
+                right: 19px;
+            }
+            .webImg{
+                position: absolute;
+                bottom: 0;
+                left: 191px;
+            }
+            .webImgo{
+                position: absolute;
+                right: 157px;
+                top: 0;
+            }
+            .webImgt{
+                position: absolute;
+                right: 89px;
+                bottom: 0px;
+            }
+            .webTruck{
+                position: absolute;
+                right: 91px;
+            }
+            .webTro{
+                position: absolute;
+                right: 62px;
+            }
+            .webTrot{
+                position: absolute;
+                right: 35px;
+            }
+            .webEcoo{
+                position: absolute;
+                right: 97px;
+            }
+            .webEcot{
+                position: absolute;
+                right: 23px;
+            }
+            .webIm{
+                position: absolute;
+                right: 46px;
+            }
+            .webFa{
+                position: absolute;
+                right: 74px;
+                bottom: 0px;
+            }
+            .webFaq{
+                position: absolute;
+                right: 14px;
+            }
+            .blogText {
+                color: $tertiaryColor;
+                font-weight: 400;
+                font-size: 17px;
+            }
+            .blackColor {
+                font-weight: 700;
+            }
+        }
+    }
+    .bottomText {
+        margin-top: 32px;
+        .btmMarg {
+            margin-top: 14px;
+        }
+        .btmText {
+            color: $tertiaryColor;
+            font-weight: 400;
+            font-size: 15px;
+            cursor: pointer;
+        }
+    }
+    .faqMain {
+        width: 412px;
+        height: 100vh;
+        background-color: $textPrimary;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
+        border-radius: 11px 0px 0px 0px;
+        padding: 33px 30px 0px 24px;
+        .blog{
+            color: $textWhite;
+            cursor: pointer;
+        }
+
+        .bgMainText {
+            color: $textWhite;
+            font-size: 24px;
+            font-weight: 400;
+            padding-left: 18px;
+        }
+        .faqInput {
+            margin-top: 45px;
+            display: flex;
+            justify-content: center;
+        }
+        .faqContainer {
+            .headFaq{
+                @include raleway;
+                font-weight: 800;
+                margin-top: 36px;
+                margin-bottom: 26px;
+            }
+           .boxFaq{
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            .textFaq{
+                @include fonts-property;
+                margin-bottom: 17px;
+                max-width: 340px;
+                width: 100%;
+                .blogTexts{
+                    cursor: pointer;
+                }
+                
+            }
+            .btmImg{
+                color: $textWhite;
+                margin-left: 10px;
+                font-size: 12px;
+            }
+           }
+                
+            
+        }
+    }
+}

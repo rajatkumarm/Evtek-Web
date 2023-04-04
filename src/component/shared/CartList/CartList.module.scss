@@ -1,0 +1,17 @@
+@import "../../../assets/scss/variables.scss";
+@import "../../../assets/scss/mixins.scss";
+
+.CartList {
+  @include flexJustifyAround;
+
+  .imageBox {
+    border-radius: 50%;
+    background-color: $textWhite;
+    padding: 14px 14px;
+    border: 2px solid $primaryDisable;
+  }
+
+  .ecoSack {
+    display: grid;
+  }
+}

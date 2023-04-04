@@ -1,0 +1,21 @@
+@import '../../assets/scss/variables.scss';
+@import "../../assets/scss/mixins.scss";
+
+.gauranteedBox {
+    @include flexJustifyAround; 
+    margin-top: 83px;
+    width: 100%;
+    max-width: 517px;
+    padding: 16px 0px 15px 0px;
+    background: $bgColor;
+    border-radius: 29px;
+    .itemText{
+        margin-left: 5px;
+    }
+    .gauranteedIcon {
+        font-size: 48px;
+    }
+    .percent {
+        display: flex;
+    }
+}

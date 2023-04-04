@@ -1,0 +1,347 @@
+@import "../../../assets/scss/variables.scss";
+@import "../../../assets/scss/mixins.scss";
+
+.Arcmain {
+    @include fonts-property;
+
+    .ArcRecyclingMain {
+        max-width: 580px;
+        width: 100%;
+        margin: 13px 0px 13px 0px;
+        background-color: $Arc-Re;
+        padding: 21px 15px 18px 12px;
+        display: flex;
+        cursor: pointer;
+        position: relative;
+        box-shadow: 0px 6px 9px $shadow-color;
+        border-radius: 19px;
+
+        .Arcwood {
+            display: flex;
+            max-width: 480px;
+            width: 100%;
+
+            .ArcRecyclingtext {
+                margin-left: 19px;
+            }
+
+            i {
+                padding-right: 10px;
+                padding-top: 5px;
+            }
+
+            .ArcText {
+                @include raleway;
+                color: $tertiaryColor;
+                line-height: 28px;
+            }
+
+            .Timing {
+                display: flex;
+                color: $darkGray;
+                gap: 10px;
+
+                .time {
+                    color: $tertiaryColor;
+                    @include fonts-property;
+
+                }
+            }
+
+            .Phone {
+                display: flex;
+                color: $darkGray;
+                gap: 10px;
+
+                .Number {
+                    color: $tertiaryColor;
+                }
+            }
+
+            .btnArc {
+
+                max-width: 100%;
+                min-width: 70px;
+                height: 27px;
+                border-radius: 17px;
+                @include fonts-property;
+                border: none;
+                cursor: pointer;
+                margin-left: 10px;
+            }
+
+            .btnDropCall {
+                @include fonts-property;
+                max-width: 85px;
+                width: 100%;
+                max-height: 32px;
+                border: none;
+                cursor: pointer;
+                margin-top: 10px;
+                border-radius: 27px;
+                font-size: 16px;
+
+                .btnicon {
+
+                    margin-right: 7px;
+                }
+            }
+
+            .star {
+                margin-top: 4px;
+                margin-bottom: 23px;
+
+                i {
+
+                    color: $orangeColor;
+                }
+            }
+
+            .downbText {
+
+                @include fonts-property;
+                text-decoration-line: underline;
+            }
+        }
+
+        .ArcRecyclingRight {
+            .heart {
+                position: absolute;
+                margin-top: 10px;
+                margin-left: 20px;
+                color: $primaryColor;
+
+            }
+
+            .bgicon {
+                position: absolute;
+                background: $textWhite;
+                height: 54px;
+                width: 54px;
+                right: 30px;
+                bottom: 14px;
+                border-radius: 100px;
+
+                .direction {
+                    position: absolute;
+                    top: 15px;
+                    text-align: center;
+                    background: $orangeColor;
+                    color: $textWhite;
+                    left: 15px;
+                    width: 24px;
+                    height: 24px;
+                    transform: rotate(45deg);
+                    border-radius: 3px;
+
+                    i {
+                        position: absolute;
+                        top: 2px;
+                        left: 5px;
+                        transform: rotate(-45deg);
+                    }
+                }
+            }
+
+        }
+    }
+
+    .Arcbox {
+        max-width: 723px;
+        width: 100%;
+        background: $textWhite;
+        border: 8px solid $Arc-Re;
+        border-radius: 19px;
+        display: flex;
+        padding: 21px 28px 30px 20px;
+
+        .btnCircle {
+            padding-right: 10px;
+            padding-left: 20px;
+
+        }
+
+        .Arcwoods {
+            max-width: 550px;
+            width: 100%;
+            padding-left: 10px;
+
+
+            .ArcText {
+                @include raleway;
+                color: $tertiaryColor;
+                line-height: 28px;
+                cursor: pointer;
+
+                .ArcHeart {
+                    font-size: 15px;
+                    margin-left: 10px;
+                    color: $primaryColor;
+
+                }
+            }
+
+            .open {
+                @include fonts-property;
+                @include flex;
+                color: $textPrimary;
+            }
+        }
+
+        .btnRecycling {
+            padding-right: 28px;
+        }
+
+        .btnDropCall {
+
+            @include fonts-property;
+            max-width: 85px;
+            width: 100%;
+            max-height: 32px;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+            border-radius: 27px;
+            font-size: 16px;
+
+            .btnicon {
+
+                margin-right: 7px;
+            }
+        }
+    }
+
+    .live {
+        margin-top: 20px;
+        display: flex;
+        gap: 20px;
+
+        .dayAlign {
+            max-width: 65px;
+            width: 100%;
+        }
+
+        .busy {
+            color: $orangeColor;
+        }
+    }
+
+    .Dys {
+        margin-top: 20px;
+    }
+
+    .Day {
+        display: flex;
+        gap: 20px;
+        max-width: 200px;
+        width: 100%;
+
+
+        .dayAlign {
+            max-width: 65px;
+            width: 100%;
+        }
+    }
+
+    .Rating {
+        display: flex;
+        max-width: 200px;
+        width: 100%;
+
+        .star {
+            margin-left: 16px;
+            margin-right: 5px;
+            color: $aluminium-color;
+        }
+    }
+
+    .time {
+        color: $textPrimary;
+    }
+
+    .ArcAdd {
+        max-width: 433px;
+        width: 100%;
+        background: $bgColor;
+        border-radius: 10px;
+        margin-top: 9px;
+        margin-bottom: 9px;
+        padding: 11px 22px 11px 16px;
+
+        .Address {
+            @include fonts-property;
+            font-weight: 700;
+            display: flex;
+            color: $tertiaryColor;
+            gap: 9px;
+
+            .away {
+                @include fonts-property;
+                font-weight: 400;
+                font-size: 14px;
+                @include flex;
+                text-align: center;
+                color: $darkGray;
+            }
+        }
+
+        .ArcRight {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+
+            .rightArrow {
+                position: absolute;
+                text-align: center;
+                background: $textPrimary;
+                color: $textWhite;
+                right: 1px;
+                width: 24px;
+                height: 24px;
+                border-radius: 3px;
+                transform: rotate(45deg);
+                bottom: 8px;
+                cursor: pointer;
+
+                i {
+                    position: absolute;
+                    top: 2px;
+                    left: 5px;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
+
+    .link {
+        @include fonts-property;
+        text-decoration-line: underline;
+        color: $solidPrimary;
+        margin-bottom: 27px;
+        margin-top: 7px;
+    }
+
+    .row {
+        display: flex;
+        padding-right: 14px;
+
+        img {
+            padding-right: 14px;
+        }
+    }
+
+    .circleBg {
+        max-width: 25px;
+
+        .circleNumber {
+            background: $darkGray;
+            width: 23px;
+            font-size: 18px;
+            height: 23px;
+            border-radius: 50%;
+            color: $whiteColor;
+            text-align: center;
+            @include flexJustifyCenter;
+        }
+    }
+}

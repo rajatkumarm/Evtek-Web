@@ -1,0 +1,84 @@
+@import '../../assets//scss//variables.scss';
+@import '../../assets//scss/mixins.scss';
+
+.ZipcodeCheck {
+    @include fonts-property;
+
+    .head {
+        color: $zipHeadingColor;
+        width: 100%;
+        text-align: center;
+        padding-right: 81px;
+        @include fonts-property;
+    }
+
+    .headOne {
+        @include flex;
+        justify-content: flex-start;
+
+        .logo {
+            margin: 20px 0px 0px 20px;
+        }
+    }
+
+    .zipMain {
+        margin: 0 auto;
+
+
+        .accountText {
+            text-align: center;
+            color: $zipHeadingColor;
+            background: $bgAlertSecondary;
+            width: 120px;
+            padding: 12px 28px;
+
+        }
+
+        .mainText {
+            margin: 0px auto;
+            padding: 10px;
+            text-align: center;
+
+            .LoginText {
+
+                text-align: center;
+                font-family: $sansPro;
+                font-size: 18px;
+                color: $zipHeadingColor;
+            }
+        }
+
+        .zip {
+            @include flex;
+            justify-content: center;
+
+        }
+        .Alert {
+            width: 330px;
+            padding: 19px 10px 17px 25px;
+            background: $bgAlertSecondary;
+            border-radius: 12px;
+            font-weight: 400;
+            margin: 0px auto;
+            font-size: 16px;
+            color: $textPrimary;
+        }
+
+        .success {
+            max-width: 330px;
+            width: 100%;
+            margin: 13px 123px 29px 118px;
+            border: $border-color;
+            border-radius: 10px;
+            padding: 17px 6px 17px 16px;
+        }
+        .btn {
+            text-align: center;
+            margin: 29px 0px 15px 0px;
+
+            .disableBtn {
+                margin: 15px 0px 41px 0px;
+            }
+        }
+    }
+}

@@ -1,0 +1,67 @@
+@import '../../../../assets//scss//variables.scss';
+@import '../../../../assets//scss/mixins.scss';
+
+.Tracker {
+  
+    .container {
+        margin: 84px 0px 0px 64px;
+
+        .itemText{
+            margin-bottom: 32px;
+            @include flex;
+            .headitem{
+                font-size: $font-xx1;
+                color:$tertiaryColor01;
+                font-weight: 600;
+                font-family: $sansPro, 'sans-serif';
+            }
+
+            .textitem{
+                color: $iconPrimary;
+                margin-left: 10px;
+                font-size: $font-lg;
+                font-family: $sansPro, 'sans-serif';
+            }
+
+        }
+
+        .bagsection {
+            @include imagesection;
+        
+        }
+         .inputSection{
+            margin: 55px 0px 97px 0px;
+            .headitem{
+                margin-bottom: 16px;
+                color: $tertiaryColor01;
+                font-size: $font-xx1;
+                font-family: $sansPro, 'sans-serif';
+                font-weight: 600;
+            }
+
+            .teatarea{
+                padding: 16px 0px 0px 16px;
+                background:$whiteColor;
+                width: 100%;
+                min-width: 456px;
+                height:109px;
+                border :1px solid $placeHolder;
+                border-radius: 15px;
+                resize: none;
+
+                &::placeholder{
+                    font-size: $font-sm;
+                    color:$placeHolder;
+                    font-family: $sansPro, 'sans-serif';
+                    font-weight: 400;
+                }
+            }
+         }
+ 
+         .btnFeedback{
+            width: 100%;
+            max-width: 456px;                      
+            text-align: center;           
+          }
+    }
+}

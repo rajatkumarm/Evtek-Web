@@ -1,0 +1,151 @@
+@import "../../../assets//scss//variables.scss";
+@import "../../../assets//scss/mixins.scss";
+
+.CurbSideWrapper {
+  .pickupScheduled {
+    display: flex;
+    max-width: 570px;
+    background-color: $bgAlertSecondary;
+    justify-content: space-around;
+    margin: 20px 0px 0px 48px;
+
+    .editText {
+      cursor: pointer;
+      margin-right: 10px;
+      border-bottom: 0.5px solid $darkGray;
+    }
+
+    .bulkText {
+      cursor: pointer;
+    }
+
+    .firstText {
+      margin-left: 8px;
+
+      .headText {
+        font-size: 14px;
+        color: $SeondaryTextColor;
+      }
+
+      .iconWeb {
+        width: 20px;
+      }
+    }
+
+    .mainText {
+      @include flexJustifyBetween;
+      padding: 24px 15px 15px 8px;
+    }
+
+    .clickIcon {
+      cursor: pointer;
+    }
+
+    .headText {
+      font-size: 10px;
+    }
+
+    .Scheduled {
+      background: $primaryDisable;
+      text-align: center;
+      min-width: 161px;
+      border-radius: 6px 6px 0px 0px;
+
+      .notConfirmed {
+        text-align: center;
+        padding: 31px 43px 0px 43px;
+        color: $darkGray;
+      }
+    }
+
+    .confirm {
+      width: 130px;
+      @include flexJustifyAround;
+      background-color: $solidPrimary;
+      color: $whiteColor;
+      margin: 18px 10px 11px 16px;
+      border-radius: 7px;
+    }
+  }
+
+  .sScheduled {
+    width: 570px;
+    padding: 0px 0px 10px 0px;
+    height: 121px;
+
+    .editMain {
+      @include flex;
+    }
+
+    .border {
+      border-top: 6px solid $orangeColor;
+      width: 21px;
+      margin: 15px 0px 0px 8px;
+    }
+  }
+
+  .PickupHeading {
+    margin: 30px 0px 50px 105px;
+  }
+
+  .second {
+    width: 100%;
+    max-width: 570px;
+    background: $bgAlert;
+    margin-left: 49px;
+    border-top: 1.55075px solid $primaryDisable;
+
+    .buttons {
+      @include flexJustifyBetween;
+      padding: 44px 22px 25px 22px;
+    }
+
+    .secondContent {
+      padding: 19px 20px 0px 20px;
+    }
+
+    .sureText {
+      @include flexEvenly;
+      align-items: center;
+      width: 100%;
+      max-width: 151px;
+      background: $primaryDisable;
+      border-radius: 4px;
+      color: $solidPrimary;
+      padding: 5px 6px 5px 6px;
+      margin-left: 13px;
+      cursor: pointer;
+
+      .fillIcon {
+        font-size: 15px;
+      }
+    }
+
+    .mainContent {
+      @include flex;
+    }
+
+    .inputText {
+      margin: 12px 0px;
+    }
+
+    input {
+      background: $mainbgAlert;
+      border: 1px solid $placeholderColor;
+      border-radius: 12px;
+      width: 197px;
+      font-size: 11px;
+    }
+
+
+    .passInput {
+      & ::placeholder {
+        color: $inputTextBorder;
+      }
+    }
+  }
+
+  .Confirmed {
+    margin: 60px 25px 0px 25px;
+  }
+}

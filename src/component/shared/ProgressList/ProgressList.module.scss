@@ -1,0 +1,29 @@
+@import "../../../assets/scss/mixins.scss";
+
+    .MainBox{
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:20px 0px;
+    padding:12px 32px 12px 24px;
+    gap: 15px;
+    .listBox{
+      display: flex;
+      max-width: 315px;
+      width: 100%;
+      border-radius: 40px;
+      background:$inputTextBackground ;
+      align-items: center;
+      .first{
+        margin-left: 20px;
+        max-width: 70px;
+        width: 100%;
+      }
+      .second{
+        margin-left: 40px;
+      }
+    }
+
+    }
+ 

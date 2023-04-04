@@ -1,0 +1,52 @@
+@import "../../../assets/scss/variables.scss";
+@import "../../../assets//scss/mixins.scss";
+
+
+.evtekModelContent {
+    max-width: 450px;
+    width: 100%;
+    background: $textWhite;
+    border: 2px solid $primaryDisable;
+    border-radius: 23px;
+    padding: 5px 27px 31px 18px;
+
+
+    .iconClassTwo {
+        font-size: 20px;
+        color: $darkGray;
+        cursor: pointer;
+    }
+
+    .modelHeading {
+        @include flexJustifyBetween;
+
+        .headContent {
+            @include flex;
+            padding-top: 30px;
+
+        }
+
+        .iconClass {
+            font-size: 30px;
+            color: $solidPrimary;
+            margin-right: 29px;
+            cursor: pointer;
+        }
+
+    }
+
+    .paraText {
+        margin: 23px 7px 0px 16px;
+        max-width: 370px;
+        width: 100%;
+    }
+
+    .learnMore {
+        margin-top: 27px;
+        cursor: pointer;
+
+        .secondText {
+            font-size: $font-xx2 ;
+        }
+    }
+}

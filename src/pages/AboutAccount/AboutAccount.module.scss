@@ -1,0 +1,85 @@
+@import "../../assets//scss/variables.scss";
+@import "../../assets//scss/mixins.scss";
+.BoxHandle{
+  margin-left: 42px;
+    .textContent{
+        max-width: 420px;
+        width: 100%;
+        margin: 45px 0px 43px 0px;
+        .myText{
+          @include raleway;
+        
+        }
+    }
+    .firstContentBox{
+        display: flex;
+        position: relative;
+        .abconector{
+          position: absolute;
+          left: 298px;
+          top: 49px;
+        }
+        .abconectoro{
+          position: absolute;
+          left: 623px;
+          top: 115px;
+
+        }
+        .abconectort{
+          position: absolute;
+         left: 856px;
+          top: 339px;
+        
+        }
+      
+    }
+    .SecondContentBox{
+        display: flex;
+        position: relative;
+      
+        .abconectorthre{
+          position: absolute;
+          left: 288px;
+          top: 43px;
+        }
+    }
+    .colletcBox{
+        margin-top:59px;
+    }
+    .sortBox{
+        margin-top: 125px;
+    }
+    .scheduleBox{
+        margin-top:65px;
+    }
+    .SecondContentBox{
+        margin-left: 250px;
+    }
+.AccountBox{
+    width: 300px;
+    background: $primaryDisable;
+    border-radius: 33px;
+    margin:20px 25px 25px 0px;
+    
+  .firstImage{
+    padding:14px 23px 14px 0px;
+    text-align: right;
+  }
+    .mainImage{
+    padding: 0px 25px 13px 0px;
+    text-align: right;
+    }
+    .thirdImage{
+      padding:5px 25px 13px 0px;
+      text-align: right;
+    }
+    .fourthImage{
+      padding:0px 34px 7px 0px;
+      text-align: right;
+    }
+    .fifthImage{
+      padding:0px 41px 16px 0px;
+      text-align: right;
+    }
+  }
+}

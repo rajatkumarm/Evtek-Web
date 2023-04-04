@@ -1,0 +1,380 @@
+@import "../../../assets/scss/variables.scss";
+@import "../../../assets/scss/mixins.scss";
+
+.button {
+  color: $textWhite;
+  border-radius: 12px;
+  font-size: $font-xxl;
+  height: 48px;
+  font-weight: 600;
+  font-family: "Raleway";
+  font-style: normal;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  &.sm0 {
+    max-width: 100%;
+    min-width: 90px;
+    font-size: $font-lg;
+    border-radius: 8px;
+    font-weight: 600;
+  }
+
+  &.sm {
+    max-width: 100%;
+    min-width: 120px;
+    font-size: $font-xs;
+    border-radius: 8px;
+    font-weight: 600;
+  }
+  &.sm01 {
+    max-width: 100%;
+    min-width: 122px;
+    font-size: $font-lg;
+    max-height: 34px;
+    border-radius: 8px;
+    font-weight: 400;
+  }
+  &.sm02 {
+    max-width: 100%;
+    min-width: 48px;
+    font-size: $font-xs;
+    max-height: 24px;
+    border-radius: 10px;
+    font-weight: 400;
+  }
+  &.sm03{
+    max-width: 100%;
+    min-width: 62px;
+    font-size: $font-xs;
+    max-height: 24px;
+    border-radius: 10px;
+    font-weight: 400;
+
+  }
+  &.sm04{
+    max-width: 100%;
+    min-width: 52px;
+    font-size: $font-xs;
+    max-height: 24px;
+    border-radius: 10px;
+    font-weight: 400;
+  }
+
+
+  &.md {
+    max-width: 100%;
+    min-width: 226px;
+    font-size: $font-xxl;
+    font-weight: 600;
+  }
+  &.md01 {
+    max-width: 100%;
+    min-width: 238px;
+    font-size: $font-xxl;
+    font-weight: 600;
+  }
+
+  &.lg {
+    max-width: 100%;
+    min-width: 301px;
+    font-size: $font-xxl;
+    font-weight: 700;
+  }
+
+  &.xxmd {
+    max-width: 100%;
+    min-width: 211px;
+    border-radius:8px;
+    height: 57px;
+    font-size:$font-xx1;
+  }
+  &.xmd01{
+    max-width: 100%;
+    min-width: 180px;
+    height: 48px;
+    font-size:$font-xxl;
+  }
+
+  &.xmd {
+    align-items: center;
+    max-width: 100%;
+    min-width: 297px;
+    height: 43px;
+    font-size: $font-md;
+    font-weight: 400;
+    font-family: $sansPro, "sans-serif";
+    text-align: center;
+    padding-left: 10px;
+  }
+
+  &.xsm{
+    max-width: 100%;
+    min-width: 87px;
+    height: 38px;
+  }
+  &.btnSm{
+    max-width: 100%;
+    min-width: 101px;
+    font-size: $font-xxl;
+    border-radius: 12px;
+  }
+  &.btnSm02{
+    max-width: 100%;
+    min-width: 108px;
+    font-size: $font-xxl1;
+    border-radius: 17px;
+  }
+  &.btnMd {
+    max-width: 100%;
+    min-width: 135px;
+    font-size: $font-xxl;
+    border-radius: 12px;
+
+  }
+  &.btnMd01 {
+    max-width: 100%;
+    min-width: 144px;
+    font-size: $font-xxl;
+    border-radius: 12px;
+
+  }
+  &.btnMd02 {
+    max-width: 100%;
+    min-width: 156px;
+    font-size: $font-xxl;
+    border-radius: 12px;
+
+  }
+  &.btnMd03 {
+    max-width: 100%;
+    width: 142.67px;
+    height: 31.02px;
+    font-size: $font-xxl;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+
+  }
+  &.btnMd04 {
+    max-width: 100%;
+    min-width: 121px;
+   font-size: $font-sm;
+    height: 25px;
+    font-weight: 700;
+    border-radius: 20.1652px;
+  }
+  &.btnMd05 {
+    max-width: 100%;
+    min-width: 102px;
+    height: 20px;
+    font-weight: 700;
+    font-size: $font-xs;
+    border-radius: 18px;
+  }
+  &.btnMd06 {
+    max-width: 100%;
+    min-width: 303px;
+    min-height: 71px;
+    font-weight: 600;
+    font-size: $font-xxl;
+    border-radius: 8px;
+  }
+  &.btnLg {
+    max-width: 100%;
+    min-width: 192px;
+    font-size: $font-xxl;
+    border-radius: 12px;
+
+  }
+  &.btnXlg {
+    max-width: 100%;
+    min-width: 206px;
+    font-size: $font-xxl;
+    border-radius: 12px;
+
+  }
+  &.btnXxlg {
+    max-width: 100%;
+    min-width: 244px;
+    font-size: $font-xxl;
+    border-radius: 12px;
+
+  }
+  &.btnXxxlg {
+    max-width: 100%;
+    min-width: 337px;
+    font-size: $font-xxl;
+    border-radius: 8px;
+
+  }
+  &.btnllg {
+    width: 100%;
+    min-width: 555px;
+    font-size: $font-xxl;
+    border-radius: 8px;
+
+  }
+  &.btnl2g {
+    max-width: 100%;
+    min-width: 487px;
+    font-size: $font-lg;
+    border-radius: 8px;
+
+  }
+  &.solidPrimaryLg {
+    max-width: 100%;
+    min-width: 163px;
+    font-size: $font-lg;
+    border-radius: 8px;
+  }
+  &.solidPrimaryLg2 {
+    max-width: 100%;
+    min-width: 179px;
+    font-size: $font-lg;
+    border-radius: 8px;
+  }
+
+  &.solidPrimary {
+    background: $solidPrimary;
+  }
+  
+
+  &.primaryDisable {
+    background: $primaryDisable;
+    color: $textPrimary;
+  }
+  &.primary02 {
+    background: $primarybg02;
+    color: $textPrimary;
+    border:1px solid $textPrimary;
+    font-size: $font-md;
+  }
+  
+  &.tertiary{
+    background: $tertiaryColor01;
+    font-size:$font-xs;
+  }
+  &.teritarySecond {
+    background: $tertiaryColor01;
+    font-size:$font-sm;
+  }
+
+  &.solidSecondary {
+    background: $bgAlertSecondary;
+    border: solid 1px transparent;
+  }
+
+  &.secondaryDisable {
+    background-color: $disabledButton;
+  }
+
+   &.secondaryDisable {
+    background-color: $disabledButton;
+  }
+
+  &.solidTertiary {
+    background: $bgAlert;
+  }
+  &.greyPrimary {
+    background: $bgStateBorder;
+    color: $inputTextBorder;
+  }
+  &.greySecondary {
+    background: $placeHolder;
+  }
+
+  &.orangePrimary {
+    background: $orangeColor;
+  }
+  &.pinkPrimary{
+    color: $textWhite;
+    background: $teritaryDanger01;
+  }
+  &.pinkPrimary02{
+    color: $pinkPrimary;
+    background: $teritaryBg2;
+    border:1px solid $pinkPrimary;
+    font-size: $font-md;
+  }
+  
+
+  &.buttonWhite {
+    background:none;
+    font-size: $font-sm;
+    color: $tertiaryColor01;
+    font-weight: 400;
+    max-width:100%;
+   
+  }
+  
+
+
+  &.teritaryGreen {
+    background: $teritaryBg;
+    border: 1px solid $textPrimary;
+    border-radius: 12px;
+    width: 190px;
+    color: $textPrimary;
+  }
+  &.citiBtn {
+    background: $bgColor;
+    border: none;
+    border-radius: 8px;
+    width: 312px;
+    color: $tertiaryColor;
+  }
+  &.bluePrimary {
+    background:$textPrimaryBlue;
+  }
+
+  &.default {
+    color: $textPrimary;
+    background: $solidPrimary;
+  }
+  &.pinkSm{
+    color: $textWhite;
+    background: $teritaryDanger01;
+  }
+  &.navyPrimary{
+    color: $navyBlue01;
+     background: $bgColor;
+  }
+  
+  &.pinkLg{
+    max-width: 100%;
+    min-width: 126px;
+  }
+  
+  &.blackPrimary{
+    max-width: 122px;
+    width: 100%;
+    height: 34px;
+    background: $tertiaryColor;
+    font-size: 16px;
+    color: $textWhite;
+    border-radius: 113px;
+  }
+
+  &.sheduleBtn{
+    background-color: $textWhite;
+    border: none;
+    border-radius: 12px;
+    width: 100px;
+    height: 39px;
+    color: $solidPrimary;
+  }
+  &.borderPrimary{
+    background: transparent;
+    border: 0.5px solid $bgColor;
+    border-radius: 10px;
+
+  }
+  &.greyTertiary {
+    background: $bgColor;
+    color: $textPrimary;
+    font-weight: 700;
+  }
+}

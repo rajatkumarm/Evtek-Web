@@ -1,0 +1,106 @@
+@import '../../../../assets/scss/mixins.scss';
+@import '../../../../assets/scss/variables.scss';
+
+.mainPrefrence {
+    @include fonts-property;
+
+    .methodsMain {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+
+        .heading {
+            margin: 45px 0px 35px;
+        }
+
+        .transferMethods {
+            max-width: 400px;
+            border-bottom: 1.5px solid $darkGray;
+            padding: 22px;
+
+            .addTransfer {
+                @include flexJustifyBetween;
+                position: relative;
+                cursor: pointer;
+
+                .transferIcon {
+                    color: $SeondaryTextColor;
+                }
+
+                .correctIcon {
+                    position: absolute;
+                    top: 10px;
+                    right: 0;
+                    color: $textPrimary;
+                }
+            }
+        }
+
+        .autoDonate {
+            padding: 14px 25px;
+            max-width: 377px;
+            background: $mainbgAlert;
+            border-radius: 12px;
+            margin-top: 100px;
+
+            .disableAutoDonate {
+                background: $primaryDisable;
+            border-radius: 12px;
+
+            }
+
+            .donateText {
+                margin-top: 8px;
+                @include flexJustifyBetween;
+
+                .sureText {
+                    background: $primaryDisable;
+                    border-radius: 4px;
+                    padding: 6px;
+                    max-width: 90px;
+                }
+
+                .disable {
+                    background: $disabledButton;
+                    border-radius: 4px;
+                    padding: 6px;
+                }
+
+                .contentOn {
+                    cursor: pointer;
+                }
+            }
+        }
+
+
+    }
+
+    .paymentMain {
+        .heading {
+            margin: 45px 0px 35px;
+        }
+
+        .transferMethods {
+            max-width: 400px;
+            border-bottom: 1.5px solid $darkGray;
+            padding: 22px;
+        }
+    }
+
+    .saveBtn {
+        text-align: center;
+        margin: 120px 120px 0 0;
+    }
+}
+
+// @media screen and (max-width:1024px) {
+//     .methodsMain {
+//         grid-template-columns: 1fr  1fr;
+//     }
+// }
+
+// @media screen and (max-width:600px) {
+//     .methodsMain {
+//         grid-template-columns: 1fr;
+//     }
+// }

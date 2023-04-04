@@ -1,0 +1,123 @@
+@import "../../../assets/scss/variables.scss";
+@import "../../../assets/scss/mixins.scss";
+
+.addcartMain {
+    box-sizing: border-box;
+    max-width: 1116px;
+    width: 100%;
+    background: $textWhite;
+    border: 4px solid $primaryDisable;
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+    padding-left: 55px;
+    padding-top: 33px;
+    position: fixed;
+
+    .mr5 {
+        margin-right: 5px;
+    }
+
+    .closeIcon {
+        position: absolute;
+        top: 32px;
+        right: 34px;
+        color: $SeondaryTextColor;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .iconStyle {
+        @include flex;
+        margin: 14px 0px 0px 20px;
+        text-align: center;
+        gap: 10px;
+        cursor: pointer;
+
+        .first {
+            text-decoration: underline;
+        }
+
+        .infoIcon {
+            font-size: 39px;
+            color: $textPrimary;
+        }
+    }
+
+    .seconColumn {
+        margin: 50px 0px 0px 74px;
+
+        .headingText {
+            display: flex;
+            gap: 50px;
+
+            .mainHead {
+                @include fonts-property;
+                margin-bottom: 7px
+            }
+
+            .second {
+                @include fonts-property;
+            }
+
+            .headcardBtn {
+                display: flex;
+                justify-content: space-evenly;
+                padding-bottom: 16px;
+                gap: 16px;
+
+                .cardGreenBtn {
+                    border-radius: 18px;
+                    @include flexEvenly;
+                }
+
+                .cardDisableBtn {
+                    @include flexJustifyCenter;
+
+                }
+
+                .recycleImage {
+                    width: 100%;
+                    max-width: 28px;
+
+                }
+            }
+        }
+
+        .itemText {
+            max-width: 387px;
+            width: 100%;
+            @include fonts-property;
+            margin: 13px 0px 26px 0px;
+        }
+
+        .allText {
+            @include flex;
+            @include fonts-property;
+        }
+
+        .counterBtn {
+            @include flexJustifyBetween;
+            max-width: 194px;
+            width: 100%;
+            min-height: 60px;
+            background: $whiteColor;
+            border: 2px solid $disabledButton;
+            border-radius: 12px;
+            padding: 0px 18px;
+            cursor: pointer;
+            margin-top: 45px;
+            transition: 0.2s ease-in-out;
+        }
+
+        .mainButton {
+            margin-top: 72px;
+            margin-bottom: 100px;
+
+            .addCart {
+                min-height: 59px;
+            }
+        }
+
+    }
+
+}

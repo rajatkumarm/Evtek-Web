@@ -1,0 +1,375 @@
+@import '../../../../assets/scss/variables.scss';
+@import '../../../../assets/scss/mixins.scss';
+
+.Main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    @include fonts-property;
+    max-height: 100vh;
+
+    .walletMain {
+        .actionHeading {
+            margin: 71px 0px 14px 0px;
+        }
+
+        .Action {
+            @include flex;
+            width: 100%;
+            max-width: 413px;
+            background: $textPrimaryBlue;
+            box-shadow: $box-shadowSecondary;
+            border-radius: 14px;
+            padding: 11px 15px;
+            color: $bgAlert;
+            margin-bottom: 20px;
+            position: relative;
+            cursor: pointer;
+
+            .transferIcon {
+                font-size: 20px;
+                margin-right: 18px;
+            }
+
+            .nextIcon {
+                position: absolute;
+                top: 16px;
+                right: 23px;
+                text-align: center;
+            }
+        }
+
+        .Donate {
+            @include flex;
+            width: 100%;
+            max-width: 413px;
+            background: $textPrimaryBlue;
+            box-shadow: $box-shadowSecondary;
+            border-radius: 14px;
+            padding: 11px 15px;
+            color: $bgAlert;
+            margin-bottom: 20px;
+            position: relative;
+            cursor: pointer;
+
+            .transferIcon {
+                font-size: 30px;
+                margin-right: 18px;
+            }
+
+            .nextIcon {
+                position: absolute;
+                top: 16px;
+                right: 23px;
+                text-align: center;
+            }
+        }
+
+        .redeem {
+            @include flex;
+            width: 100%;
+            max-width: 413px;
+            background: $textPrimaryBlue;
+            box-shadow: $box-shadowSecondary;
+            border-radius: 14px;
+            padding: 11px 15px;
+            color: $bgAlert;
+            margin-bottom: 65px;
+            position: relative;
+            cursor: pointer;
+
+            .transferIcon {
+                font-size: 30px;
+                margin-right: 20px;
+            }
+
+            .nextIcon {
+                position: absolute;
+                top: 16px;
+                right: 23px;
+                text-align: center;
+            }
+        }
+
+        .walletReward {
+            box-sizing: border-box;
+            width: 100%;
+            @include flex;
+            margin-bottom: 14px;
+
+            .infoIcon {
+                color: $textPrimary;
+                border-radius: 10px;
+                margin-left: 10px;
+                cursor: pointer;
+            }
+        }
+
+        .freeReward {
+            position: relative;
+            width: 100%;
+            max-width: 105px;
+            background: $whiteColor;
+            border-radius: 12px;
+            box-shadow: $box-shadowSecondary;
+
+            .FreeText {
+                width: 100%;
+                max-width: 70px;
+                padding: 12px 0px 0px 12px;
+            }
+
+            .bottleMain {
+                width: 81px;
+                height: 80px;
+                border-radius: 58px 52px 15px 58px;
+                background: $orangeColor;
+                margin-left: 12px;
+
+                .recyleBottle {
+                    position: absolute;
+                    bottom: 7px;
+                    right: 20px;
+                }
+            }
+        }
+
+        .walletCoupon {
+            margin: 30px 0px 0px;
+
+            .WalletReward {
+                margin: 38px 0 16px 0;
+            }
+
+            .couponImage {
+                .couponMain {
+                    width: 100%;
+                    max-width: 413px;
+                    overflow: hidden;
+                    margin: 0;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .walletGraph {
+        position: relative;
+        width: 100%;
+        max-width: 500px;
+        margin-right: 120px;
+        margin-top: 155px;
+
+        .cashBalance {
+            width: 100%;
+            max-width: 448px;
+            background: $bgAlert;
+            z-index: 99;
+            position: absolute;
+            top: -118px;
+            left: 12px;
+            box-sizing: border-box;
+            border: 2.5px solid $primaryDisable;
+            border-radius: 24px;
+
+            .cashMain {
+                position: relative;
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                margin-top: 25px;
+
+                .dollarIcon {
+                    color: $textPrimary;
+                    font-size: 28px;
+                    line-height: 10px;
+                }
+
+                .balanceText {
+                    font-family: 'raleway';
+                }
+
+                .moreAction {
+                    cursor: pointer;
+
+                    .dotIcon {
+                        top: -8px;
+                        right: 19px;
+                        position: absolute;
+                        font-size: 40px;
+                        color: $tertiaryColor;
+                    }
+
+                    .moreMain {
+                        box-sizing: border-box;
+                        z-index: 111;
+                        position: absolute;
+                        top: 33px;
+                        right: -104px;
+                        width: 100%;
+                        max-width: 155.92px;
+                        background: $mainbgAlert;
+                        border-radius: 5px;
+                        filter: $dropShadow;
+
+                        .prefer {
+                            position: relative;
+                            width: 100%;
+                            @include flex;
+                            justify-content: space-between;
+                            padding: 16px 20px;
+
+                            .rightIcon {
+                                position: absolute;
+                                right: 16px;
+                                font-size: 12px;
+                                color: $darkGray;
+                            }
+                        }
+
+                        .action {
+                            position: relative;
+                            border-top: 1.01102px solid $primaryDisable;
+                            width: 100%;
+                            @include flex;
+                            justify-content: space-between;
+                            padding: 16px 20px;
+
+                            .actionIcon {
+                                position: absolute;
+                                right: 16px;
+                                font-size: 12px;
+                                color: $darkGray;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .ecoMain {
+                margin-top: 16px;
+                position: relative;
+                @include flex;
+
+                .ecoBorder {
+                    border-top: 1.5px solid $primaryDisable;
+                    padding-top: 25px;
+                    margin: 0px 40px 30px;
+
+                    .balanceText {
+                        font-family: 'raleway';
+                    }
+
+                    .ecoPoints {
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    .balanceText {
+                        font-family: 'raleway';
+                    }
+                }
+
+                .balanceText {
+                    font-family: 'raleway';
+                }
+
+                .logo {
+                    position: absolute;
+                    bottom: -8px;
+                    right: -3px;
+                }
+            }
+        }
+
+        .graphBackground {
+            position: relative;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            max-width: 472px;
+            min-height: 671px;
+            background: $iconPrimary;
+            border-radius: 16px;
+            padding: 0 50px 45px 40px;
+
+            .walletTodate {
+                @include flex;
+                justify-content: space-between;
+                padding: 11px 25px;
+                width: 100%;
+                max-width: 381px;
+                background: $darkShadowColor;
+                border-radius: 22px;
+                margin: 156px 0 30px;
+                font-family: 'raleway';
+
+                .todateText {
+                    margin-right: 4px;
+                }
+
+                .todateCash {
+                    position: relative;
+                    display: flex;
+                    justify-content: space-around;
+                    padding: 11px 23px;
+                    width: 100%;
+                    max-width: 197px;
+                    background: $shadowSecondaryColor;
+                    border-radius: 16px;
+                    margin-left: 3px;
+
+                    .cashText {
+                        margin-left: 20px;
+                    }
+
+                    .cash {
+                        @include flex;
+                        font-family: 'raleway';
+                    }
+
+                    .cash::after {
+                        position: absolute;
+                        left: 105px;
+                        top: 20px;
+                        content: '';
+                        width: 1px;
+                        height: 32px;
+                        background: $whiteColor;
+                    }
+
+                    .ecoPoint {
+                        font-family: 'raleway';
+                        @include flex;
+                        margin-top: 5px;
+                    }
+                }
+            }
+
+            .walletChart {
+                width: 380px;
+                height: 356px;
+                background: #659C77;
+                border: 5.27967px solid rgba(255, 255, 255, 0.13);
+                border-radius: 21.1187px;
+
+                .graphHead{
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 21px 26px 22px 15px;
+
+                    .graphRight{
+                     @include flex;
+                        gap: 5px;
+                }
+                }
+                .graphButtons{
+                    display: flex;
+                    gap: 10px;
+                    padding: 0px 0px 28px 15px;
+                }
+            }
+        }
+    }
+}

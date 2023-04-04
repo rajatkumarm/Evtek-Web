@@ -1,0 +1,137 @@
+@import '../../../assets//scss/mixins.scss';
+@import '../../../assets//scss//variables.scss';
+
+.wrapper {
+    margin-left:40px;
+    display: flex;
+    justify-content: space-between;
+
+
+
+    .leftSection {
+        margin: 87px 119px 0px 0px;
+
+        .inviteDetails {
+            width:100%;
+            max-width: 421px;
+            .inviteHead {
+                font-weight: 600;
+                font-size: $font-xx4;
+                color: $tertiaryColor01;
+               @include raleway;
+                margin-bottom: 10px;
+            }
+
+            .inviteText {
+                font-weight: 400;
+                font-size: $font-xxl;
+                color: $darkGray;
+                font-family: $sansPro, 'sans-serif';
+            }
+        }
+
+        .imgSection {
+            margin-top: 146px;
+
+            .imdDetails {
+                margin-bottom: 25px;
+
+                .imgHeading {
+                    font-weight: 600;
+                    font-size: $font-xx6;
+                    color: $tertiaryColor01;
+                    font-family: 'Raleway';
+                }
+            }
+
+            .img01 {
+                display: flex;
+                align-items: center;
+                margin-bottom: 26px;
+
+                .imgTime0 {
+                    @include fonts-property;
+                    display: flex;
+                    align-items: center;
+
+                    .time01 {
+                        margin-left: 12px;
+
+                        .imgTime {
+                            color: $darkGray;
+                            font-size: $font-sm;
+                            font-weight: 400;
+                            font-family: $sansPro, 'sans-serif';
+                        }
+
+                        .imgDays {
+                            font-size: $font-sm;
+                            font-weight: 400;
+                            font-family: $sansPro, 'sans-serif';
+                            color: $tertiaryColor01;
+
+                        }
+
+                    }
+                }
+
+                .reminder {
+                    margin-left: 44px;
+                    // font-weight: 600px;
+                    // font-family: $sansPro, 'sans-serif';
+                    // color: $tertiaryColor01;
+                    // font-size: $font-sm;
+                    text-decoration: underline;
+                }
+
+            }
+
+            .img02 {
+                @extend .img01;
+
+                .imgDays1 {
+                    font-size: $font-sm;
+                    font-weight: 600;
+                    font-family: $sansPro, 'sans-serif';
+                    color: $textPrimary01;
+                }
+
+                .echoPoint {
+                   margin-left: 40px;
+                    color: $textPrimary01;
+
+                }
+            }
+        }
+    }
+
+    .rightSection {
+        font-family: $sansPro, 'sans-serif';
+        margin: 100px 139px 0px 0px;
+        .textMain{
+            text-align: center;
+            margin-bottom:5px;
+        }
+        .codeSection {
+            margin-bottom:46px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 360px;
+            height: 62px;
+            border-radius: 16px;
+            background-color: $lightGreen;
+
+            .text {
+                font-size: $font-big03;
+                color: $textPrimary01;
+                font-weight: 600;
+                letter-spacing: 15px;
+            }
+        }
+
+        .buttonInvite {
+            text-align: center;
+        }
+    }
+}

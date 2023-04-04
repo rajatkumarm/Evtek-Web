@@ -1,0 +1,524 @@
+@import '../../assets/scss/variables.scss';
+@import '../../assets//scss/mixins.scss';
+@import '../../assets//scss/breakpoints.scss';
+
+.homeMain {
+    width: 100%;
+    .rightleft {
+        display: flex;
+    }
+
+    .homeContainer {
+        position: relative;
+
+        .blueBg {
+            width: 100%;
+            max-width: 344px;
+            min-height: 344px;
+            border-top-right-radius: 0;
+            border-top-left-radius: 0;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 100%;
+            background-color: $solidPrimary;
+            position: absolute;
+            right: 0;
+            top: 0;
+
+            .blueText {
+                max-width: 160px;
+                width: 100%;
+                margin-top: 70px;
+                text-align: center;
+                margin-left: 140px;
+                @include fonts-property
+            }
+
+            .blueButton {
+                margin-top: 71px;
+                margin-left: 175px
+            }
+        }
+
+        .userProfile {
+            @include flex;
+            padding-top: 20px;
+        }
+
+        .profileName {
+            margin-left: 45px
+        }
+
+        .homeText {
+            @include raleway;
+            font-weight: 500;
+            margin-bottom: 2px;
+        }
+
+        .ecoText {
+            @include fonts-property;
+            font-weight: 700;
+        }
+
+        .ecopointText {
+            @include fonts-property;
+        }
+
+        .homeleaf {
+            display: flex;
+        }
+
+        .homeStreak {
+            .homestreakText {
+                @include fonts-property;
+                font-weight: 700;
+            }
+
+            @include fonts-property;
+            display: flex;
+            margin-left: 50px;
+            align-items: flex-end;
+
+        }
+
+        .samBalance {
+            @include flexJustifyCenter;
+            padding: 3px 12px;
+            gap: 16px;
+            margin-top: 10px;
+            width: 100%;
+            max-width: 348px;
+            height: 38px;
+            background: $textPrimary;
+            border-radius: 19px;
+
+            .balanceText {
+                @include fonts-property;
+                font-weight: 600;
+            }
+
+            .Ecopoints {
+                @include fonts-property;
+
+            }
+        }
+    }
+
+    .homeMetrics {
+        @include flex;
+        padding: 11px 22px;
+        width: 100%;
+        max-width: 336px;
+        background: $bgSecondaryGrey;
+        border-radius: 17px 17px 0px 0px;
+    }
+
+    .homeRecycle {
+        display: flex;
+        justify-content: center;
+        width: 336px;
+        margin-top: 2px;
+        background: $textWhite;
+        border: 1px solid $primaryDisable;
+        box-shadow: 0px 15.2462px 30.4923px rgba(39, 81, 63, 0.03);
+        border-radius: 0px 0px 16.8084px 16.8084px;
+
+        .homeRecyclemetrics {
+            margin: 22px 0px 0px 22px;
+        }
+
+        .homePlastic {
+            margin-top: 15px;
+        }
+
+        .homeGlass {
+            margin: 15px 0px 24px 0px;
+        }
+
+        .itemImages {
+            margin: 22px 0px 0px 24px;
+        }
+
+    }
+
+    .homemetricsText {
+        @include fonts-property;
+    }
+
+    .homeProgress {
+        @include flex;
+        padding: 11px 22px;
+        width: 294px;
+        height: 39px;
+        background: $bgSecondaryGrey;
+        border-radius: 17px 17px 0px 0px;
+        margin-top: 20px;
+    }
+
+    .progressImpact {
+        width: 293px;
+        height: 348px;
+        background: $primaryDisable;
+        border-radius: 0px 0px 16px 16px;
+        margin-top: 2px;
+        position: absolute;
+    }
+
+    .homeImpactbadge {
+        width: 100%;
+        max-width: 313px;
+        min-height: 95px;
+        background: $whiteColor;
+        box-shadow: -8px 8px 11px rgba(0, 0, 0, 0.17);
+        border-radius: 16px;
+        margin: 10px 0px 0px 20px;
+        @include flex;
+        position: relative;
+        cursor: pointer;
+
+        .impactText {
+            margin-left: 15px;
+        }
+
+        .rightIcon {
+            margin-left: 15px;
+            padding-top: 5px 0px 0px 8px;
+            background: $bgAlert;
+            border-radius: 5px;
+            color: $solidPrimary;
+
+        }
+
+        .leaderIcon {
+            margin-left: 67px;
+            padding-top: 5px 0px 0px 8px;
+            background: $bgAlert;
+            border-radius: 5px;
+            color: $solidPrimary;
+
+        }
+
+        .coIcon {
+            margin-left: 10px;
+            padding-top: 5px 0px 0px 8px;
+            background: $bgAlert;
+            border-radius: 5px;
+            color: $solidPrimary;
+        }
+
+
+        .homeBulb {
+            margin: 10px 0px 0px 20px;
+            width: 58px;
+            height: 58px;
+        }
+
+        .homeproText {
+            @include fonts-property;
+            font-weight: 700;
+        }
+
+        .homeorange {
+            @include raleway;
+        }
+
+        .barPosition {
+            @include fonts-property
+        }
+
+        .progressBack {
+            .contentLeftbottam {
+                @include flex;
+                margin-top: 2px;
+
+                .barText {
+                    @include fonts-property;
+                }
+
+                .ProgressBar {
+                    width: 100%;
+                    min-width: 120px;
+                    min-height: 25px;
+                    background: rgba(94, 186, 125, 0.07);
+                    border-radius: 31px;
+                    @include raleway;
+
+                    .progressBar {
+                        padding: 5px 5px;
+
+                    }
+                }
+            }
+        }
+    }
+
+    .slideHome {
+        position: relative;
+
+        .homeCoupons {
+            @include flex;
+            padding: 10px 22px;
+            width: 100%;
+            max-width: 481px;
+            min-height: 39px;
+            background: $bgSecondaryGrey;
+            border-radius: 16px 16px 0px 0px;
+
+            .homecouponText {
+                @include fonts-property;
+            }
+        }
+
+        .couponsExpiring {
+            margin-top: 3px;
+            width: 481px;
+            height: 144px;
+            background: $primaryDisable;
+            border-radius: 0px 0px 16px 16px;
+
+        }
+    }
+
+
+    .textico {
+        margin: 10px 0px 0px 315px;
+        @include flex;
+        justify-content: space-around;
+    }
+
+    .pickupCalender {
+        display: flex;
+    }
+
+    .homePickup {
+        width: 100%;
+        @include flexJustifyBetween;
+        padding: 10px 22px;
+        max-width: 481px;
+        min-height: 39px;
+        margin-top: 20px;
+        background: $bgSecondaryGrey;
+        border-radius: 17px 17px 0px 0px;
+
+        .homecouponText {
+            @include fonts-property;
+        }
+
+        .legend {
+            padding: 4px 6px;
+            width: 100%;
+            max-width: 119px;
+            border-radius: 6px;
+            background: $darkGray;
+            cursor: pointer;
+            @include flexJustifyCenter;
+
+        }
+
+
+    }
+
+    .rightSide {
+        margin-left: 20px;
+    }
+
+    .homeCalc {
+        width: 100%;
+        max-width: 481px;
+        margin-top: 4px;
+    }
+
+    .homeCalender {
+        height: 335px;
+        background: $textWhite;
+        box-shadow: 0px 17px 35px rgba(39, 81, 63, 0.03);
+        border-radius: 0px 0px 18px 18px;
+    }
+
+}
+
+.modelMain {
+    max-width: 570px;
+
+    .logoM {
+        text-align: center;
+        margin-top: 19px;
+        position: relative;
+
+        .cameraImg {
+            width: 100%;
+            max-width: 58px;
+            min-height: 54px;
+            background: $solidPrimary;
+            border-radius: 50%;
+            position: absolute;
+            left: 326px;
+            right: 0px;
+            top: 103px;
+
+            .btncamera {
+                color: $textWhite;
+                font-size: 28px;
+                @include flexJustifyCenter;
+                margin-top: 12px;
+            }
+        }
+    }
+
+    .sideModel {
+        margin: 35px 82px 82px 0px;
+
+        .editor {
+            cursor: pointer;
+        }
+
+        .modelText {
+            @include fonts-property;
+            font-weight: 600;
+
+        }
+
+        .textModel {
+            @include fonts-property;
+            @include flexJustifyBetween;
+        }
+    }
+
+    .savebtn {
+        text-align: center;
+        margin: 42px 0px 60px 0px;
+    }
+}
+
+// tutorial navbar content css start
+
+.navbar {
+    width: 100%;
+    height: 100vh;
+    margin-left: 366px;
+    display: flex;
+   
+    .navbarMain {
+        width: 100%;
+        max-width: 225px;
+        height: 100vh;
+        background: $navyBlue01;
+        margin: 12px 0px 17px 0px;
+        border-radius: 14px;
+        display: grid;
+        align-content: space-between;
+        padding: 12px;
+
+        .skipText {
+            margin: 10px 0px 31px;
+            text-align: right;
+            cursor: pointer;
+        }
+
+        .navContent {
+            width: 100%;
+            max-width: 159px;
+            margin-left: 10px;
+        }
+
+        .accountBtn {
+            margin-top: 34px;
+            @include flexJustifyBetween;
+        }
+    }
+}
+// Tutorial navbar content css end
+// Tutorial Profile Model content css start
+
+.profileMain {
+    position: absolute;
+    right: 252px;
+    top: 23px;
+    @include md {
+        right: 90px ;
+    }
+    @include xmd {
+        right: 155px;
+    }
+
+    .profileContent {
+        width: 100%;
+        max-width: 338px;
+        @include md {
+            max-width: 251px;
+        }
+    }
+}
+// Tutorial Profile Model content css start
+// Tutorial Metrics Model content css start
+
+.metricsMain {
+    width: 100%;
+    margin: 228px 0px 0px 90px;
+    @include flex;
+    justify-content: space-around;
+    @include md {
+        margin: 228px 0px 0px 250px;
+
+    }
+    @include xmd {
+        margin: 228px 0px 0px 250px;
+
+    }
+}
+// Tutorial Metrics Model content css end
+// Tutorial impact Model content css start
+.impactMain {
+    width: 100%;
+    margin: 518px 0px 0px 90px;
+    display: flex;
+    justify-content: space-around;
+    @include md {
+        margin: 518px 0px 0px 270px;
+
+    }
+    @include xmd {
+        margin: 518px 0px 0px 170px;
+
+    }
+    .impactContent {
+        display: grid;
+        min-height: 313px;
+    }
+}
+// Tutorial impact Model content css end
+// Tutorial carousel Model content css start
+
+.carouselMain {
+    width: 100%;
+    margin: 206px 0px 0px 450px;
+    display: flex;
+}
+// Tutorial carousel Model content css end
+// Tutorial scheduler Model content css start
+
+.schedulerMain {
+    width: 100%;
+    margin: 550px 0px 0px 450px;
+    display: flex;
+}
+// Tutorial scheduler Model content css end
+// Tutorial pickup Model content css start
+
+.pickupMain {
+    position: absolute;
+    right: 400px;
+    top: 98px;
+}
+// Tutorial pickup Model content css start
+
+.zIndex {
+    z-index: 99999;
+    position: relative;
+}
+
+.layoutindex {
+    z-index: 999;
+    position: static !important;
+    max-width: 324px;
+    width: 100%;
+}

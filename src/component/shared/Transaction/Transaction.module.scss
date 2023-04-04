@@ -1,0 +1,80 @@
+@import "../../../assets/scss/variables.scss";
+@import "../../../assets/scss/mixins.scss";
+
+
+.dollarText {
+  @include raleway;
+    font-weight: 400;
+    font-size: 12.3264px;
+    color: $tertiaryColor;
+
+}
+
+.Recycleds {
+     box-sizing: border-box;
+    max-width: 563px;
+    width: 100%;
+    background: $Arc-Re;
+    border: 1px solid $bgStateBorder;
+    border-radius: 19.7222px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+   @include fonts-property;
+    cursor: pointer;
+
+    h4 {
+
+        font-weight: 400;
+        font-size: 17.2569px;
+        line-height: 120%;
+        color: $tertiaryColor;
+        cursor: pointer;
+    }
+
+    .Recycled {
+        display: flex;
+        padding: 9px 11px 9px 0px;
+        justify-content: space-between;    
+        align-items: self-end;
+
+
+        .recycledLeft {
+            display: flex;
+                  
+            .middle {
+                .donatedText {
+                    padding-top: 10px;
+                }
+            }
+        }
+
+        .left {
+            width: 51.77px;
+            height: 51.77px;
+            background: $aluminium-color;
+            border-radius: 11.0938px;
+            margin-left: 20px;
+            margin-right: 26px;
+            position: relative;
+            top: 10px;
+
+            .leftIcon {
+                color: $textWhite;
+                position: absolute;
+                left: 10px;
+                top: 11px;
+                font-size: 28px;
+            }
+        }
+    }
+
+    .donatedText {
+        gap: 5px;
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        font-size: 12.3264px;
+        color: $tertiaryColor;
+    }
+}

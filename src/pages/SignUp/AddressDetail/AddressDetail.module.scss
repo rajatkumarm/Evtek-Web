@@ -1,0 +1,109 @@
+@import "../../../assets/scss/variables.scss";
+@import "../../../assets/scss/mixins.scss";
+
+.modal {
+    .errorMsg {
+        margin-top: 10px;
+        text-align: left;
+        color:$redColor;
+     }
+    padding: 22px 25px 30px 21px;
+    .logoText {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        .headText {
+            color: $SeondaryTextColor;
+            font-weight: 700;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+    }
+    .radioBtn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 40px;
+        padding-bottom: 75px;
+    }
+    .addressMain {
+        max-width: 394px;
+        @include fonts-property;
+        margin: 0 auto;
+        .headTxt {
+            padding-top: 38px;
+        }
+        .mainTxt {
+
+            color: $SeondaryTextColor;
+            font-size: 16px;
+        }
+        .radioHead 
+        {
+        input[type="radio"]:checked + .radioMain {
+            background-color: $bgColor;
+            cursor: pointer;
+            background: $bgColor;
+            border-radius: 16px; 
+        }
+    }
+
+        .radioHead input[type="radio"]:checked + .radioMain {
+            cursor: pointer;
+        }
+        .radioHead {
+            display: flex;
+            align-items: center;
+            // padding-top: 46px;
+            input[name="radio"] {
+                accent-color: $SeondaryTextColor;
+                cursor: pointer;
+                border: 1px solid $SeondaryTextColor;
+                width: 16px;
+                height: 16px;
+            }       
+              input[type="radio"]:checked:before {
+                background: #494E5E;
+                
+              }
+            .radioMain {
+                margin-left: 22px;
+                padding: 28px 73px 28px 17px;
+                cursor: pointer;
+            }
+        }
+        .inputHead {
+            padding-top: 19px;
+        }
+        .radioText {
+            font-size: 16px;
+            color: $SeondaryTextColor;
+            font-weight: 400;
+            cursor: pointer;
+        }
+        .addressTxt {
+            color: $SeondaryTextColor;
+            font-weight: 600;
+            font-size: 16px;
+            padding-top: 15px;
+            max-width: 150px;
+            width: 100%;
+        }
+        .addressChange{
+            max-width: 150px;
+            width: 100%;
+            margin-top: 16px;
+        }
+        .addressLine{
+            max-width: 195px;
+            width: 100%;
+            margin-top: 16px;
+        }
+    }
+    .btn {
+        display: flex;
+        justify-content: space-between;
+    }
+}

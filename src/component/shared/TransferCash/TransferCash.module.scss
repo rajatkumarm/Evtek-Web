@@ -1,0 +1,19 @@
+@import '../../../assets/scss/variables.scss';
+@import '../../../assets/scss/mixins.scss';
+    .transferFund {
+        background: $bgAlert;
+        border: 2px solid $bgBorder;
+        border-radius: $font-lg;
+        width: 480px;
+        padding: 25px 28px 25px 28px;
+        margin-top: 63PX;
+        .cashFund {
+            border-bottom: 2px solid $bgStateBorder;
+            padding-bottom: 38px;
+            .dollarTxt {
+                font-size: $font-big02;
+                color: $textPrimary;
+                margin-top: 5px;
+            }
+        }
+    }

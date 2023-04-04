@@ -1,0 +1,117 @@
+@import"../../../../assets/scss/mixins.scss";
+@import"../../../../assets/scss/variables.scss";
+
+.dropOff {
+
+    @include fonts-property;
+
+    .map {
+        margin-top: 20px;
+        width: 100%;
+        height: 100vh;
+        border-radius: 16px;
+        overflow: overlay;
+    }
+
+    .Inputsection {
+        display: flex;
+        margin-top: 72px;
+        border: none;
+        gap: 11px;
+    }
+
+    .textInput {
+        height: 38px;
+        font-size: 18px;
+        border-radius: 8px;
+        padding: 0 12px;
+        max-width: 485px;
+        width: 100%;
+        border: none;
+        background: $bgStateBorder;
+    }
+
+    .dropDown {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        list-style: none;
+        text-indent: 1px;
+        text-overflow: '';
+
+        background-image: url("../../../../../public/images/arrow_drop_up.svg") !important;
+        background-repeat: no-repeat !important;
+        background-position: right 10px center !important;
+        padding-right: 30px !important;
+        cursor: pointer;
+        padding-left: 10px;
+        background: $primaryDisable;
+        border-radius: 4px;
+        height: 38px;
+        color: $textPrimary;
+        padding-right: 20px;
+
+    }
+
+    .btnFilter {
+        @include fonts-property;
+        @include flexJustifyCenter;
+        gap: 7px;
+        min-height: 38px;
+        font-size: 15px;
+        margin-left: 37px;
+        background: $tertiaryColor;
+    }
+
+    .inputHead {
+        @include fonts-property;
+        @include flex;
+        font-size: 14px;
+        gap: 10px;
+        text-align: center;
+        color: $darkGray;
+        margin-top: 16px;
+
+        .btnInpt Button {
+            color: $textPrimary;
+            background: $primaryDisable;
+            border-radius: 38px;
+            font-size: 16px;
+            margin-right: 10px;
+            font-weight: 400;
+            max-height: 26px;
+
+        }
+    }
+
+    .location {
+        margin-top: 61px;
+        margin-bottom: 40px;
+        @include flex;
+
+        .locationText {
+            width: 98px;
+            height: 29px;
+            font-weight: 400;
+            font-size: 24px;
+           @include flex;
+            text-align: center;
+            color: $tertiaryColor;
+        }
+
+        .btnDrop {
+            @include fonts-property;
+            background: $navyBlue;
+            border-radius: 17.2114px;
+            font-size: 12px;
+            margin-left: 23px;
+            margin-right: 14px;
+        }
+
+        .btnWalk {
+            @include fonts-property;
+            background: $orangeColor;
+            font-size: 12px;
+
+        }
+    }
+}

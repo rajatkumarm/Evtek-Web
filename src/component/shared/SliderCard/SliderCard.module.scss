@@ -1,0 +1,20 @@
+@import '../../../assets/scss/variables.scss';
+@import '../../../assets/scss/mixins.scss';
+
+.container {
+    width: 100%;
+    max-width: 180px;
+    min-height: 180px;
+    background: $whiteColor;
+    border-radius: 7px;
+    padding: 10px 9px;
+    border: 2px solid #dbf0d6;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .cardImage {
+        min-height: 145px;
+    }
+}

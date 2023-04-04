@@ -1,0 +1,34 @@
+@import '../../../assets/scss/mixins.scss';
+@import '../../../assets/scss/variables.scss';
+
+.Account {
+    @include raleway;
+    @include flex;
+    width: 592px;
+    background: $radioDisable03;
+    border-radius: 28px;
+    margin-top: 18px;
+
+    .contentBox {
+        margin-left: 8px;
+        .bottomText{
+            margin-top: 22px;
+        }
+    }
+
+    .mainImage {
+        margin: 38px 0px 31px 22px;
+        border-radius: 5px;
+    }
+    .iconBox{
+        @include flex; 
+        width: 40px;
+        height: 40px;
+        border-radius: 5px;
+        margin-left: 142px;
+        font-size: 22px;
+        color:$textWhite;
+        background-color: $leadColor;
+        justify-content: center;
+    }
+}   

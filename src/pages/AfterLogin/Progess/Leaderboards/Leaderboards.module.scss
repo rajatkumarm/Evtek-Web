@@ -1,0 +1,139 @@
+@import '../../../../assets//scss//variables.scss';
+@import '../../../../assets//scss/mixins.scss';
+
+.container {
+
+    .davidsonProfile {
+
+        @include raleway;
+        display: flex;
+        align-items: center;
+        margin-top: 47px;
+
+        .bgFirt {
+            border: 15.2857px solid rgba(255, 149, 0, 0.17);
+            border-radius: 50%;
+            margin-right: 40px;
+
+            .bgSecond {
+                width: 188.52px;
+                height: 188.52px;
+                border: 20.381px solid rgba(255, 149, 0, 0.46);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+        }
+
+        .profileHeading {
+            @include fonts-property;
+
+            .levelText {
+                margin-top: 8px;
+            }
+        }
+    }
+
+    .leaderBoxHeading {
+        margin-top: 57px;
+        display: flex;
+        width: 592px;
+        justify-content: space-between;
+        align-items: center;
+
+        .main {
+            margin-right: 16px;
+            display: -webkit-inline-box;
+        }
+    }
+
+    .otherLeaderboards {
+        margin-top: 56px;
+
+        .otherHeading {
+            margin-bottom: 29px;
+
+            .headimgText {
+                display: -webkit-inline-box;
+                margin-right: 16px;
+            }
+        }
+
+        .leaderBox {
+            cursor: pointer;
+        }
+
+        .bottomBorder {
+            border: 0.20438px solid $tertiaryColor;
+            margin: 25px 0px;
+            opacity: 0.3;
+            max-width: 594px;
+        }
+    }
+
+    .iconClass {
+        color: $redColor;
+        font-size: 29px;
+    }
+
+    .cardBox {
+        margin-top: 51px;
+        display: flex;
+        gap: 30px;
+
+        .cardBoxFirst {
+            width: 120.11px;
+            background: $lightGreen;
+            mix-blend-mode: normal;
+            border: 1.58046px solid $primaryDisable;
+            border-radius: 25.2873px;
+            padding: 15px 15px 0;
+            text-align: center;
+            cursor: pointer;
+
+            .closeIcon {
+                color: $textPrimary;
+                font-size: 25px;
+                margin: 12px 0px;
+            }
+        }
+
+        .cardBoxSecond {
+            width: 120.11px;
+            background: #FFFBEF;
+            mix-blend-mode: normal;
+            border: 1.58046px solid $orangeColor;
+            border-radius: 25.2873px;
+            padding: 15px 15px 0;
+            text-align: center;
+            cursor: pointer;
+
+            .keyIcon {
+                color: $orangeColor;
+                font-size: 22px;
+                margin: 12px 0px;
+            }
+
+        }
+    }
+
+    .EvtekleaderBox {
+        cursor: pointer;
+    }
+
+    .icoBox {
+        font-size: 23px;
+        color: $tertiaryColor;
+        cursor: pointer;
+    }
+}
+
+.evtekModel {
+    @include fonts-property;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+}

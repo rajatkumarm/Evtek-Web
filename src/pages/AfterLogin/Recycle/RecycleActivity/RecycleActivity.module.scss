@@ -1,0 +1,67 @@
+@import '../../../../assets//scss//variables.scss';
+@import '../../../../assets//scss/mixins.scss';
+
+.headerMain{
+    padding-bottom: 52px;
+}
+
+.contamination {
+    box-sizing: border-box;
+    width: 563px;
+    color: $redColor;
+    background: $textWhite;
+    border: 1.37153px solid rgba(255, 95, 95, 0.65);
+    border-radius: 10.9722px;
+    margin-bottom: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 23px;
+    cursor: pointer;
+
+    .headMain{
+        padding-bottom: 15px;
+        padding-top: 5px;    }
+
+    .iconFill{
+        padding-left: 250px;
+        color: $tertiaryColor;
+    }
+
+    .textUpdate {
+        padding-left: 36px;
+    }
+
+    .contaminationTracker {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding-left: 13px;
+        margin-bottom: 10px;
+
+        .textTracker {
+            font-size: 20px;
+            color: $redColor;
+            font-family: 'Source Sans Pro';
+            font-style: normal;
+            font-weight: 600;
+        }
+
+        .textTwo {
+            width: 23.32px;
+            height: 23.32px;
+            background: $redColor;
+            border-radius: 2.74306px;
+            align-items: center;
+
+            .textTrackertwo {
+                padding-left: 8px;
+            }
+        }
+
+        .iconFill{
+            padding-left: 250px;
+            color: $tertiaryColor;
+        }
+    }
+}

@@ -1,0 +1,93 @@
+@import '../../../../assets//scss//variables.scss';
+@import '../../../../assets//scss/mixins.scss';
+
+.Tracker {
+   
+
+    .container {
+        margin: 58px 0px 0px 64px;
+
+        .bagsection {
+            @include imagesection;
+        }
+
+        .datetime {
+            margin: 34px 0px 41px 0px;
+
+            .headdate {
+                margin-bottom: 13px;
+                font-size: $font-xxxl;
+                font-family: $sansPro, 'sans-serif';
+                color: $tertiaryColor01;
+                font-weight: 600;
+            }
+
+            .textdate {
+                font-size: $font-md;
+                font-family: $sansPro, 'sans-serif';
+                color: $tertiaryColor01;
+                font-weight: 400;
+            }
+
+        }
+
+        .recycleSection {
+            margin-bottom: 53px;
+            width: 470px;
+            @extend .datetime;
+
+            .recyclehead {
+                @extend .headdate;
+            }
+
+            .recycletext {
+                @extend .textdate;
+                width: 470px;
+                height: 110px;
+            }
+
+        }
+
+        .linkDetails {
+            width: 297px;
+            height: 43px;
+            border: 1px solid $tertiaryColor01;
+            display: flex;
+            align-items: center;
+            border-radius: 13.83px;
+
+            .details {
+                padding-left: 10px;
+                font-size: $font-md;
+                font-weight: 400;
+                font-family: $sansPro, 'sans-serif';
+                text-align: left;
+                color: $tertiaryColor01;
+            }
+
+            .icon {
+                padding-left: 21px;
+                color: $iconPrimary;
+                font-size: $font-md;
+            }
+
+        }
+
+        .footer {
+            margin-top: 241px;
+            margin-bottom: 19px;
+
+            .textfooter {
+                font-size: $font-xl;
+                font-weight: 500;
+                font-family: "Raleway";
+                color: $iconPrimary;
+                position: relative;
+                text-decoration: underline;
+                
+            }
+        }
+
+
+    }
+}

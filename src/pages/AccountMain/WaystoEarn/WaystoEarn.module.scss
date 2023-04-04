@@ -1,0 +1,179 @@
+@import '../../../assets/scss/variables.scss';
+@import '../../../assets/scss/mixins.scss';
+
+.main {
+    margin-left: 40px;
+    @include fonts-property;
+    gap: 128px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    .reviewBox{
+        display: grid;
+    }
+    .headMain {
+        margin: 70px 0 16px;
+    }
+
+    .textMain {
+        display: flex;
+        margin-bottom: 10px;
+        @include raleway;
+
+
+        .primaryHead {
+            padding-right: 5px;
+        }
+    }
+
+    .textMainSecondary {
+        display: flex;
+        margin: 32px 0px 10px 0px;
+        @include raleway;
+
+        .primaryHead {
+            padding-right: 5px;
+        }
+    }
+
+    .PrimaryEcopoints {
+        display: flex;
+
+        .ecoPoint {
+            margin-right: 20px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            min-width: 150px;
+            background: $primaryDisable;
+            border-radius: 14px;
+            padding: 28px 0px;
+
+            .ecoImgFirst {
+                height: 53px;
+                margin-bottom: 10px;
+                
+            }
+
+            .ecoImg {
+                height: 53px;
+                margin-bottom: 10px;
+            }
+        }
+
+        .ecoPointTwo {
+
+            margin-right: 20px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            max-width: 150px;
+            background: $primaryDisable;
+            border-radius: 14px;
+            padding: 28px 6px;
+
+            .ecoImg {
+                height: 53px;
+                margin-bottom: 10px;
+
+            }
+        }
+    }
+
+    .textMainTertiary {
+        display: flex;
+        margin: 26px 0px 10px 0px;
+        @include raleway;
+
+        .primaryHead {
+            padding-right: 5px;
+        }
+    }
+
+    .PrimaryEcopoints {
+        display: flex;
+
+        .more {
+            margin-right: 20px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            min-width: 150px;
+            background: $bgPrimaryBlue;
+            border-radius: 14px;
+            padding: 28px 0px;
+
+            .ecoImg {
+                height: 53px;
+                margin-bottom: 10px;
+
+            }
+
+
+
+        }
+    }
+
+    .PrimaryEcopoints {
+        display: flex;
+
+        .multipliers {
+            margin-right: 20px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            min-width: 150px;
+            background: $bgPrimaryOrange;
+            border-radius: 14px;
+            padding: 28px 0px;
+
+            .ecoImg {
+                height: 53px;
+                margin-bottom: 10px;
+
+                .ecoIconLast {
+                    min-width: 58px
+                }
+            }
+        }
+    }
+
+    .paraMain {
+        @include fonts-property;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 377px;
+        background: $bgColor;
+        border-radius: 29px;
+        margin-top: 70px;
+
+
+        .para {
+            max-width: 321px;
+            margin: 48px 23px 50px 33px;
+
+            .textParaFirst {
+                font-weight: 400;
+
+
+            }
+
+        }
+
+        .paraContent {
+
+
+            padding-top: 20px;
+            ;
+
+            .textPera {
+
+                color: $textPrimary;
+
+            }
+        }
+    }
+}

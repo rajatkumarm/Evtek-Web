@@ -1,0 +1,11 @@
+@import "../../../assets/scss/variables.scss";
+@import "../../../assets/scss/mixins.scss";
+
+.dateBox{
+    @include fonts-property;
+    width:100%;
+    max-width: 263px;
+    background: $textPrimary;
+    border-radius: 8px;
+    padding:16px 12px;
+  }

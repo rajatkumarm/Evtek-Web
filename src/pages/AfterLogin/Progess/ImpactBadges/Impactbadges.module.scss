@@ -1,0 +1,329 @@
+@import '../../../../assets//scss//variables.scss';
+@import '../../../../assets//scss/mixins.scss';
+
+
+.impactBadges {
+    position: relative;
+    @include fonts-property;
+
+    .impactItems {
+        padding: 75px 0px 45px 0;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        .textItem {
+            font-weight: 900;
+            color: $SeondaryTextColor;
+        }
+    }
+
+    .currentGoal {
+        box-sizing: border-box;
+        max-width: 952px;
+        width: 100%;
+        height: 321px;
+        background: $textWhite;
+        border: 2px solid $Arc-border;
+        border-radius: 16px;
+
+        .currentGoalbox {
+            padding: 26px 26px 26px 35px;
+
+            .currentGoalcontent {
+                position: relative;
+                top: 18px;
+
+                .bulbImage {
+                    position: absolute;
+                    top: -1px;
+                }
+
+                .contentInside {
+                    box-sizing: border-box;
+                    max-width: 864px;
+                    height: 107px;
+                    background: $bgAlert;
+                    border: 1px solid $textPrimary;
+                    border-radius: 12px;
+                    margin-left: 27px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .contentLeft {
+                        padding-left: 72px;
+                        @include raleway;
+
+                        .contentLeftbottam {
+                            display: flex;
+                            align-items: center;
+                            margin-top: 12px;
+
+                            .ProgressBar {
+                                width: 326px;
+                                height: 41.35px;
+                                background: rgba(94, 186, 125, 0.29);
+                                border-radius: 37.9007px;
+                                margin-right: 13px;
+
+                                .progressBar {
+                                    padding: 7px 11px;
+                                }
+                            }
+                        }
+                    }
+
+                    .contentRight {
+                        display: inline-grid;
+                        gap: 8px;
+                        padding-right: 16px;
+                    }
+                }
+            }
+
+            .middle {
+                position: absolute;
+                max-width: 447px;
+                bottom: 73px;
+                width: 100%;
+
+                .middleTextclr {
+                    color: $textPrimary;
+                    font-weight: 700;
+                }
+            }
+
+            .bottom {
+                position: absolute;
+                bottom: 27px;
+                display: flex;
+                gap: 10px;
+                color: $solidPrimary;
+            }
+        }
+    }
+}
+
+.impactBadgesgoals {
+    padding-top: 56px;
+    @include raleway;
+
+    .badgesGoalstext {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+        @include fonts-property;
+
+        .bgBorder{   
+            width: 2px;
+            width: 2px;
+            height: 16px;
+            border-radius: 12px;
+            background: $tertiaryColor;
+        }
+
+        .viewActive {
+            color: $textPrimary;
+            font-weight: 600;
+        }
+
+        .viewListtext {
+            cursor: pointer;
+        }
+
+        .viewGridtext {
+            cursor: pointer;
+        }
+    }
+
+    .goalsFirst {
+        margin-top: 14px;
+        position: relative;
+
+        .carImage {
+            position: absolute;
+            bottom: 1px;
+        }
+
+        .goalsFirstcontent {
+            max-width: 517px;
+            height: 77px;
+            background: $primaryDisable;
+            border-radius: 13.8194px;
+            margin-left: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 81px;
+            cursor: pointer;
+        }
+
+        .rightImage {
+            position: absolute;
+            right: 447px;
+        }
+    }
+
+    .goalsSecondcontent {
+        max-width: 517px;
+        background: $darkBlue;
+        border-radius: 13.8194px;
+        margin-left: 30px;
+        @include flexJustifyBetween;
+        padding-left: 81px;
+        height: 78px;
+
+        .goaltext {
+            display: flex;
+            gap: 3px;
+            color: $recycleColor;
+        }
+
+        .goalsContentright {
+            margin-right: 28px;
+        }
+    }
+
+    .goalsFourcontent {
+        width: 517px;
+        border-radius: 13.8194px;
+        margin-left: 30px;
+        @include flexJustifyBetween;
+        padding-left: 81px;
+        height: 78px;
+        border: 1px solid $solidPrimary;
+
+        .goalsContentright {
+            padding-right: 29px;
+            gap: 19px;
+            display: flex;
+            align-items: center;
+        }
+
+        .goalTextitems {
+            color: $textPrimary;
+        }
+    }
+
+    .goalsFifthcontent {
+        width: 517px;
+        top: 831px;
+        border-radius: 13.8194px;
+        margin-left: 30px;
+        @include flexJustifyBetween;
+        padding-left: 81px;
+        height: 78px;
+        background: $bgStateBorder;
+        font-size: 30px;
+        color: $scrollBgColor;
+    }
+
+    .goalsContentright {
+        padding-right: 29px;
+        gap: 19px;
+        @include flex;
+    }
+
+    .iconarrowright {
+        color: $tertiaryColor;
+        cursor: pointer;
+
+    }
+
+    .listGridContent {
+
+        display: flex;
+
+        .goalAssetBox {
+            width: 375px;
+            height: 284px;
+            background: $bgAlert;
+            border: 3px solid $primaryDisable;
+            border-radius: 13.9583px;
+            margin: 14px 0px 0px 30px;
+
+            .assetHead {
+                margin: 18px 17px 0px 25px;
+                @include flexJustifyBetween;
+
+                .assetHeading {
+
+                    .headText {
+                        font-weight: 700;
+                    }
+
+                    .headTextMiles {
+                        font-weight: 400;
+                    }
+                }
+
+                .iconClose {
+                    font-size: 13px;
+                    color: $darkGray;
+                    cursor: pointer;
+                }
+            }
+
+            .assetContent {
+                margin: 0px 32px 32px 26px;
+
+                .assetCntext {
+                    @include fonts-property;
+                }
+
+                .assetbtn {
+                    margin: 14px 0px 31px;
+                    display: flex;
+
+                    .confirmBtn {
+                        margin-left: 7px;
+                    }
+                }
+
+                .assetGoalContent {
+                    display: flex;
+                    align-items: flex-start;
+
+                    .carTxt {
+                        @include fonts-property;
+                        min-width: 180px;
+                        margin-left: 25px;
+                        padding-right: 3px;
+
+                        .milestxt {
+                            color: $textPrimary;
+                            font-weight: 900;
+
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
+}
+
+.gridListMain {
+
+    display: flex;
+    padding-top: 36px;
+
+    .gridListFirst {
+        text-align: center;
+        padding-right: 35px;
+        position: relative;
+
+
+        .gridImage {
+            min-width: 112px;
+        }
+
+        .rightImage {
+            position: absolute;
+            top: 0;
+        }
+    }
+
+}

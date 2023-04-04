@@ -1,0 +1,27 @@
+@import "../../../assets/scss/mixins.scss";
+@import "../../../assets/scss/variables.scss";
+
+.mainBox {
+    width: 100%;
+    max-width: 251px;
+    background: $navyBlue01;
+    border-radius: 14px;
+    padding: 14px;
+    .skipText{
+       text-align: right;
+       cursor: pointer;
+    }
+    .mainBtn {
+        @include flexJustifyBetween;
+        margin-top: 22px;
+        .btnOne{
+           cursor: pointer;
+
+       }
+    }
+
+    .mainHeading {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,106 @@
+@import '../../../../assets/scss/variables.scss';
+@import '../../../../assets/scss/mixins.scss';
+
+.container {
+    width: 100%;
+    @include fonts-property;
+    height: 100vh;
+
+    .ml13 {
+        margin-left: 13px;
+    }
+
+    .headerWave {
+        width: 100%;
+    }
+
+
+    .shopHome {
+       @include flexJustifyBetween;
+
+        .pageTitleClass {
+            padding: 0;
+            margin-bottom: 57px;
+        }
+
+        .filterIcon {
+            font-size: 27px;
+            color: $textPrimary;
+            background: $primaryDisable;
+            border: 1.42857px solid $primaryDisable;
+            border-radius: 28.5714px 0px 0px 28.5714px;
+            padding: 21px 30px;
+            cursor: pointer;
+        }
+    }
+
+    .main {
+        margin-left: 45px;
+        .orderList {
+            margin: 58px 0px 42px 0px;
+        }
+        .detailsMain {
+            width: 100%;
+            max-width: 435px;
+            margin-top: 16px;
+
+            .headMain {
+                margin-bottom: 73px;
+
+            }
+
+            .headText {
+                margin-left: 5px;
+            }
+
+           
+
+            .ecoMain {
+                @include flexJustifyBetween;
+                margin-bottom: 13px;
+
+            }
+
+            .kratesMain {
+                border-bottom: 1.3px solid rgba(73, 78, 94, 0.3);
+                padding-bottom: 43px;
+                margin-bottom: 40px;
+            }
+
+            .subTotalMain {
+                border-bottom: 1.3px solid rgba(73, 78, 94, 0.3);
+                padding-bottom: 41px;
+
+                .subTotal {
+                    @include flexJustifyBetween;
+                    margin-bottom: 14px;
+                }
+
+                .Total {
+                    @include flexJustifyBetween;
+                    margin-top: 28px;
+                }
+            }
+
+            .paymentMain {
+                margin-top: 41px;
+
+                .cardMain {
+                    margin: 11px 0px 42px 0px;
+                    @include flex;
+
+                    .cardIcon {
+                        font-size: 37px;
+                        color: $textPrimary;
+                        cursor: pointer;
+                        margin-right: 7px;
+                    }
+                }
+
+                .shipped {
+                    margin-bottom: 11px;
+                }
+            }
+        }
+    }
+}

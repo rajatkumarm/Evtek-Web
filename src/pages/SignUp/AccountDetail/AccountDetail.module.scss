@@ -1,0 +1,312 @@
+@import "../../../assets/scss/variables.scss";
+@import "../../../assets/scss/mixins.scss";
+
+.modalBox {
+   
+    .BgMain {
+        .main {
+            .Close {
+                display: none !important;
+            }
+        }
+    }
+}
+.icoHide {
+    display: none !important;
+}
+.modal {
+    .errorMsg {
+        margin-top: 10px;
+        text-align: left;
+        color:$redColor;
+     }
+    padding: 22px 8px 30px 20px;
+    .scrollBehavior {
+        overflow-x: hidden;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+        height: 80vh;
+    }
+    .scrollWeb::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px $wbBoxShadow;
+        background-color: $scrollBgColor;
+        border-radius: 14px;
+    }
+
+    .scrollWeb::-webkit-scrollbar {
+        width: 14px;
+        background-color: $inputTextBackground;
+        width: 20px;
+    }
+
+    .scrollWeb::-webkit-scrollbar-thumb {
+        background-color: $inputTextBackground;
+        border-radius: 9px;
+        -webkit-box-shadow:inset 0 0 6px $wbBoxShadow2;
+    }
+    .bottmMain input[type="radio"]:checked + .btmRadio .btmIcon {
+        cursor: pointer;
+        background-color: $textWhite;
+
+        .badgeColor {
+            color: $SeondaryTextColor;
+        }
+        .ecoColor {
+            color: $textPrimary;
+        }
+        .recycleColor {
+            color: $recycleColor;
+        }
+        .leadColor {
+            color: $leadColor;
+        }
+        .carbonColor {
+            color: $carbonColor;
+        }
+        .circle {
+            color: $textPrimary;
+        }
+        img {
+            filter: grayscale(0);
+        }
+    }
+    .logoText {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    .headText {
+        color: $SeondaryTextColor;
+        font-weight: 700;
+        font-size: $font-xxl;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .accountDetail {
+        max-width: 394px;
+        @include fonts-property;
+        margin: 0 auto;
+
+        .LoginText {
+            @include Text-afterLogo;
+        }
+        .mainHead {
+            padding-top: 16px;
+        }
+        .stateHead {
+            padding-top: 16px;
+            max-width: 156px;
+        }
+        .mainTxt {
+            padding-top: 38px;
+            color: $SeondaryTextColor;
+            font-size: $font-lg;
+        }
+        .mainState {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 54px;
+            border-bottom: 1px solid $bgStateBorder;
+        }
+        .inputHead {
+            padding-top: 19px;
+        }
+        .check {
+            display: flex;
+            align-items: center;
+            padding-top: 30px;
+            .checkInput {
+                width: 24px;
+                height: 24px;
+                background-color: $primaryColor;
+            }
+            .checkTxt {
+                padding-left: 9px;
+                color: $SeondaryTextColor;
+            }
+        }
+        .btmTxt {
+            padding: 49px 0px 32px 0px;
+            .checkboxTxt {
+                padding-top: 11px;
+                padding-bottom: 43px;
+                color: $inputTextBorder;
+                font-size: $font-lg;
+                text-align: left;
+            }
+            .presetTxt {
+                color: $SeondaryTextColor;
+                font-weight: 600;
+                font-size: $font-lg;
+            }
+        }
+        .modalText {
+            font-size: 16px;
+            line-height: 19px;
+        }
+        .editTxt {
+            font-size: 14px;
+            line-height: 120%;
+            padding-left: 19px;
+        }
+        .textInput {
+            width: 100%;
+            max-width: 395px;
+            margin-top: 7px;
+        }
+        .userInput {
+            width: 100%;
+            max-width: 395px;
+            margin-top: 2px;
+        }
+        .inputText {
+            color: $SeondaryTextColor;
+        }
+
+        .codeType {
+           @include flex;
+            padding: 42px 0px 38px 0px;
+        }
+        .zip {
+            @include  flexJustifyAround;
+            background: $solidPrimary;
+            border-radius: 6px;
+            width: 238px;
+            height: 61px;
+        }
+        .acTypeTxt {
+            color: $bgAlert;
+            font-weight: 700;
+            font-size: $font-xs;
+        }
+        .numTxt {
+            color: $bgAlert;
+            font-weight: 400;
+            font-size: $font-lg;
+            padding-top: 3px;
+        }
+        .verifyTxt {
+            font-weight: 400;
+            font-size: $font-msm;
+            color: $SeondaryTextColor;
+        }
+        .editBtn {
+            cursor: pointer;
+        }
+        .chngModel {
+            position: absolute;
+            left: 10%;
+            width: 100%;
+            max-width: 330px;
+            background: $whiteColor;
+            border: 1px solid $primaryDisable;
+            border-radius: 16px;
+            cursor: pointer;
+            padding: 20px 18px;
+        }
+        .boxCroseIcon {
+            padding-top: 15px;
+            padding-bottom: 35px;
+        }
+        .boxSpanText {
+            max-width: 280px;
+            margin: 0 auto;
+        }
+        .modelPos {
+            position: absolute;
+            left: 102%;
+            top: 0;
+            width: 330px;
+            .changeBtn {
+                margin-top: 45px;
+            }
+        }
+        .btnClose {
+            position: absolute;
+            cursor: pointer;
+            top: 13px;
+            right: 17px;
+            background: transparent;
+            color: $inputTextBorder;
+            border-radius: 1px;
+        }
+
+        .btnMain {
+            width: 292px;
+            margin: 45px 18px 22px 18px;
+            background-color: $solidPrimary;
+            color: $bgAlert;
+            max-width: 100%;
+            min-width: 180px;
+            height: 48px;
+            font-size: $font-xxl;
+            border-radius: 12px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .bottmMain {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            .addText {
+                padding-left: 17px;
+                font-weight: 700;
+                color: $inputTextBorder;
+            }
+            input[name="radio"] {
+                accent-color: $SeondaryTextColor;
+                cursor: pointer;
+                border: 1px solid $SeondaryTextColor;
+             
+            }
+            input[type="radio"] {
+                width: 18px;
+                height: 18px;
+                position: absolute;
+                left: 0;
+                top: 36px;
+            }
+            input[type="radio"]:checked:before {
+                background:$tertiaryColor01;     
+              }
+        }
+        .bottmMarg {
+            margin-top: 20px;
+            margin-bottom: 60px;
+        }
+        .btmRadio {
+            width: 292px;
+            background: $bgColor;
+            border: 1px solid $bgColor;
+            border-radius: 16px;
+            padding: 16px 16px 16px 16px;
+            .btmIcon {
+                margin-top: 5px;
+                display: flex;
+                text-align: left;
+                background-color: $radioDisable;
+                border-radius: 10px;
+                padding: 10px 13px 10px 10px;
+                align-items: center;
+                cursor: pointer;
+
+                img {
+                    width: 28px;
+                    height: 28px;
+                    filter: grayscale(100%);
+                }
+
+                .circle {
+                    color: $SeondaryTextColor;
+                    margin-left: auto;
+                }
+            }
+        }
+    }
+    .btn {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 30px 0 30px;
+    }
+}

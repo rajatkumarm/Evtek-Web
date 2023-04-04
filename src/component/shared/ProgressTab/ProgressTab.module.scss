@@ -1,0 +1,41 @@
+@import '../../../assets/scss/variables.scss';
+@import '../../../assets/scss/mixins.scss';
+
+.Main {
+    @include fonts-property;
+    width: 100%;
+    min-width: 450px;
+    background: $textWhite;
+    padding: 0px 18px 12px;
+    border: 2px solid $primaryDisable ;
+    box-shadow: -10px 10px 17px rgba(138, 135, 144, 0.21);
+    border-radius: 16px;
+    box-sizing: border-box;
+    .HeadingMain {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .Heading {
+           @include raleway;
+           font-weight: 500;
+           margin-top: 19px;
+       }
+   
+       .tabIcon {
+           background: $bgAlertSecondary;
+           border-radius: 5px;
+           color: $textPrimary;
+           padding: 10px;
+           cursor: pointer;
+           margin-top: 16px;
+       }
+    }
+    .tabMain {
+        margin: 17px 0px 0px 11px;
+        display: flex;
+        .tabContentMain {
+            margin-left: 28px;
+        }
+    }
+
+}

@@ -1,0 +1,106 @@
+@import '../../assets//scss//variables.scss';
+@import '../../assets//scss/mixins.scss';
+
+.email {
+    padding: 26px 21px;
+    .emailHead {
+        width: 100%;
+        max-width: 330px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .emailContent {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 40px 0 20px 0;
+        line-height: 120%;
+        font-size: $font-lg;
+        font-family: $sansPro;
+    }
+    .emailIdTxt {
+        font-weight: 700;
+    }
+    .textInput {
+        max-width: 180px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex; 
+        margin-bottom: 25px; 
+        line-height: 25px;  
+        text-transform: uppercase;
+        letter-spacing: 0.525em;
+        padding: 8px 35px;
+        font-size: $font-xxxl;
+        border: 1px solid $disabledButton;
+        font-weight: 600;
+        border-radius: 6px;
+    }
+    .emailCaptcha {
+        padding: 12px 12px;
+        max-width: 260px;
+        margin: 0 auto;
+        background-color: $textWhite;
+        box-shadow: 0px 0px 3.8px 0.9px $box-shadowColor;
+        border-radius: 5.35714px;
+    }
+    .emailCaptchaText {
+        font-size: $font-xs;
+    }
+    .captchaCode{
+        margin: 50px auto;
+    }
+    .emailCaptchaInfo{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        .captchaInput {
+        max-width: 80px;
+        color: $SeondaryTextColor;
+        font-size: $font-xs;
+        border: 1px solid $bgStateBorder;
+        padding: 10px;
+    }
+}
+.emailCaptchaResend {
+        margin: 50px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+a{
+    background-color: $primaryDisable;
+    color: $textPrimary !important;
+    max-width: 180px;
+    width: 100%;
+    font-size: $font-xxl;
+    border-radius: 8px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    padding: 15px 20px;
+    position: absolute !important;
+    bottom: 0px !important;
+    left: 50% !important;
+    transform: translate(-50%,-50%) !important;
+}
+.successImg {
+    width: 30px;
+    font-size: 25px;
+    color:$solidPrimary;
+    position: absolute;
+    top: 0;
+    right: 40px;
+    height: 30px;
+}
+.showMsg {
+    padding: 10px 0px;
+}
+}

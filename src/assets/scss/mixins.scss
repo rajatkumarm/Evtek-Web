@@ -1,0 +1,406 @@
+@import './variables.scss';
+
+@mixin textStyling {
+    &.strong4 {
+        font-weight: 400;
+    }
+
+    &.strong5 {
+        font-weight: 500;
+    }
+
+    &.strong6 {
+        font-weight: 600;
+    }
+
+    &.strong7 {
+        font-weight: 700;
+    }
+    &.strong8 {
+        font-weight: 800;
+    }
+    &.strong9 {
+        font-weight: 900;
+    }
+
+    &.redPrimary {
+        color: $redColor;
+    }
+
+    &.primary {
+        color: $SeondaryTextColor;
+    }
+
+    &.secondary {
+        color: $textWhite;
+    }
+
+    &.tertiary {
+        color: $textblackPrimary;
+    }
+
+    &.primary2 {
+        color: $textPrimary;
+    }
+
+    &.secondary2 {
+        color: $textPrimaryBlue;
+    }
+
+    &.greyPrimary {
+        color: $inputTextBorder;
+    }
+    &.greySecondary {
+        color:$placeholderColor;
+    }
+
+    &.greenPrimary {
+        color: $solidPrimary;
+    }
+
+    &.orangePrimary {
+        color: $orangeColor;
+    }
+
+    &.grayPrimary {
+        color: $darkGray;
+    }
+    &.graySecondary {
+        color: $lightGray;
+    }
+
+    &.pinkPrimary {
+        color: $teritaryDanger01;
+    }
+
+    &.bluePrimary {
+        color: $glass-color;
+    }
+
+    &.ecoPrimary {
+        color: $tertiaryColor;
+    }
+    &.orangeprof {
+        color: $profileOrange;
+    }
+    &.yellowPrimary{
+       color: $yelloColor;
+    }
+
+    &.upperCase {
+        text-transform: uppercase;
+    }
+
+    &.lineThrough {
+        text-decoration: line-through;
+    }
+
+    &.underline {
+        text-decoration: underline;
+    }
+}
+
+@mixin fonts-property {
+    font-family: $sansPro, 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+}
+
+@mixin raleway {
+    font-family: 'raleway';
+    font-weight: 600;
+    font-style: normal;
+}
+
+@mixin Text-afterLogo {
+    font-size: $font-xxl;
+    line-height: 23px;
+    letter-spacing: 0.015em;
+    color: $SeondaryTextColor;
+}
+
+@mixin raleway {
+    font-family: 'raleway';
+    font-weight: 600;
+    font-style: normal;
+}
+
+// placeholder
+@mixin placeholder {
+    padding-left: 12px;
+    color: $SeondaryTextColor;
+    font-size: $font-xxl;
+    line-height: 23px;
+    letter-spacing: 0.015em;
+}
+
+@mixin LabelText {
+    font-size: $font-lg;
+    color: $SeondaryTextColor;
+}
+
+@mixin flex {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flexJustifyCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin flexJustifyBetween {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@mixin flexBetween {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin flexJustifyAround {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+@mixin flexEvenly {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+@mixin flexJustifyEvenly {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+// anchor
+
+@mixin receiveService {
+
+    .logoText {
+        display: flex;
+        align-items: center;
+        margin: 26px 0px 30px 21px;
+
+        .heading {
+            color: $SeondaryTextColor;
+            font-weight: bold;
+            font-size: 18px;
+            width: 400px;
+            text-align: center;
+        }
+    }
+
+    .Receive {
+        max-width: 394px;
+        margin: 0 auto;
+        @include fonts-property;
+
+        .receiveText01 {
+            text-align: left;
+            margin: 33px 0px 26px 0px;
+        }
+
+        .input01 {
+            margin: 26px 0 16px 0;
+
+            .text {
+                @include LabelText;
+                display: flex;
+                margin-bottom: 7px;
+            }
+        }
+
+        .input02 {
+            margin: 10px 0 27px 0;
+
+            .text01 {
+                @include LabelText;
+                display: flex;
+                margin-bottom: 7px;
+            }
+        }
+
+        .Checkbox {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+
+            .Checktext {
+                font-size: $font-msm;
+                color: $SeondaryTextColor;
+                margin-left: 7px;
+            }
+        }
+
+        .btn {
+            margin: 75px 0px 77px 0px;
+            text-align: center;
+        }
+    }
+}
+
+//img section
+@mixin imagesection {
+    @include flex;
+
+    .bagdetail {
+        margin-left: 16px;
+
+        .imghead {
+            font-size: $font-xxl1;
+            font-weight: 600;
+            font-family: $sansPro, 'sans-serif';
+            color: $tertiaryColor01;
+
+        }
+
+        .imgtext {
+            font-size: $font-sm;
+            color: $inputTextBorder;
+            font-weight: 400;
+        }
+    }
+}
+
+//img section
+
+// custom DropDown Icon
+@mixin dropIcon {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    list-style: none;
+    text-indent: 1px;
+    text-overflow: '';
+    background-image: url("../../../../../../public/images/arrow_drop_up.svg") !important;
+    background-repeat: no-repeat !important;
+    background-position: right 6px center !important;
+    padding-right: 30px !important;
+}
+
+@mixin plasticRecyclingMetrics {
+    display: flex;
+    align-items: center;
+
+    .ProgressPlasticText {
+        font-weight: 700;
+    }
+
+    .plasticChartImage {
+        margin-left: 10px;
+    }
+
+    .ItemsMain {
+        width: 100%;
+        max-width: 222px;
+        background: $teritaryDanger01;
+        border-radius: 15px;
+        padding: 2px 7px 5px 15px;
+        box-sizing: border-box;
+        margin-left: 23px;
+
+        .ItemTextMain {
+            display: flex;
+            justify-content: space-between;
+
+            .ItemTextPlastic {
+                display: flex;
+                align-items: center;
+                font-weight: 400;
+
+                .ItemTextFirst {
+                    @include raleway;
+                    font-weight: 400;
+                }
+
+                .ItemTextSecond {
+                    margin-left: 5px;
+                }
+            }
+
+            .ItemTextThird {
+                font-weight: 600;
+
+            }
+        }
+
+        .ItemTextFour {
+            font-weight: 700;
+
+        }
+    }
+
+}
+@mixin shopHome {
+    display: flex;
+    justify-content: space-between;
+    .pageTitleClass{
+        padding: 0;
+    }
+    .moreIcon {
+        font-size: 30px;
+        color: $SeondaryTextColor;
+        cursor: pointer;
+        margin-right: 10px;
+
+    }
+    .moreMain {
+        box-sizing: border-box;
+        z-index: 111;
+        position: absolute;
+        top: 90px;
+        right: 45px;
+        width: 100%;
+        max-width: 280px;
+        min-height: 105px;
+        background: $mainbgAlert;
+        border-radius: 5px;
+        filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.25));
+        cursor: pointer;
+        .prefer {
+            position: relative;
+            width: 100%;
+            @include flex;
+            justify-content: space-between;
+            padding: 18px 0px 18px 18px;
+
+            .rightIcon {
+                position: absolute;
+                right: 16px;
+                font-size: 12px;
+                color: $textPrimary;
+            }
+        }
+
+        .order {
+            position: relative;
+            border-top: 1.01102px solid $primaryDisable;
+            width: 100%;
+            @include flex;
+            justify-content: space-between;
+            padding: 18.1664px 0px 18.1664px 18.1664px;
+
+            .orderIcon {
+                position: absolute;
+                right: 16px;
+                font-size: 12px;
+                color: $textPrimary;
+            }
+        }
+    }
+}
+
+// radio input color
+@mixin  radioGrey {
+    input[name="radio"] {
+        accent-color: $SeondaryTextColor;
+        cursor: pointer;
+        border: 1px solid $SeondaryTextColor;
+    }
+
+    input[type="radio"]:checked:before {
+        background: $SeondaryTextColor;
+    }
+}

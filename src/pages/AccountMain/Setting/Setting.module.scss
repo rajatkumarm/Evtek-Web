@@ -1,0 +1,58 @@
+@import "../../../assets//scss/variables.scss";
+@import "../../../assets//scss/mixins.scss";
+
+.settingMain {
+    display: flex;
+    flex-direction: column;
+    .settingContainer {
+        width: 483px;
+        margin-top: 88px;
+        margin-left: 50px;
+        .boxContaint {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 24px;
+            border-bottom: 1px solid $lightGray;
+            margin-top: 24px;
+            
+            cursor: pointer;
+            .notifyText {
+                color: $tertiaryColor;
+                font-weight: 400;
+                font-size: 21px;
+            }
+        }
+        .btmMarg {
+            margin-top: 80px;
+            .moreText {
+                color: $placeholderColor;
+                font-weight: 400;
+                font-size: 21px;
+            }
+        }
+    }
+    .settingGami{
+        max-width: 483px;
+        width: 100%;
+        margin-top: 88px;
+        margin-left: 50px;
+        .boxContaint {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 24px;
+            border-bottom: 1px solid $lightGray;
+            margin-top: 24px;
+            cursor: pointer;
+            .notifyText {
+               
+                font-weight: 400;
+                font-size: 21px;
+            }
+            .notifyTex{
+                font-weight: 400;
+                font-size: 21px;
+            }
+        }
+    }
+   
+}

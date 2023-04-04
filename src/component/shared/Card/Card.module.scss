@@ -1,0 +1,40 @@
+@import '../../../assets/scss/variables.scss';
+@import '../../../assets/scss/mixins.scss';
+
+.container {
+    max-width: 251px;
+    min-height: 279px;
+    background: $textWhite;
+    border: 2px solid $primaryDisable;
+    border-radius: 31px; 
+    text-align: center;
+    cursor: pointer;
+    .cardImage {
+        width: 100%;
+        margin-top: 18px;
+        @include flexJustifyEvenly;
+        .cardGarbageImage {
+            margin-left: 20px;
+            min-height: 156px;
+        }
+        .addIcon {
+            color: $textPrimary;
+            font-size: $font-xx2;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+    }
+    .cardBtn {
+        margin-top: 11px;
+        @include flexJustifyEvenly;
+        padding-bottom: 16px;
+        .cardGreenBtn {
+            @include flexEvenly;
+        }
+        .recycleImage {
+            width: 100%;
+            max-width: 28px;
+    
+        }
+    }
+}

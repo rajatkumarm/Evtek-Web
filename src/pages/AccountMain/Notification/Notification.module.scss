@@ -1,0 +1,38 @@
+@import "../../../assets//scss/variables.scss";
+@import "../../../assets//scss/mixins.scss";
+
+.notifiMain {
+    display: flex;
+    flex-direction: column;
+    .notifyContent {
+        margin-top: 100px;
+        margin-left: 50px;
+        .blogText {
+            color: $tertiaryColor;
+            font-weight: 400;
+            font-size: 18px;
+        }
+        .warningContainer {
+            display: flex;
+            align-items: center;
+            width: 492px;
+            height: 72px;
+            background-color: $notifiyColor;
+            border-radius: 10px;
+            padding: 12px 30px 12px 30px;
+            margin-top: 30px;
+            .alertColor {
+                color: $redColor;
+                font-size: 30px;
+            }
+            .warnText {
+                padding-left: 28px;
+                .btmText {
+                    color: $tertiaryColor;
+                    font-weight: 300;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}

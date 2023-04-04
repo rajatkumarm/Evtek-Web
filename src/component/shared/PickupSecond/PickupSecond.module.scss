@@ -1,0 +1,35 @@
+@import "../../../assets//scss//variables.scss";
+@import "../../../assets//scss/mixins.scss";
+
+.mainBox {
+    width: 378px;
+    margin-left: 20px;
+    background: $bgAlertSecondary;
+    border-radius: 11px;
+
+    .itemSecText {
+        padding-left: 16px;
+    }
+
+    .headBox {
+        padding: 22px 0px 0px 32px
+    }
+
+    .textBox {
+        margin: 23px 0px 0px 32px;
+    }
+
+    .Checksection {
+        display: flex;
+        margin: 35px 28px 0px 32px;
+
+        .pickupText {
+            margin-left: 10px;
+        }
+    }
+        .mainBtn {
+       @include flexJustifyBetween;
+        padding: 20px 32px;
+    }
+
+}

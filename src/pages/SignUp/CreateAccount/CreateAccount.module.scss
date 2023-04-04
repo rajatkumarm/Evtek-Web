@@ -1,0 +1,176 @@
+@import "../../../assets/scss/variables.scss";
+@import "../../../assets/scss/mixins.scss";
+
+.modal {
+    padding: 22px 22px 0px 22px;
+    .errorMsg {
+        margin-top: 10px;
+        text-align: left;
+        color:$redColor;
+     }
+    .logoText {
+        @include flexJustifyBetween;
+        max-width: 342px;
+        width: 100%;
+
+    }
+    .headText {
+        color: $SeondaryTextColor;
+        font-weight: 700;
+        font-size: $font-xxl;
+        margin-bottom: 10px;
+    }
+    .signUp {
+        max-width: 394px;
+        @include fonts-property;
+        margin: 0 auto;
+
+        .LoginText {
+            @include Text-afterLogo;
+        }
+        .mainHead {
+            padding-top: 16px;
+        }
+        .inputHead {
+            padding-top: 19px;
+        }
+        .check {
+           @include flex;
+            padding-top: 25px;
+            .checkInput {
+                width: 24px;
+                height: 24px;
+                background-color: $primaryColor;
+            }
+            .checkTxt {
+                padding-left: 9px;
+                color: $SeondaryTextColor;
+            }
+        }
+        .signUpBtm {
+            max-width: 287px;
+            font-weight: 400;
+            font-size: 18px;
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 35px;
+        }
+        .checkboxTxt {
+            color: $inputTextBorder;
+            text-decoration-line: underline;
+            text-align: center;
+        }
+        .modalText {
+            font-size: 17px;
+            line-height: 19px;
+        }
+        .editTxt {
+            font-size: 14px;
+            line-height: 120%;
+            padding-left: 19px;
+        }
+        .textInput {
+            width: 100%;
+            max-width: 395px;
+            margin-top: 7px;
+        }
+        .userInput {
+            width: 100%;
+            max-width: 395px;
+            margin-top: 2px;
+        }
+        .inputText {
+            color: $SeondaryTextColor;
+        }
+
+        .codeType {
+           @include flex;
+            padding-top: 33px;
+        }
+        .zip {
+            @include flexJustifyAround;
+            background: $solidPrimary;
+            border-radius: 6px;
+            width: 238px;
+            padding: 10px 0;
+        
+        }
+        .seprateLine {
+            height: 39px;
+            border: 1px solid $primaryDisable;
+        }
+        .acTypeTxt {
+            color: $textWhite;
+            font-weight: 700;
+            font-size: $font-xs;
+        }
+        .numTxt {
+            color: $textWhite;
+            font-size: $font-lg;
+            padding-top: 3px;
+        }
+        .verifyTxt {
+            font-size: $font-msm;
+            color: $SeondaryTextColor;
+        }
+        .editBtn {
+            cursor: pointer;
+        }
+        .chngModel {
+            position: absolute;
+            left: 10%;
+            width: 100%;
+            max-width: 330px;
+            background: $whiteColor;
+            border: 1px solid $primaryDisable;
+            border-radius: 16px;
+            cursor: pointer;
+            padding: 20px 18px;
+        }
+        .boxCroseIcon {
+            padding-top: 15px;
+            padding-bottom: 35px;
+        }
+        .boxSpanText {
+            max-width: 280px;
+            margin: 0 auto;
+        }
+        .modelPos {
+            position: absolute;
+            left: 102%;
+            top: 0;
+            width: 330px;
+            .changeBtn {
+                margin-top: 45px;
+            }
+        }
+        .btnClose {
+            position: absolute;
+            cursor: pointer;
+            top: 13px;
+            right: 17px;
+            background: transparent;
+            color: $inputTextBorder;
+            border-radius: 1px;
+        }
+        .btnMain {
+            width: 292px;
+            margin: 45px 18px 22px 18px;
+            background-color: $solidPrimary;
+            color: $bgAlert;
+            max-width: 100%;
+            min-width: 180px;
+            height: 48px;
+            font-size: $font-xxl;
+            border-radius: 12px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+    }
+    .btn {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 30px 30px 30px;
+    }
+}

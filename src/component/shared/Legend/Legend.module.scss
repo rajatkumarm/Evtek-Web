@@ -1,0 +1,121 @@
+@import '../../../assets//scss/variables.scss';
+@import '../../../assets/scss/mixins.scss';
+
+
+.legendMain {
+    max-width: 210px;
+    box-shadow: 0px 0px 25px $box-shadowDark;
+    width: 100%;
+    padding: 16px;
+    margin: 20px 0px 0px 30px;
+    border-radius: 22px;
+    background: $textWhite;
+
+    .headText {
+        margin-left: 5px;
+    }
+
+
+    .legendHead {
+        @include flexBetween;
+
+        .iconHead {
+            cursor: pointer;
+            font-size: 13px;
+            color: $darkGray;
+        }
+    }
+
+    .previousDate {
+        @include flex;
+        margin-top: 10px;
+
+        .headTex {
+            margin-left: 4px;
+        }
+
+        .calenderDate {
+            @include flexJustifyCenter;
+            width: 100%;
+            max-width: 64px;
+            min-height: 43px;
+            background: $textPrimary;
+            border-radius: 6px;
+        }
+    }
+
+    .todaysDate {
+        @include flex;
+        margin-top: 10px;
+
+        .calenderDate {
+            width: 64px;
+            height: 43px;
+            background: $bgAlert;
+            border: 1px solid $primaryDisable;
+            border-radius: 6px;
+            @include flexJustifyCenter;
+
+        }
+    }
+
+    .curbsideDate {
+        margin-top: 10px;
+        @include flex;
+
+        .calenderDate {
+            width: 64px;
+            height: 43px;
+            background: $bgColor;
+            border-radius: 6px;
+            @include flexJustifyCenter;
+
+        }
+
+        .headText {
+            width: 100%;
+            max-width: 100px;
+
+        }
+    }
+
+    .Shedulepickup {
+        width: 100%;
+        max-width: 174px;
+        background: $primaryDisable;
+        border-radius: 8px;
+        margin-top: 10px;
+        padding: 10px 1px 9px 8px;
+
+        .calenderDate {
+            background-color: $bgAlert;
+
+            .dateText {
+                border-bottom: 5px solid $plastic-color;
+            }
+
+            .dateTexttoday {
+                border-bottom: 5px solid $orangeColor;
+            }
+
+            .dateTextcurb {
+                border-bottom: 5px solid $glass-color;
+            }
+        }
+
+        .headTex {
+            @include fonts-property;
+
+        }
+     }
+
+    .bottemText {
+        @include fonts-property;
+
+        .bottemHead {
+            @include fonts-property;
+            font-weight: 700;
+
+        }
+    }
+}

@@ -1,0 +1,39 @@
+@import "../../../assets/scss/variables.scss";
+@import "../../../assets/scss/mixins.scss";
+.container {
+    max-width: 594px;
+
+    .OtherLeader{
+        @include flex;
+
+
+        .iconBox {
+            @include flex;
+            flex-direction: column;
+            margin:30px 0px 0px 238px;
+        }
+         .accountBox {
+            background-image: url("../../../../public/images/gradiant.svg");
+            background-repeat: no-repeat;
+            text-align: center;
+            min-height: 31px;
+            margin-top: 8px;
+
+            .mainText {
+                padding-right: 11px;
+            }
+        }
+
+        .iconClass {
+            color:$redColor;
+        }
+
+        .contentBox {
+            margin-left: 25px;
+            width: 123px;
+
+        }
+    }
+
+   
+}

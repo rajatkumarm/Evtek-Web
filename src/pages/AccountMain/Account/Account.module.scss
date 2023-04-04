@@ -1,0 +1,99 @@
+@import "../../../assets/scss/variables.scss";
+@import "../../../assets/scss/mixins.scss";
+
+.accountMain {
+    display: flex;
+    justify-content: space-between;
+
+    .accountDetail {
+        margin-top: 90px;
+        .accountContainer {
+            @include flexJustifyBetween;
+            margin-top: 12px;
+            text-align: center;
+            color: $bgAlert;
+            padding: 15px 23px 15px 18px;
+            width: 100%;
+            min-width: 384px;
+            background-color: $textWhite;
+            box-shadow: $box-shadowColor02;
+            border-radius: 11px;
+            cursor: pointer;
+            .iconMain {
+                @include flex;
+                .notifyText {
+                 padding-left: 12px;
+                  
+                }
+                .accountIcon {
+                    color: $textPrimary;
+                    font-size: 22px;
+                }
+                .accountText {
+                    padding-left: 12px;
+                }
+            }
+            .nextIcon {
+                color: $SeondaryTextColor;
+            }
+            .iconAlign {
+               @include flex;
+                .ecoMain {
+                    margin-right: 15px;
+                    padding-bottom: 3px;
+                    width: 102px;
+                    background: $solidPrimary;
+                    border-radius: 17px;
+                }
+            }
+        }
+    }
+    .blogMain {
+        width: 412px;
+        background: $textPrimary;
+        height: 100vh;
+        box-shadow: $box-shadowColor02;
+        border-radius: 11px 0px 0px 0px;
+        .articleMain {
+            padding: 32px 37px 0px 37px;
+            .textMain {
+                margin: 12px 0px 12px 0px;
+            }
+            .contentClass{
+                background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, rgba(255, 255, 255, 0.66) 49.48%, #FFFFFF 100%) !important;
+            }
+            .blogContent {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 32px;
+                width: 100%;
+                max-width: 337px;
+                height: 105px;
+                background: $bgAlert;
+                border-radius: 11px;
+              
+                .blogPad {
+                    padding: 17px 8px 0px 17px;
+                    span {
+                        line-height: 110%;
+                        display: flex;
+                        margin-bottom: 9px;
+                    }
+                }
+               
+                .miniText {
+                    @include fonts-property;
+                }
+            }
+        }
+        .blog{
+            @include flex;
+        }
+        .blogIcon {
+            color: $textWhite;
+            margin-left: 18px;
+            cursor: pointer;
+        }
+        
+    }
+}

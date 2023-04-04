@@ -1,0 +1,41 @@
+@import '../../../assets/scss/variables.scss';
+@import '../../../assets/scss/mixins.scss';
+
+.main {
+    @include fonts-property; 
+    width: 100%;
+    .couponMain {
+        margin-top: 63px;
+        box-sizing: border-box;
+        padding-left: 45px;
+        width: 100%;
+        max-width: 479px;
+        background: $bgAlert;
+        border: 2px solid $primaryDisable;
+        border-radius: 16px; 
+        .image {
+            cursor: pointer;
+            margin: 34px 0px 36px 0px;
+        }
+        .heading {
+            @include raleway;
+            margin-bottom: 6px;
+        }
+        .headingTwo {
+            margin:46px 0px 72px 0px;
+        }
+        .codeMain {
+            display: flex;
+            align-items: baseline;
+            margin-bottom: 53px;
+            .onlinecodeHeading {
+                margin-left: 5px;
+                line-height: 0px;
+            }
+            .imageQR {
+                cursor: pointer;
+                margin-left: 100px;
+            }
+        }
+    }
+}

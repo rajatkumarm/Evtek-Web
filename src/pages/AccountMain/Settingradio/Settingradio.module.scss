@@ -1,0 +1,152 @@
+@import "../../../assets/scss/variables.scss";
+@import "../../../assets/scss/mixins.scss";
+
+.radioMain {
+    margin-left: 40px;
+    margin-top: 45px;
+
+    .gamiTxt {
+        max-width: 380px;
+        width: 100%;
+
+        .checkboxTxt {
+            @include fonts-property;
+            font-size: 17px;
+        }
+    }
+
+    .btnRadio {
+
+
+        .radioBox {
+            display: flex;
+            gap: 130px;
+            margin-top: 60px;
+
+
+            .bottmMain input[type="radio"]:checked+.btmRadio .btmIcon {
+                cursor: pointer;
+                background-color: $textWhite;
+
+                .badgeColor {
+                    color: $SeondaryTextColor;
+                }
+
+                .ecoColor {
+                    color: $textPrimary;
+                }
+
+                .recycleColor {
+                    color: $recycleColor;
+                }
+
+                .leadColor {
+                    color: $leadColor;
+                }
+
+                .carbonColor {
+                    color: $carbonColor;
+                }
+
+                .circle {
+                    color: $textPrimary;
+                }
+
+                img {
+                    filter: grayscale(0);
+                }
+            }
+
+            .bottmMain {
+                position: relative;
+                display: flex;
+                justify-content: center;
+
+                .addText {
+                    padding-left: 17px;
+                    font-weight: 700;
+                    color: $inputTextBorder;
+                }
+
+                input[name="radio"] {
+                    accent-color: $SeondaryTextColor;
+                    cursor: pointer;
+                    border: 1px solid $SeondaryTextColor;
+
+                }
+
+                input[type="radio"] {
+                    width: 18px;
+                    height: 18px;
+                    margin-top: 30px;
+                    margin-right: 20px;
+                }
+
+                input[type="radio"]:checked:before {
+                    background: #494E5E;
+                }
+            }
+
+
+            .btmRadio {
+                width: 298px;
+                background: $bgColor;
+                border: 1px solid $bgColor;
+                border-radius: 16px;
+                padding: 16px 16px 16px 16px;
+
+                .mainTxt {
+                    @include fonts-property;
+                    font-size: 17px;
+                    line-height: 21px;
+                }
+
+                .appText {
+                    margin-bottom: 15px;
+                }
+
+                .changeText {
+                    margin-bottom: 12px;
+                }
+
+                .mainText {
+                    @include fonts-property;
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+
+                .btmIcon {
+                    margin-top: 5px;
+                    display: flex;
+                    text-align: left;
+                    background-color: $radioDisable;
+                    border-radius: 10px;
+                    padding: 10px 13px 10px 10px;
+                    align-items: center;
+                    cursor: pointer;
+                    margin-top: 5px;
+
+                    img {
+                        width: 28px;
+                        height: 28px;
+                        filter: grayscale(100%);
+                    }
+
+                    .circle {
+                        color: $SeondaryTextColor;
+                        margin-left: auto;
+                    }
+
+                }
+            }
+        }
+        .btnConfirm {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            max-width: 840px;
+            width: 100%;
+        }
+    }
+}

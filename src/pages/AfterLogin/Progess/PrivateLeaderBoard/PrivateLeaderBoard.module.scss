@@ -1,0 +1,86 @@
+@import '../../../../assets/scss/variables.scss';
+@import '../../../../assets/scss/mixins.scss';
+
+.wrapper {
+    .topBox {
+        margin: 90px 0px 0px 40px;
+
+        .codeText {
+            display: grid;
+        }
+    }
+
+    .codeSection {
+        @include flexJustifyCenter;
+        margin-top: 16px;
+        width: 100%;
+        max-width: 237px;
+        min-height: 62px;
+        border-radius: 16px;
+        background-color: $lightGreen;
+
+        .text {
+            font-size: $font-big03;
+            color: $textPrimary01;
+            font-weight: 600;
+            letter-spacing: 15px;
+        }
+    }
+
+    .secondBox {
+        margin-top: 84px;
+        margin-left: 40px;
+        @include raleway;
+
+        .FeesBox {
+            max-width: 540px;
+            min-height: 355px;
+            margin: 40px 0px 46px 0px;
+            background: $bgAlert;
+            border-radius: 16px;
+            padding: 24px 0px 0px 22px;
+
+            .methodtext {
+                margin-top: 34px;
+            }
+
+            .radiobtnOne {
+                margin-top: 28px;
+            }
+
+            .radiobtnTwo {
+                margin-top: 38px;
+
+                .ecoPointText {
+                    margin-left: 22px;
+                }
+            }
+
+            .radiobtnThree {
+                margin-top: 38px;
+            }
+        }
+
+        .Checksection {
+            @include flex;
+            margin-left: 22px;
+        }
+
+        .imageCount {
+            display: flex;
+
+            .texBox {
+                margin-left: 15px;
+                padding: 5px;
+            }
+
+            .monthText {
+                margin-top: 8px;
+            }
+        }
+
+        .mainBtn {
+            margin: 47px 0px 0px 170px;
+        }
+    }
+}

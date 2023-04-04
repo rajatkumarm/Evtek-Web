@@ -1,0 +1,67 @@
+@import '../../../../assets//scss//variables.scss';
+@import '../../../../assets//scss/mixins.scss';
+
+.container {
+    margin-left: 40px;
+
+    .formPara {
+        @include fonts-property;
+        width: 100%;
+        max-width: 480px;
+        margin: 78px 0px 51px;
+    }
+
+    .formData {
+        @include raleway;
+        font-weight: 400;
+
+        .leaderInput {
+            border: 2px solid $mainbgAlert;
+            max-width: 433px;
+            border-radius: 24px;
+            width: 100%;
+            background: $mainbgAlert;
+        }
+
+        .dropDown {
+            width: 390px;
+            padding: 17px 19px 17px 21px;
+            background: $mainbgAlert;
+            border-radius: 24px;
+
+            .dropContent {
+                @include raleway;
+                font-weight: 400;
+                background: none;
+                color: $tertiaryColor;
+                font-size: 16px;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                list-style: none;
+                text-indent: 1px;
+                text-overflow: '';
+                background-image: url("../../../../../public/images/arrow_drop_up.svg") !important;
+                background-repeat: no-repeat !important;
+                background-position: right 10px center !important;
+                padding-right: 30px !important;
+                cursor: pointer;
+            }
+        }
+
+        .selectHeading {
+            margin: 36px 0px 11px;
+            display: flex;
+            align-items: center;
+            gap: 3px;
+
+            .infoIcon {
+                color: #9a9797;
+                padding-left: 5px;
+            }
+        }
+    }
+
+    .btnPrimary {
+        margin: 48px 0px 48px 120px;
+    }
+}

@@ -1,0 +1,188 @@
+@import "../../../assets/scss/variables.scss";
+@import "../../../assets/scss/mixins.scss";
+
+.filter {
+    width: 563px;
+    z-index: 10;
+
+    .filterHead {
+        @include flexJustifyBetween;
+        @include fonts-property;
+        font-size: 14px;
+        line-height: 120%;
+        color: $tertiaryColor01;
+
+        .sortDrop {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            list-style: none;
+            text-indent: 1px;
+            text-overflow: '';
+            background-image: url("../../../../public/images/arrow_black.svg") !important;
+            background-repeat: no-repeat !important;
+            background-position: right 10px center !important;
+            padding-right: 30px !important;
+            cursor: pointer;
+            color: $tertiaryColor01;
+            @include fonts-property;
+            padding-left: 5px;
+        }
+    }
+
+    .btnicon {
+        margin-right: 5px;
+    }
+
+    .DateRange {
+        margin-left: 22px;
+        margin-top: 20px;
+        padding-top: 21px;
+
+    }
+
+
+    .btn Button {
+        background-color: $textPrimary;
+        color: $textWhite;
+        max-width: 100%;
+        min-width: 83px;
+        height: 33px;
+        font-size: 14px;
+        border-radius: 20px;
+        @include fonts-property;
+        border: none;
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+        @include flex;
+        justify-content: center;
+    }
+
+    .filterBox {
+        width: 563px;
+        height: 300px;
+        background: $textPrimary01;
+        border-radius: 5px 5px 22px 22px;
+        position: relative;
+
+        .Date {
+            display: flex;
+
+
+            .date {
+
+                input {
+                    width: 121px;
+                    height: 33px;
+                    background: $mainbgAlert;
+                    border-radius: 7px;
+                    padding-left: 10px;
+                    margin-top: 2px;
+                }
+
+            }
+
+            .bgBorder {
+                width: 2px;
+                background: $skyShadow-color;
+                transform: rotate(90deg);
+                margin: 10px 40px 0px;
+                height: 20px;
+                border-radius: 20px;
+            }
+
+            .Range {
+
+                width: 143px;
+                height: 33px;
+                background: $skyShadow-color;
+                border-radius: 7px;
+                margin-top: 2px;
+                color: $lightGray;
+                font-size: 10px;
+                padding-top: 10px;
+                text-align: center;
+                input {
+                    background: none;
+                }
+            }
+        }
+
+        .boxDropdown {
+            display: flex;
+            gap: 30px;
+
+        }
+
+        .Dropdown {
+            margin-left: 22px;
+            margin-top: 22px;
+
+            .dropDown {
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                list-style: none;
+                text-indent: 1px;
+                text-overflow: '';
+                background-image: url("../../../../public/images/arrow_drop_up.svg") !important;
+                background-repeat: no-repeat !important;
+                background-position: right 10px center !important;
+                padding-right: 30px !important;
+                cursor: pointer;
+                @include flex;
+                height: 22px;
+                left: 22px;
+                top: 117px;
+                background: $bgAlert;
+                border-radius: 4px;
+                color: $textPrimary;
+                padding-left: 10px;
+
+
+            }
+
+
+
+        }
+
+    }
+
+    .labels {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12.2188px;
+        line-height: 120%;
+        align-items: center;
+        color: #FFFFFF;
+        padding-bottom: 5px;
+
+    }
+
+    .btnSave {
+
+        padding-top: 20px;
+
+        Button {
+            background-color: #DBF0D6;
+            color: #5EBA7D;
+            max-width: 100%;
+            min-width: 180px;
+            height: 48px;
+            font-size: 18px;
+            border-radius: 12px;
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            bottom: 20px;
+            right: 17px;
+            transition: 0.5s ease-in-out;
+            position: absolute;
+        }
+
+    }
+
+
+
+}

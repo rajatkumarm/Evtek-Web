@@ -1,0 +1,67 @@
+@import "../../assets//scss//variables.scss";
+@import "../../assets//scss/mixins.scss";
+
+.ZipcodeCheck {
+    margin: 0px auto;
+    @include fonts-property;
+
+
+    .head {
+        color: $zipHeadingColor;
+        text-align: center;
+        font-family: $sansPro;
+        width: 311px;
+        margin: 0px 0px 0px 30px;
+    }
+    .headOne {
+        @include flex;
+
+        .test {
+            width: 100%;
+        }
+
+        .logo {
+            margin: 20px 0px 0px 26px;
+        }
+    }
+
+    .mainText {
+        margin: 55px 105px;
+    }
+
+    .zipMain {
+
+        .accountText {
+            text-align: center;
+            color: $textPrimary;
+            background: $bgAlertSecondary;
+            width: 120px;
+            padding: 12px 28px;
+        }
+        .zip {
+            @include flex;
+            justify-content: center;
+
+        }
+
+        .Alert {
+            width: 330px;
+            padding: 19px 10px 17px 25px;
+            background: $bgAlert;
+            border-radius: 12px;
+            font-weight: 400;
+            margin: 0px auto;
+            font-size: 18px;
+            color: $textPrimary;
+        }
+        .btn {
+            text-align: center;
+            margin: 97px 0px 44px 0px;
+        }
+
+    }
+}
+
+.primaryBtn {
+    background-color: $solidPrimary;
+}

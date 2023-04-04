@@ -1,0 +1,197 @@
+@import '../../../../assets//scss//variables.scss';
+@import '../../../../assets//scss/mixins.scss';
+
+.openLeader {
+    .JoinLeaderboards {
+        @include raleway;
+
+        .joinMain {
+            margin-left: 40px;
+
+            & ::placeholder {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 120%;
+                color: $placeholderColor;
+                padding-left: 20px;
+
+            }
+
+            .LeaderBox {
+                margin-top: 25px;
+                cursor: pointer;
+            }
+
+            .heading {
+                margin-top: 53px;
+
+                .headSearch {
+                    margin-left: 10px;
+                }
+
+                .textInput {
+                    border: none;
+                    width: 100%;
+                    max-width: 445px;
+                    margin-top: 7px;
+                    background: $mainbgAlert;
+                    border-radius: 25px;
+                }
+            }
+
+            .MixText {
+                margin: 46px 0px 26px 0px;
+                @include flex;
+
+                .editText {
+                    margin-left: 20px;
+                    text-decoration: underline;
+                }
+            }
+
+            .dropBox {
+                @include flex;
+                margin-top: 56px;
+                .dropDown {
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    list-style: none;
+                    text-indent: 1px;
+                    text-overflow: '';
+            
+                    background-image: url("../../../../../public/images/arrow_drop_up.svg") !important;
+                    background-repeat: no-repeat !important;
+                    background-position: right 10px center !important;
+                    padding-right: 30px !important;
+                    cursor: pointer;
+                    background: $bgAlert;
+                    height: 38px;
+                    color: $textPrimary;
+                    padding-right: 20px;
+                    border-radius: 30px;
+                    padding: 9px 8px 9px 12px;
+                    width: 193px;
+                   
+            
+                }
+                .sortDrop {
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    list-style: none;
+                    text-overflow: '';
+                    background-image: url("../../../../../public/images/arrow_black.svg") !important;
+                    background-repeat: no-repeat !important;
+                    background-position: right 10px center !important;
+                    padding-right: 30px !important;
+                    cursor: pointer;
+                    color: $tertiaryColor01;
+                    @include fonts-property;
+                    padding-left: 5px;
+                   
+                }
+
+                .texttwo {
+                    @include flex;
+                    margin-left: 152px;
+                }
+            }
+        }
+    }
+
+    .secondBox {
+        margin-top: 84px;
+        margin-left: 40px;
+        @include raleway;
+
+        .FeesBox {
+            width: 100%;
+            max-width: 540px;
+            min-height: 355px;
+            margin: 40px 0px 46px 0px;
+            background: $bgAlert;
+            border-radius: 16px;
+            padding: 24px 0px 0px 22px;
+
+            .methodtext {
+                margin-top: 34px;
+            }
+
+            .radiobtnOne {
+                margin-top: 28px;
+            }
+
+            .radiobtnTwo {
+                margin-top: 38px;
+
+                .ecoPointText {
+                    margin-left: 22px;
+                }
+            }
+
+            .radiobtnThree {
+                margin-top: 38px;
+            }
+        }
+
+        .Checksection {
+            @include flex;
+            margin-left: 22px;
+        }
+
+        .imageCount {
+            display: flex;
+
+            .texBox {
+                margin-left: 15px;
+                padding: 5px;
+            }
+
+            .monthText {
+                margin-top: 8px;
+            }
+
+        }
+
+        .mainBtn {
+            margin: 47px 0px 0px 170px;
+        }
+
+    }
+
+    .thirdOpenLeaderBoard {
+        @include raleway;
+        margin-top: 20px;
+        margin-left: 40px;
+
+        .imageBox {
+            display: flex;
+            margin-top: 84px;
+
+
+            .texBox {
+                margin-left: 15px;
+                padding: 5px;
+
+                .currentText {
+                    margin-top: 10px;
+                }
+            }
+        }
+
+        .openText {
+            margin-top: 48px;
+
+            .confirmText {
+                margin-top: 20px;
+            }
+
+            .closeText {
+                margin-top: 14px;
+            }
+        }
+
+        .openBtn {
+            margin: 90px 0px 50px 140px;
+        }
+    }
+}

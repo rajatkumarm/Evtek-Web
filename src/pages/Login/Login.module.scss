@@ -1,0 +1,60 @@
+ @import '../../assets//scss//variables.scss';
+ @import '../../assets//scss/mixins.scss';
+
+ .Login {
+     max-width: 394px;
+     margin: 0 auto;
+     text-align: center;
+     @include fonts-property;
+     .errorMsg {
+        margin-top: 10px;
+        text-align: left;
+        color:$redColor;
+     }
+     .LoginText {
+         @include Text-afterLogo;
+         margin: 35px 0 35px 0;
+
+
+     }
+     .errorMsg {
+        margin-top: 10px;
+        text-align: left;
+        color:$redColor;
+     }
+     .email {
+         margin: 0 0 16px 0;
+
+         .eText {
+             @include LabelText;
+             display: flex;
+             margin: 0 0px 10px 0px;
+
+         }
+     }
+     .logo {
+         margin: 65px 0 0 0;
+     }
+
+     .pass {
+         margin: 0px 0 45px 0;
+
+         .passText {
+             @include LabelText;
+             display: flex;
+             margin: 0 0px 10px 0px;
+         }
+
+     }
+     .forget {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin: 45px 0px;
+         color: $solidPrimary;
+         font-size: 18px;
+         letter-spacing: 0.015em;
+
+
+     }
+ }

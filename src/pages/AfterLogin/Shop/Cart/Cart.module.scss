@@ -1,0 +1,240 @@
+@import '../../../../assets/scss/variables.scss';
+@import '../../../../assets/scss/mixins.scss';
+
+.container {
+    width: 100%;
+    @include fonts-property;
+    height: 100vh;
+    @include radioGrey;
+
+    .ml {
+        margin-left: 5px;
+    }
+
+    .headerWave {
+        width: 100%;
+    }
+    .shopHome {
+        padding-right: 35px;
+        @include shopHome;
+
+        .pageTitleClass {
+            margin-bottom: 113px;
+
+        }
+    }
+
+    .main {
+        width: 100%;
+        position: relative;
+        height: 100vh;
+
+        .cartItems {
+            margin-top: 41px;
+            max-width: 456px;
+            padding: 22px;
+            background: $mainbgAlert;
+            border-radius: 32px;
+
+            .cartTwo {
+                margin-top: 30px;
+            }
+        }
+
+        .cartItems::before {
+            position: absolute;
+            top: 45px;
+            right: 55%;
+            content: "";
+            width: 1px;
+            min-height: 945px;
+            background: $box-shadowColorSecondary;
+        }
+
+        .orderPlaced {
+            margin: 25px 0px 72px 0px;
+        }
+
+        .placeOrderMain {
+            width: 100%;
+            max-width: 489px;
+
+            .ecoSack {
+                margin-top: 85px
+            }
+
+            .ecoMain {
+                @include flexJustifyBetween;
+                margin-bottom: 30px;
+
+            }
+        }
+
+        .method {
+            margin: 50px 0px 31px 0px;
+
+            .methodBox {
+                @include flexJustifyBetween;
+
+                .commonText {
+                    @include flex;
+
+                    .cartNumber {
+                        margin: 0px 0px 5px 5px;
+                    }
+
+                }
+
+                .iconBox {
+                    font-size: 40px;
+                    color: $solidPrimary;
+
+                }
+
+                .iconEdit {
+                    font-size: 14px;
+                    color: $solidPrimary;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .Checksection {
+            @include flex;
+            margin-right: 10px;
+
+        }
+
+        .billingCount {
+            @include flex;
+            align-items: flex-start;
+            width: 450px;
+            margin-top: 26px;
+            margin-bottom: 31px;
+            border-bottom: 1.5px solid $box-shadowColorSecondary;
+            padding-bottom: 50px;
+        }
+
+        .equal {
+            width: 100%;
+           max-width: 40px;
+            color: $solidPrimary;
+            padding: 50px 54px 0px 33px;
+        }
+
+        .gridText {
+            display: grid;
+            .conversionText  {
+                width: 100%;
+                max-width: 154px;
+            }
+        }
+
+        .number {
+            background: $primaryDisable;
+            min-width: 183px;
+            padding: 15px 0px 14px 19px;
+            min-height: 59px;
+            margin-top: 5px;
+            @include raleway;
+            color: $darkGray;
+            font-size: 27px;
+            border: none;
+            & ::placeholder {
+                color: $darkGray;
+                font-size: 27px;
+            }
+        }
+
+        .numberTwo {
+            background: $bgColor;
+            min-width: 183px;
+            min-height: 59px;
+            padding: 15px 0px 14px 19px;
+            margin-top: 5px;
+            @include raleway;
+        }
+
+        .shipping {
+            width: 450px;
+
+            .iconEditTwo {
+                cursor: pointer;
+                color: $solidPrimary;
+            }
+
+            font-size: 26px;
+            margin-bottom: 31px;
+            border-bottom: 1.5px solid $box-shadowColorSecondary;
+            padding-bottom: 50px;
+
+            .shopBox {
+                @include flexBetween;
+            }
+        }
+
+        .shippingMethod {
+            border-bottom: 1.5px solid $box-shadowColorSecondary;
+            padding-bottom: 44px;
+            width: 450px;
+
+            .radioFirst {
+                @include flex;
+                margin-top: 10px;
+
+            }
+
+            .method {
+                margin-top: 5px;
+            }
+
+            .dropoffText {
+                margin: 23px 0px;
+
+                .radiobtnOne {
+                    margin-top: 9px;
+                }
+
+            }
+
+            .dropoffTextSecond {
+                margin-top: 23px;
+
+                .radiobtnOne {
+                    @include flex;
+                    margin-top: 9px;
+
+                    .radiobtnText {
+                        display: grid;
+
+                    }
+                }
+            }
+        }
+
+        .totalMain {
+            margin-top: 50px;
+
+            .total {
+                @include flexJustifyBetween;
+                margin-bottom: 12px;
+            }
+
+            .mainbtn {
+                margin-top: 40px;
+            }
+
+            .submit {
+                margin-top: 80px;
+            }
+        }
+
+        .emailMain {
+            margin-top: 73px;
+        }
+
+        .ordersubmit {
+            margin-top: 150px;
+        }
+    }
+}

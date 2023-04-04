@@ -1,0 +1,183 @@
+@import "../../../../assets/scss/variables.scss";
+@import "../../../../assets/scss/mixins.scss";
+
+.redeemMain {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
+    .transferFund {
+        background: $bgAlert;
+        border: 2px solid $bgBorder;
+        border-radius: $font-lg;
+        width: 480px;
+        padding: 35px 28px 35px 28px;
+        margin-top: 63px;
+        .ecoPointsTxt {
+            font-size: 21px;
+            font-family: 'Raleway';
+            color: $darkGray;
+        }
+        .cashFund {
+            border-bottom: 2px solid $bgStateBorder;
+            padding-bottom: 32px;
+            .donateHeadText {
+                display: flex;
+                align-items: center;
+            }
+            .homeIconImg {
+                margin-left: 12px;
+            }
+            .ecoTxtMain {
+                margin-top: 13px;
+                .ecoTxt {
+                    color: $tertiaryColor;
+                    font-size: $font-big02;
+                    font-family: 'Raleway';
+
+                }
+            }
+        }
+        .methodFund {
+            margin-top: 48px;
+            .methodTxt {
+                font-weight: 600;
+                font-size: $font-xxxl;
+                color: $SeondaryTextColor;
+            }
+            .papyalPadd {
+                margin-top: 20px;
+            }
+            .paypalMain {
+                display: flex;
+                align-items: center;
+                margin-top: 18px;
+                .paypalBtm0 {
+                    margin-left: 18px;
+                }
+            }
+            .paypalBtm {
+                margin-top: 20px;
+                display: flex;
+                align-items: center;
+
+                .link {
+                    width: 193px;
+                    height: 29px;
+                    background: $textPrimary;
+                    border-radius: 13px;
+                    display: flex;
+                    align-items: center;
+                    padding: 3px 0px 3px 8px;
+                    .iconFill {
+                        padding-left: 21px;
+                    }
+                    a {
+                        font-weight: 600;
+                        font-size: 17px;
+                        line-height: 22px;
+                        color: $textWhite;
+                    }
+                }
+            }
+            .paypal {
+                background: $recycleColor;
+                border-radius: 41px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 151px;
+                height: 35px;
+                margin-left: 18px;
+            }
+            .tranferTxt {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 22px;
+                color: $inputTextBorder;
+            }
+
+            .methodHead{
+                margin-top: 77px;
+            }
+
+            .methodPara{
+                max-width: 400px;
+
+                .methodMail{
+                    margin-top: 25px;
+                }
+            }
+        }
+
+        .amountBtm {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 42px;
+            .middleIcon {
+                display: flex;
+                align-items: center;
+            }
+            .amtInput {
+                margin-top: 5px;
+                
+                .labelBank {
+                    color: $tertiaryColor;
+                    font-weight: 600;
+                    font-size: 16px;
+                }
+                .inputMarg {
+                    margin-top: 5px;
+                }
+                .ecoText {
+                    color: $inputTextBorder;
+                    font-weight: 600;
+                    font-size: 16px;
+                }
+                
+                .maxDiv {
+                    background-color: $primaryDisable;
+                    border-radius: 4px;
+                    width: 130px;
+                    height: 25px;
+                    margin-top: 12px;
+                    .maxText {
+                        font-size: 16px;
+                        color: $solidPrimary;
+                        font-weight: 400;
+                        display: flex;
+                        justify-content: center;
+                        background: $bgBorder;
+                        border-radius: 4px;
+                    }
+                }
+            }
+            .radioInput {
+                @include fonts-property;
+                width: 100%;
+                height: 43px;
+                max-width: 174px;
+                font-family: 'Raleway';
+                font-size: $font-xxl;
+                color: $SeondaryTextColor;
+                background-color: $whiteColor;
+                padding: 0 12px;
+                box-shadow: 0px 0px 6px rgba(186, 186, 186, 0.35);
+            }
+        }
+        .walletBtn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 90px;
+        }
+
+        .walletBtnTwo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 210px;
+        }
+    }
+}

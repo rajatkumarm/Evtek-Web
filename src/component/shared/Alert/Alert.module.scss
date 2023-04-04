@@ -1,0 +1,31 @@
+@import '../../../assets//scss//variables.scss';
+
+.alert {
+  display: flex;
+  align-items: center;
+
+  &.disable {
+    color: $zipHeadingColor;
+  }
+
+  &.enable {
+    color: $textPrimary;
+  }
+
+  p {
+    padding: 6px;
+  }
+
+  span {
+    display: block;
+    color: $textPrimary;
+    font-weight: bold;
+  }
+
+  .successList {
+    font-size: 14px;
+    color: $tertiaryColor01;
+  }
+ 
+
+}

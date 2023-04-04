@@ -1,0 +1,192 @@
+@import "../../../assets/scss/variables.scss";
+@import "../../../assets/scss/mixins.scss";
+
+.dollarText {
+    font-family: 'Raleway';
+    font-style: normal;
+}
+
+.Recycleds {
+    box-sizing: border-box;
+    max-width: 563px;
+    width: 100%;
+    background: $primaryDisable;
+    border: 1px solid $bgStateBorder;
+    border-radius: 19.7222px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    @include fonts-property;
+    cursor: pointer;
+
+    h4 {
+
+        font-weight: 400;
+        font-size: 17.2569px;
+        line-height: 120%;
+        color: $tertiaryColor;
+        cursor: pointer;
+    }
+
+    .Recycled {
+        display: flex;
+        padding: 9px 11px 9px 0px;
+        justify-content: space-between;
+        cursor: pointer;
+
+        .recycledLeft {
+            display: flex;
+
+            .middle {
+
+                .donatedText {
+                    padding-top: 10px;
+
+                    I {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+        .left {
+            width: 51.77px;
+            height: 51.77px;
+            background: $textPrimary;
+            border-radius: 11.0938px;
+            margin-left: 20px;
+            margin-right: 26px;
+            position: relative;
+            margin-top: 19px;
+
+            .mainIcon{
+                color: $textWhite;
+                position: absolute;
+                left: 14px;
+                top: 10px;
+                font-size: 33px;
+            }
+
+        }
+
+        .donatedText {
+            gap: 5px;
+            display: flex;
+            align-items: center;
+
+            .pointText {
+                padding-left: 50px;
+                line-height: 120%;
+            }
+        }
+    }
+
+    .middleRight {
+
+        .top {
+
+            font-family: 'Source Sans Pro';
+            font-style: normal;
+            font-weight: 600;
+            padding-bottom: 46px;
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+
+    .itemText {
+        line-height: 120%;
+        display: flex;
+        align-items: center;
+    }
+
+    .moreText {
+        text-decoration-line: underline;
+        color: $textPrimary;
+    }
+
+    .recycledRight {
+
+        width: 120.46px;
+        background: $textWhite;
+        border-radius: 9.83333px;
+        font-size: 11px;
+        display: flex;
+        align-items: center;
+        padding-left: 6px;
+        gap: 2px;
+
+        .noText {
+            padding-bottom: 8px;
+            padding-top: 5px;
+            padding-left: 3px;
+        }
+
+        .checkCircleicon {
+
+            background: $solidPrimary;
+            border-radius: 50%;
+            height: 20px;
+            width: 26px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .tick {
+                color: $textWhite;
+                font-size: 8px;
+            }
+        }
+    }
+
+    .clickbottom {
+        padding-left: 10px;
+    }
+
+    .pickup {
+        padding-left: 10px;
+    }
+
+    .donated {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 12px;
+        padding-top: 14px;
+    }
+
+    .donatedBoxmain {
+        display: flex;
+        align-items: center;
+
+        I {
+            margin: 0px 9px;
+            font-size: 12px;
+        }
+    }
+
+    .donatedBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 7.375px;
+        width: 110.56px;
+        background: $textWhite;
+        font-size: 12px;
+        border-radius: 4.91667px;
+    }
+
+    .pointText {
+        font-family: 'Raleway';
+        font-style: normal;
+    }
+
+    .donatedText {
+        line-height: 120%;
+        display: flex;
+        align-items: center;
+        color: $tertiaryColor;
+    }
+
+}

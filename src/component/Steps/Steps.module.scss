@@ -1,0 +1,31 @@
+@import '../../assets//scss//variables.scss';
+@import '../../assets//scss/mixins.scss';
+
+.steps {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .steps a {
+    color: transparent;
+  }
+  
+  .steps li {
+    background: #DBF0D6;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin-right: 8px;
+    cursor: pointer; 
+  }
+  .steps li[class="active"] {
+    background: #494E5E;
+  } 
+  .steps li:last-child {
+    border: none;
+  }
+  
+  

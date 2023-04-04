@@ -1,0 +1,80 @@
+@import "../../../assets/scss/variables.scss";
+@import "../../../assets/scss/mixins.scss";
+
+.pickupAlert {
+ @include flex;
+  background: $navyBlue;
+  color: $textWhite;
+  border-radius: 14px;
+  max-width: 570px;
+  margin: 199px 0px 0px 0px;
+  padding: 13px 0px 15px 0px;
+cursor: pointer;
+  .fisrtIcon {
+    margin: 0px 13px 0px 14px;
+  }
+
+ 
+
+}
+
+.main {
+  background: $whiteColor;
+  border: 2px solid $primaryDisable;
+  border-radius: 21px;
+  width: 100%;
+  max-width: 511px;
+  margin: 20px 0px 0px 43px;
+
+  .icons {
+    @include flexJustifyBetween;
+
+    .iconFirst {
+      margin: 20px 0px 0px 25px;
+      color: $solidPrimary;
+      font-size: 29px;
+    }
+
+    .iconSecond {
+      margin: 19px 19px 0px 0px;
+      color: $darkGray;
+    }
+
+  }
+
+  .feelContent {
+    margin: 19px 28px 34px 28px;
+
+    .shopHead {
+      color: $solidPrimary;
+    }
+  }
+
+  .bottomBorder {
+    width: 435px;
+    background: $darkGray;
+    opacity: 0.3;
+    border: 1px solid $darkGray;
+    margin: 0px 56px 0px 28px;
+  }
+
+  .firstText {
+    margin: 32px 0px 0px 28px;
+    @include flex;
+    cursor: pointer;
+
+  }
+
+  .secondText {
+    margin: 15px 0px 40px 28px;
+    @include flex;
+    cursor: pointer;
+  }
+
+  .iconColor {
+    color: $solidPrimary;
+    font-size: 13px;
+    margin-left: 22px;
+  }
+
+}

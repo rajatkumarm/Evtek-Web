@@ -1,0 +1,115 @@
+@import '../../../assets/scss/variables.scss';
+@import '../../../assets/scss/mixins.scss';
+
+.Main {
+    width: 100%;
+    height: 100vh;
+    @include fonts-property;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 35px;
+    margin-left: 39px;
+
+    .feedback {
+        max-width: 285px;
+
+        .experience {
+            margin: 88px 0 110px;
+        }
+
+        .work {
+            margin-bottom: 222px;
+        }
+    }
+
+    .feedbackSubmit {
+        max-width: 650px;
+        margin-right: 150px;
+
+        .emojiIcon {
+            margin: 90px 0 115px 0;
+            font-size: 50px;
+            cursor: pointer;
+
+            .emojiOne {
+                margin-right: 20px;
+                color: $primaryDisable;
+            }
+
+            .emojiTwo {
+                margin-right: 20px;
+                color: $textPrimary;
+            }
+
+            .emojiThree {
+                margin-right: 20px;
+                color: $textPrimary;
+            }
+        }
+
+        .emojiIcon {
+            margin: 90px 0px 105px 0px;
+            font-size: 50px;
+            color: $primaryDisable;
+
+            .emojiOne {
+                margin-right: 20px;
+                cursor: pointer;
+
+                &:active {
+                    color: $textPrimary;
+                }
+            }
+        }
+
+        .btnMain {
+            margin-bottom: 105px;
+
+            .btnOne {
+                display: flex;
+                margin-bottom: 15px;
+
+                .btnPrimary {
+                    margin-right: 11px;
+
+                }
+            }
+
+            .btnTwo {
+                display: flex;
+            }
+
+            .btnThree {
+                display: flex;
+            }
+        }
+
+        .feedbackInput {
+            max-width: 640px;
+            min-height: 70px;
+            margin-bottom: 65px;
+            resize: none;
+            overflow: hidden;
+            padding: 13px 14px 26px;
+
+            &::placeholder {
+                color: $disabledButton;
+                max-width: 500px;
+            }
+        }
+
+        .submitBtn {
+            display: block;
+        }
+    }
+}
+
+
+.ThankMain {
+    margin: 150px auto;
+    max-width: 360px;
+    text-align: center;
+    .Donebtn {
+        margin-top: 150px;
+    }
+}

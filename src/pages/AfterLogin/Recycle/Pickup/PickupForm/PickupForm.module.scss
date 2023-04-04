@@ -1,0 +1,468 @@
+@import '../../../../../assets/scss/variables.scss';
+@import '../../../../../assets/scss/mixins.scss';
+
+
+.formMain {
+    box-sizing: border-box;
+    width: 100%;
+    width: 439px;
+    background: $textWhite;
+    border: 2px solid $textPrimary;
+    border-radius: 16px;
+    @include fonts-property;
+    position: relative;
+
+    input[name="radio"] {
+        accent-color: $SeondaryTextColor;
+        cursor: pointer;
+        border: 1px solid $SeondaryTextColor;
+    }
+
+    input[type="radio"]:checked:before {
+        background: $SeondaryTextColor;
+    }
+
+    .Main {
+        margin: 0 auto;
+
+        .pickMain {
+            margin-top: 25px;
+
+            .pickupHead {
+                @include flex;
+                margin: 0px 0px 8px 16px;
+
+                .countOne {
+                    text-align: center;
+                    background: $SeondaryTextColor;
+                    max-width: 16px;
+                    width: 100%;
+                    border-radius: 50px;
+                    margin-right: 15px;
+
+                }
+
+                .infoIcon {
+                    margin-left: 5px;
+                    color: $textPrimary;
+                    border-radius: 20px;
+                    cursor: pointer;
+                }
+            }
+
+
+            .paddingLeft {
+                margin-left: 47px;
+
+                .radiobtn {
+                    margin-bottom: 5px;
+                }
+
+                .pickupCheck {
+                    color: $darkGray;
+                }
+            }
+
+            .checkBorder {
+                border-bottom: 1px solid $primaryDisable;
+                margin-top: 25px;
+            }
+
+        }
+
+        .PickupAmount {
+            margin-top: 29px;
+
+            .amountHead {
+                @include flex;
+                margin: 0px 0px 16px 16px;
+
+                .countOne {
+                    text-align: center;
+                    background: $SeondaryTextColor;
+                    max-width: 16px;
+                    width: 100%;
+                    border-radius: 50px;
+                    margin-right: 15px;
+
+                }
+            }
+
+            .EcoMain {
+                border-bottom: 1px solid $primaryDisable;
+
+                .Eco {
+                    @include flex;
+                    margin: 16px 0px 10px 0;
+
+                    .EcoSacks {
+                        @include flex;
+                        margin-left: 50px;
+
+                        .infoIcon {
+                            margin-left: 5px;
+                            color: $textPrimary;
+                            border-radius: 20px;
+                            cursor: pointer;
+                        }
+                    }
+
+                    .EcoKrates {
+                        @include flex;
+                        margin-left: 60px;
+
+                        .infoIcon {
+                            margin-left: 5px;
+                            color: $textPrimary;
+                            border-radius: 20px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                .selectMain {
+                    display: flex;
+                    margin-bottom: 29px;
+
+                    .SacksSelect {
+                        @include dropIcon;
+                        cursor: pointer;
+                        margin-left: 50px;
+                        padding: 3px 6px;
+                        color: $textPrimary;
+                        background: $bgColor;
+                        border-radius: 4px;
+
+                        .Item {
+                            font-size: 18px;
+                            line-height: 22px;
+                            padding: 5px;
+                        }
+
+                    }
+
+                    .KratesSelect {
+                        @include dropIcon;
+                        cursor: pointer;
+                        margin-left: 89px;
+                        padding: 3px 6px;
+                        color: $textPrimary;
+                        background: $bgColor;
+                        border-radius: 4px;
+
+                        .Item {
+                            font-size: 18px;
+                            line-height: 22px;
+                            padding: 5px;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .radioTime {
+            border-bottom: 1px solid $primaryDisable;
+
+            .radioMorning {
+                @include flex;
+                margin: 0px 0px 8px 45px;
+
+                .disableText {
+                    margin-left: 9px;
+                }
+            }
+
+            .radioAfter {
+                @include flex;
+                margin: 0px 0px 8px 45px;
+
+                .radioOne {
+                    color: $darkGray;
+                }
+
+                .radioOne {
+                    color: $darkGray;
+
+                }
+
+                .disableText {
+                    margin-left: 10px;
+                }
+            }
+
+            .radioThree {
+                margin: 0px 0px 31px 45px;
+
+                .radioOne {
+                    color: $darkGray;
+
+                }
+            }
+        }
+
+        .instructionMain {
+            margin-top: 31px;
+            border-bottom: 1px solid $primaryDisable;
+
+            .InputMain {
+                @include flex;
+                margin: 0px 0px 8px 16px;
+
+                .countOne {
+                    text-align: center;
+                    background: $SeondaryTextColor;
+                    max-width: 16px;
+                    width: 100%;
+                    border-radius: 50px;
+                    margin-right: 15px;
+
+                }
+
+            }
+
+            .pickupInput {
+                max-width: 343px;
+                margin: 0px 0px 31px 47px;
+                background: $mainbgAlert;
+                border: 0.5px solid $disabledButton;
+            }
+        }
+
+
+        .paymentMain {
+            margin: 31px 0px 0px 16px;
+
+            .paymentHead {
+                @include flex;
+
+                .countOne {
+                    text-align: center;
+                    background: $SeondaryTextColor;
+                    max-width: 16px;
+                    width: 100%;
+                    border-radius: 50px;
+                    margin-right: 15px;
+
+                }
+            }
+
+            .radioMorning {
+                @include flex;
+                margin: 8px 0px 10px 30px;
+
+                .charity {
+                    @include flexJustifyBetween;
+                    background: $primaryDisable;
+                    color: $textPrimary;
+                    margin-left: 10px;
+                    padding: 3px 6px;
+                    width: 100%;
+                    max-width: 137px;
+                    border-radius: 4px;
+                    cursor: pointer;
+
+                    .charityIcon {
+                        font-size: 10px;
+                    }
+                }
+
+                .infoIcon {
+                    margin-left: 12px;
+                    color: $textPrimary;
+                    border-radius: 20px;
+                    cursor: pointer;
+                }
+            }
+
+            .radioAfter {
+                @include flex;
+                margin-left: 30px;
+                margin-bottom: 31px;
+
+                .infoIcon {
+                    margin-left: 12px;
+                    color: $textPrimary;
+                    border-radius: 20px;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .tooltip {
+            width: 100%;
+            max-width: 184px;
+            background: $navyBlue01;
+            border-radius: 18px;
+            padding: 10px 11px;
+            @include flex;
+            box-sizing: border-box;
+            position: absolute;
+            top: 5px;
+            right: 30px;
+
+            .tooltipText {
+                width: 100%;
+                max-width: 163px;
+
+                .tooltipTwo {
+                    margin-top: 20px;
+                }
+            }
+        }
+
+        .ecoSacks {
+            width: 100%;
+            max-width: 304px;
+            background: $navyBlue01;
+            border-radius: 18px;
+            padding: 16px;
+            @include flex;
+            box-sizing: border-box;
+            position: absolute;
+            top: 78px;
+            right: 24px;
+
+            .tooltipText {
+                width: 100%;
+                max-width: 290px;
+
+                .tooltipOne {
+                    margin-top: 6px;
+                }
+
+                .tooltipTwo {
+                    margin-top: 6px;
+                }
+            }
+        }
+
+        .ecoKratesTooltip {
+            width: 100%;
+            max-width: 304px;
+            background: $navyBlue01;
+            border-radius: 18px;
+            padding: 16px;
+            @include flex;
+            box-sizing: border-box;
+            position: absolute;
+            top: 92px;
+            right: 3px;
+
+            .tooltipText {
+                width: 100%;
+                max-width: 290px;
+
+                .tooltipOne {
+                    margin-top: 6px;
+                }
+
+                .tooltipTwo {
+                    margin-top: 6px;
+                }
+            }
+        }
+
+        .TimeTooltip {
+            width: 100%;
+            max-width: 215px;
+            background: $navyBlue01;
+            border-radius: 18px;
+            @include flex;
+            box-sizing: border-box;
+            position: absolute;
+            top: 224px;
+            right: 56px;
+
+            .tooltipText {
+                width: 100%;
+                max-width: 193px;
+                margin: 17px 10px;
+            }
+        }
+
+        .charityTooltip {
+            width: 100%;
+            max-width: 184px;
+            background: $navyBlue01;
+            border-radius: 18px;
+            padding: 10px 11px;
+            @include flex;
+            box-sizing: border-box;
+            position: absolute;
+            top: 565px;
+            right: 2px;
+
+            .tooltipText {
+                width: 100%;
+                max-width: 163px;
+
+                .tooltipTwo {
+                    margin-top: 20px;
+                }
+            }
+        }
+
+        .AccountBalanceTooltip {
+            width: 100%;
+            max-width: 184px;
+            background: $navyBlue01;
+            border-radius: 18px;
+            padding: 10px 11px;
+            @include flex;
+            box-sizing: border-box;
+            position: absolute;
+            top: 583px;
+            right: 46px;
+
+            .tooltipText {
+                width: 100%;
+                max-width: 163px;
+
+                .tooltipTwo {
+                    margin-top: 20px;
+                }
+            }
+        }
+
+    }
+}
+.pickupContinueBtn {
+    margin: 24px 0px 0px 0px;
+    text-align: right;
+  }
+.mainBox {
+    width: 100%;
+    max-width: 378px;
+    margin-left: 20px;
+    background: $bgAlertSecondary;
+    border-radius: 11px;
+
+    .itemSecText {
+        padding-left: 16px;
+    }
+
+    .headBox {
+        padding: 22px 0px 0px 32px;
+    }
+
+    .textBox {
+        margin: 23px 0px 0px 32px;
+    }
+
+    .checkSection {
+        display: flex;
+        margin: 35px 28px 0px 32px;
+
+        .pickupText {
+            margin-left: 10px;
+        }
+
+    }
+
+    .mainBtn {
+        @include flexJustifyBetween;
+        padding: 20px 32px;
+    }
+
+}

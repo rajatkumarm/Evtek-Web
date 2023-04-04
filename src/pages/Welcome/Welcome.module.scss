@@ -1,0 +1,45 @@
+@import "../../assets//scss//variables.scss";
+@import "../../assets//scss/mixins.scss";
+
+.welcome {
+    @include fonts-property;
+
+    .mainImg {
+        margin: 20px;
+    }
+
+    .head {
+        .logo {
+            margin: 20px 0px 0px 26px;
+        }
+    }
+
+    .main {
+        padding: 50px 83px 0px 30px;
+
+        .headsecond {
+            
+            margin-top: 10px;
+        }
+
+        .downText {
+            margin: 40px 0px;
+        }
+
+        .text {
+            margin: 8px 0px 0px 0px;
+            @include raleway;
+            font-size: 27px;
+        }
+
+        .appText {
+            color: $solidPrimary;
+            margin: 0px 5px 0px 0px;
+        }
+    }
+
+    .btn {
+        text-align: center;
+        margin: 108px 0px 60px 0px;
+    }
+}

@@ -1,0 +1,324 @@
+@import "../../../assets/scss/variables.scss";
+@import "../../../assets/scss/mixins.scss";
+
+.Brentmain {
+    @include fonts-property;
+
+    .BrentwoodMain {
+
+        max-width: 580px;
+        width: 100%;
+        margin: 13px 0px 13px 0px;
+        background:$creamColor;
+        padding: 21px 15px 18px 12px;
+        display: flex;
+        cursor: pointer;
+        position: relative;
+        box-shadow: 0px 6.20321px 9.30481px rgba(186, 186, 186, 0.35);
+        border-radius: 19px;
+
+        .Brentwood {
+            display: flex;
+            max-width: 480px;
+            width: 100%;
+
+         .Brentwoodtext{
+            margin-left: 19px;
+         }
+
+            i {
+                padding-right: 10px;
+                padding-top: 5px;
+            }
+
+            .BrentText {
+                font-family: Raleway;
+                font-weight: 500;
+                color: $tertiaryColor;
+                line-height: 28px;
+
+            }
+
+            .Timing {
+                display: flex;
+                color: $darkGray;
+                gap: 10px;
+
+                .time {
+                    color: $tertiaryColor;
+                    font-family: 'Source Sans Pro';
+                    font-style: normal;
+                    font-weight: 400;
+                }
+            }
+
+            .Phone {
+                display: flex;
+                color: $darkGray;
+                gap: 10px;
+
+                .Number {
+                    color: $tertiaryColor;
+                }
+            }
+
+            .btnwood {
+                max-width: 100%;
+                min-width: 70px;
+                height: 27px;
+                font-size: 14px;
+                border-radius: 17px;
+                @include fonts-property;
+                border: none;
+                cursor: pointer;
+                margin-left: 10px;
+            }
+
+            .star {
+                margin-bottom: 23px;
+            }
+            .downbText {
+               @include fonts-property;
+                text-decoration-line: underline;
+            }
+
+            .star {
+                margin-top: 4px;
+                margin-bottom: 23px;
+
+                i {
+                    color: $orangeColor;
+                }
+            }
+        }
+
+        .BrentwoodRight {
+            .heart {
+                position: absolute;
+                margin-top: 10px;
+                margin-left: 20px;
+                color: $primaryColor;
+
+            }
+
+            .bgicon {
+                position: absolute;
+                background: $textWhite;
+                height: 54px;
+                width: 54px;
+                right: 30px;
+                bottom: 14px;
+                border-radius: 100px;
+                transform: rotate(45deg);
+
+                .direction {
+                    position: absolute;
+                    top: 15px;
+                    text-align: center;
+                    background: $navyBlue;
+                    color: $textWhite;
+                    left: 15px;
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 3.10695px;
+
+                    i {
+                        position: absolute;
+                        top: 2px;
+                        left: 5px;
+                        transform: rotate(-45deg);
+                    }
+                }
+            }
+        }
+    }
+
+    .Brentbox {
+        position: relative;
+        max-width: 723px;
+        width: 100%;
+        background: $textWhite;
+        border: 8px solid$creamColor;
+        border-radius: 18.6096px;
+        display: flex;
+        padding: 21px 28px 30px 20px;
+        margin-bottom: 10px;
+
+
+        .btnCircle {
+            padding-right: 10px;
+            padding-left: 20px;
+        }
+
+        .Brentwoods {
+            max-width: 550px;
+            width: 100%;
+
+            .Brentwoodtext{
+                padding-left: 9px;
+            }
+
+            .BrentText {
+                font-family: Raleway;
+                font-weight: 500;
+                color: $tertiaryColor;
+                line-height: 28px;
+                cursor: pointer;
+
+                .brentHeart {
+                    font-size: 15px;
+                    margin-left: 10px;
+                    color: $primaryColor;
+                }
+            }
+
+            .open {
+              @include fonts-property;
+                font-weight: 600;
+                line-height: 120%;
+               @include flex;
+                color: $textPrimary;
+            }
+        }
+
+        .btnDropCall {
+            max-width: 85px;
+            width: 100%;
+            max-height: 32px;
+          @include fonts-property;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+            border-radius: 27px;
+            font-size: 16px;
+
+            .btnicon {
+
+                margin-right: 7px;
+            }
+        }
+    }
+
+    .live {
+        margin-top: 20px;
+        display: flex;
+        gap: 20px;
+        font-weight: 700;
+
+        .dayAlign {
+            max-width: 65px;
+            width: 100%;
+        }
+
+        .busy {
+            color: $orangeColor;
+        }
+    }
+
+    .Day {
+        display: flex;
+        gap: 20px;
+
+        .dayAlign {
+            max-width: 65px;
+            width: 100%;
+        }
+    }
+
+    .Rating {
+        display: flex;
+        max-width: 200px;
+        width: 100%;
+
+        .star {
+            margin-left: 16px;
+            margin-right: 5px;
+            color: $orangeColor;
+        }
+    }
+
+    .time {
+        color: $textPrimary;
+    }
+
+    .BrentAdd {
+        max-width: 433px;
+        width: 100%;
+        background: $bgColor;
+        border-radius: 10px;
+        margin-top: 9px;
+        margin-bottom: 9px;
+        padding: 11px 22px 11px 16px;
+
+
+        .Address {
+            @include fonts-property;
+            font-weight: 700;
+            display: flex;
+            color: $tertiaryColor;
+            gap: 9px;
+
+            .away {
+                @include fonts-property;
+                font-size: 14px;
+               @include flex;
+                text-align: center;
+                color: $darkGray;
+            }
+        }
+
+        .BrentRight {
+           @include flexJustifyBetween ;
+            position: relative;
+
+            .direction {
+                position: absolute;
+                text-align: center;
+                background: $textPrimary;
+                color: $textWhite;
+                right: 1px;
+                bottom: 8px;
+                width: 24px;
+                height: 24px;
+                border-radius: 3.10695px;
+                transform: rotate(45deg);
+                cursor: pointer;
+
+                i {
+                    position: absolute;
+                    top: 2px;
+                    left: 5px;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
+
+    .link {
+        @include fonts-property;
+        text-decoration-line: underline;
+        color: $solidPrimary;
+        margin-bottom: 27px;
+        margin-top: 7px;
+    }
+
+    .row {
+        display: flex;
+        gap: 14px;
+    }
+
+    .circleBg {
+        max-width: 25px;
+
+        .circleNumber {
+            background: $tertiaryColor;
+            width: 23px;
+            font-size: 18px;
+            height: 23px;
+            border-radius: 50%;
+            color: $textWhite;
+            text-align: center;
+         @include flexJustifyCenter;
+        }
+    }
+}

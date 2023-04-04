@@ -1,0 +1,204 @@
+@import "../../../assets/scss/variables.scss";
+@import "../../../assets/scss/mixins.scss";
+
+.wrapper {
+
+    @include fonts-property;
+
+    .rulesBox {
+        width: 410px;
+        background: $lightGray;
+        border-radius: 23px;
+        padding: 22px 8px 41px 27px;
+        margin-top: 64px;
+
+        .mainText {
+            display: flex;
+            margin-top: 20px;
+            align-items: center;
+        }
+
+        .circleBg {
+            max-width: 25px;
+
+            .circleNumber {
+                background: $tertiaryColor;
+                width: 25px;
+                font-size: 12px;
+                height: 25px;
+                border-radius: 50%;
+                color: $whiteColor;
+                text-align: center;
+                @include flexJustifyCenter;
+            }
+        }
+
+        .headText {
+            margin-left: 12px;
+        }
+    }
+
+    .borderBottom {
+        border: 1px solid $textblackPrimary;
+        width: 952px;
+        margin-top: 56px;
+
+    }
+
+    .guideHeading {
+        margin-top: 22px;
+    }
+
+    .acceptableContainer {
+        width: 330px;
+        margin-top: 29px;
+        background: $bgColor;
+        border-radius: 23px;
+        text-align: center;
+        padding: 16px 50px 0px;
+    }
+
+    .acceptale {
+        text-align: center;
+
+    }
+
+    .paraClass {
+        margin-left: 5px;
+    }
+
+    .SecClass {
+        margin-left: 12px;
+    }
+
+    .guideBox {
+        display: flex;
+        justify-content: space-around;
+        padding: 12px 0px 18px 0px;
+        text-align: center;
+
+
+        .bottol {
+            .plasticIcon {
+                background-color: $teritaryDanger;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                @include flexJustifyCenter;
+            }
+
+            .glasssIcon {
+                background-color: $navyBlue;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                @include flexJustifyCenter;
+            }
+
+            .aluminumIcon {
+                background-color: $orangeColor;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                @include flexJustifyCenter
+            }
+
+        }
+
+    }
+
+    .braverageBox {
+        display: flex;
+
+
+        .paraClass {
+            font-size: 14px;
+            color: $tertiaryColor;
+            margin-top: 5px;
+        }
+
+        .headText {
+            padding: 24px 0px 0px 0px;
+            text-align: center;
+        }
+
+        .braverageFirstBox {
+            margin-top: 65px;
+            width: 410px;
+            background: $primaryDisable;
+            border-radius: 23px;
+            max-height: 520px;
+
+            .alertBox {
+                padding: 16px 42px 0px 39px;
+
+                .alertIcon {
+                    font-size: 23px;
+                }
+
+                .iconClass {
+                    color: $solidPrimary;
+                    font-size: 18px;
+                    margin-top: 9px;
+                }
+            }
+
+        }
+
+        .braverageFirstText {
+            text-align: center;
+            padding-top: 24px;
+        }
+
+        .braverageSecondBox {
+            width: 410px;
+            width:100%;
+            margin-top: 65px;
+            margin-left: 25px;
+            background: $notifiyColor;
+            border-radius: 23px;
+
+            .alertBoxSecond {
+                padding: 17px 0px 40px 39px;
+
+                .cencleIconFirst {
+                    color: $redColor;
+                    font-size: 23px;
+                   
+                }
+
+                .cencleIcon {
+                    color: $redColor;
+                    font-size: 18px;
+                    margin-top: 9px;
+                }
+            }
+        }
+
+        .success {
+            background: $whiteColor;
+            border-radius: 17.0833px;
+            padding: 11px 22px 12px 23px;
+            width: 338.82px;
+            margin-bottom: 12px;
+        }
+
+        .braverageThirdBox {
+            width: 410px;
+            margin-top: 36px;
+            margin-left: 25px;
+            background: $bgColor;
+            border-radius: 23px;
+
+            .alertBoxSecond {
+                padding: 17px 0px 40px 39px;
+
+                .errorIcon {
+                    color: $tertiaryColor;
+                    font-size: 18px;
+                    margin-top:9px;
+                }
+            }
+        }
+    }
+}

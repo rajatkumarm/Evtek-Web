@@ -1,0 +1,185 @@
+@import "../../../../assets/scss/variables.scss";
+@import "../../../../assets/scss/mixins.scss";
+
+.tranferMain {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+    .transferringMain {
+        margin-top: 63px;
+
+        .transferring {
+            @include flex;
+            width: 100%;
+            margin-top: 44px;
+
+            .transferringTxt {
+                margin-left: 7px;
+                cursor: pointer;
+            }
+        }
+
+        .citiAccountText {
+            width: 100%;
+            max-width: 225px;
+            margin-top: 5px;
+        }
+
+        .confirmation {
+            margin-top: 5px;
+        }
+
+        .transferAmount {
+            @include flex;
+            width: 100%;
+            margin: 35px 0px 5px 0px;
+
+            .transferringTxt {
+                margin-left: 7px;
+                cursor: pointer;
+            }
+        }
+
+        .walletBtn {
+            @include flexJustifyCenter;
+            margin-top: 130px;
+        }
+    }
+
+    .transferFund {
+        background: $bgAlert;
+        border: 2px solid $bgBorder;
+        border-radius: $font-lg;
+        width: 480px;
+        padding: 25px 28px 25px 28px;
+        margin-top: 63px;
+
+        .methodFund {
+            margin-top: 18px;
+
+            .paypalMain {
+                @include flex;
+                margin-top: 14px;
+            }
+
+            .paypalBtm {
+                margin-top: 20px;
+                @include flex;
+
+                .paypalBtm0 {
+                    margin-left: 24px;
+                }
+
+                .link {
+                    width: 193px;
+                    height: 29px;
+                    background: $textPrimary;
+                    border-radius: 13px;
+                    @include flex;
+                    padding: 3px 3px 3px 8px;
+
+                    .iconFill {
+                        padding-left: 21px;
+                        font-size: 14px;
+                    }
+
+                    a {
+                        font-weight: 600;
+                        font-size: 17px;
+                        line-height: 22px;
+                        color: $textWhite;
+                    }
+                }
+            }
+
+            .paypal {
+                background: $recycleColor;
+                border-radius: 41px;
+                @include flex;
+                justify-content: center;
+                width: 151px;
+                height: 35px;
+                margin-left: 24px;
+            }
+        }
+
+        .cashFund {
+            border-bottom: 2px solid $bgStateBorder;
+            padding-bottom: 38px;
+
+            .dollarTxt {
+                font-size: $font-big02;
+                color: $textPrimary;
+                margin-top: 5px;
+            }
+        }
+
+        .amountBtm {
+            margin-top: 42px;
+
+            .amtInput {
+                margin-top: 5px;
+                max-width: 400px;
+                background: $textWhite;
+                padding: 13px 20px;
+                border: 1px solid $textWhite;
+                font-size: 24px;
+                @include flex;
+                color: $SeondaryTextColor;
+                font-family: 'Raleway';
+            }
+        }
+
+        .walletBtn {
+            @include flex;
+            justify-content: center;
+            margin-top: 52px;
+        }
+    }
+
+}
+
+.citiMain {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    .bankMain {
+        position: absolute;
+        width: 100%;
+        max-width: 894px;
+        height: 680px;
+        background-color: $bankColor;
+        border-radius: 16px;
+        top: 170px;
+
+        .citiImg {
+            margin: 50px 0px 50px 0px;
+        }
+
+        .inputBtm {
+            margin: 25px 0px 71px 0px;
+        }
+
+        .citiBtn {
+            margin: 83px 0px 75px 0px;
+        }
+
+        a {
+            color: $textWhite;
+        }
+
+        .spinnerMain {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+
+            .spinner {
+                margin-top: 20px;
+                position: static;
+            }
+        }
+    }
+
+}

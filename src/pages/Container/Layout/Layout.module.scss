@@ -1,0 +1,32 @@
+@import "../../../assets//scss/variables.scss";
+@import "../../../assets//scss//styles.scss";
+
+.layoutMain {
+     min-height: 100vh;
+     max-height: 100vh;
+     position: relative;
+    .layout {
+        position: fixed;
+        width: 100%;
+        min-width: 324px;
+        z-index: 1;
+    }
+    .childreMain {
+        margin-left: 366px;
+    }
+    .leftside{
+        position: absolute;
+        top: 292px;
+        left: 260px;
+    }
+    .stick{
+        position: absolute;
+        top: 75px;
+        right: 0px;
+    }
+    .rightSide{
+        position: absolute;
+        bottom: 60px;
+        right: 0px;
+    }
+}

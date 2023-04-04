@@ -1,0 +1,80 @@
+@import '../../../../assets//scss//variables.scss';
+@import '../../../../assets//scss/mixins.scss';
+
+.container {
+    max-width: 640px;
+    margin: 57px auto 0px;
+    @include raleway;
+
+    .headImg {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .headingText {
+        text-align: center;
+        margin-top: 20px;
+
+        .main {
+            margin: 6px 0px 3px;
+        }
+    }
+
+    .leaderBar {
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 25px;
+        align-items: center;
+        margin-top: 37px;
+
+        .ProgressBar {
+            width: 193px;
+            .progressBar {
+                border: 2px solid $primaryDisable;
+                border-radius: 28px;
+                width: 100%;
+            }
+        }
+    }
+
+    .tabHeadText {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        margin-top: 70px;
+
+        .icoBox {
+            font-size: 30px;
+            color: $solidPrimary;
+            cursor: pointer;
+        }
+    }
+
+    .profileBoard {
+
+        .colorPrimary {
+            color: $solidPrimary;
+
+        }
+
+        .colorSecondary {
+            color: $redColor;
+        }
+
+        .textColor {
+            color: $primaryDisable;
+        }
+
+        .backNone {
+            margin: 50px 0;
+        }
+
+        .bottomBorder {
+            border: 0.20438px solid $tertiaryColor;
+            margin: 65px 27px;
+            opacity: 0.3;
+            max-width: 585px;
+        }
+    }
+}

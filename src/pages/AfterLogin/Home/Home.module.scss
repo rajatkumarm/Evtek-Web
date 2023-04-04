@@ -1,0 +1,1785 @@
+@import '../../../assets/scss/variables.scss';
+@import '../../../assets//scss/mixins.scss';
+@import '../../../assets//scss/breakpoints.scss';
+
+// home scc start
+.homeMain {
+    .rightleft {
+        display: flex;
+    }
+
+    .homeContainer {
+        position: relative;
+        @include fonts-property;
+
+        .blueBg {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            max-width: 344px;
+            min-height: 300px;
+            border-top-right-radius: 0;
+            border-top-left-radius: 0;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 100%;
+            background-color: $solidPrimary;
+
+            .blueText {
+                width: 100%;
+                max-width: 160px;
+                margin: 40px 0px 0px 155px;
+                text-align: center;
+
+            }
+
+            .blueButton {
+                margin: 45px 0px 0px 184px;
+            }
+        }
+
+        .userProfile {
+            @include flex;
+            padding-top: 20px;
+        }
+
+        .profileName {
+            margin-left: 45px;
+            @include fonts-property;
+
+            .mainHead {
+                margin-left: 10px;
+            }
+        }
+
+        .homeText {
+            @include raleway;
+            margin-bottom: 2px;
+        }
+
+
+        .homeleaf {
+            display: flex;
+        }
+
+        .homeStreak {
+            @include fonts-property;
+            display: flex;
+            align-items: flex-end;
+            margin-left: 50px;
+
+        }
+
+        .samBalance {
+            display: flex;
+            gap: 16px;
+            margin-top: 10px;
+            min-width: 348px;
+            border-radius: 19px;
+            padding: 10px 0px 10px 28px;
+            background: $textPrimary;
+
+
+            .balanceText {
+                @include fonts-property;
+
+            }
+
+            .Ecopoints {
+                @include fonts-property;
+
+            }
+        }
+    }
+
+    .homeMetrics {
+        @include flex;
+        padding: 11px 22px;
+        width: 336px;
+        background: $bgHeader;
+        border-radius: 17px 17px 0px 0px;
+    }
+
+    .homeRecycle {
+        display: flex;
+        justify-content: center;
+        width: 336px;
+        margin-top: 2px;
+        background: $textWhite;
+        border: 1px solid $primaryDisable;
+        box-shadow: 0px 15px 30px $calendar-boxShadowColor ;
+        border-radius: 0px 0px 17px 17px;
+
+        .homeRecyclemetrics {
+            margin: 22px 0px 0px 22px;
+
+        }
+
+        .homePlastic {
+            margin-top: 15px;
+        }
+
+        .homeGlass {
+            margin: 15px 0px 24px 0px;
+        }
+        .chartDough {
+            max-width: 140px;
+            width: 100%;
+            position: relative;
+            text-align: center;
+            left: 24px;
+            top: 22px;
+
+            .itemIco {
+                position: absolute;
+                top: 50px;
+                right: 50px;
+
+                .recycleChart {
+                    @include raleway;
+                }
+
+                .alurecycleChart {
+                    @include fonts-property;
+                }
+            }
+
+        }
+    }
+
+    .homemetricsText {
+        @include fonts-property;
+    }
+
+    .homeProgress {
+        @include flex;
+        padding: 11px 22px;
+        width: 294px;
+        height: 39px;
+        background: $bgHeader;
+        border-radius: 17px 17px 0px 0px;
+        margin-top: 20px;
+    }
+
+    .progressImpact {
+        width: 100%;
+        max-width: 293px;
+        min-height: 348px;
+        background: $primaryDisable;
+        border-radius: 0px 0px 16px 16px;
+        margin-top: 2px;
+        position: absolute;
+    }
+
+    .homeImpactbadge {
+        @include flex;
+        cursor: pointer;
+        position: relative;
+        margin: 10px 0px 0px 20px;
+        width: 100%;
+        max-width: 313px;
+        min-height: 95px;
+        background: $textWhite;
+        box-shadow: -8px 8px 11px $box-darkShadowColor;
+        border-radius: 16px;
+
+        .impactText {
+            margin-left: 15px;
+        }
+
+        .rightIcon {
+            margin-left: 15px;
+            padding: 8px 8px 8px 10px;
+            background: $bgAlert;
+            border-radius: 5px;
+            color: $solidPrimary;
+
+        }
+
+        .leaderIcon {
+            margin-left: 72px;
+            padding: 8px 8px 8px 10px;
+            background: $bgAlert;
+            border-radius: 5px;
+            color: $solidPrimary;
+
+        }
+
+        .coIcon {
+            padding: 8px 8px 8px 10px;
+            margin-left: 15px;
+            background: $bgAlert;
+            border-radius: 5px;
+            color: $solidPrimary;
+
+        }
+
+        .homeBulb {
+            margin: 10px 0px 0px 20px;
+            width: 100%;
+            max-width: 58px;
+            min-height: 58px;
+        }
+
+        .homeorange {
+            @include raleway;
+        }
+
+        .barPosition {
+            @include fonts-property;
+        }
+
+        .progressBack {
+            .contentLeftbottam {
+                @include flex;
+                margin-top: 2px;
+
+                .barText {
+                    @include fonts-property;
+                }
+
+                .ProgressBar {
+                    width: 100%;
+                    min-width: 120px;
+                    min-height: 25px;
+                    background: $radioDisable04;
+                    border-radius: 31px;
+                    @include raleway;
+
+                    .progressBar {
+                        padding: 5px 5px;
+
+                    }
+                }
+                .goalText{
+                    min-width: 44px;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+
+    .slideHome {
+        position: relative;
+
+        .homeCoupons {
+            @include flex;
+            padding: 11px 22px;
+            width: 100%;
+            max-width: 481px;
+            min-height: 39px;
+            background: $bgHeader;
+            border-radius: 17px 17px 0px 0px;
+
+            .homecouponText {
+                @include fonts-property;
+            }
+        }
+
+        .couponsExpiring {
+            margin-top: 3px;
+            width: 100%;
+            max-width: 481px;
+            min-height: 144px;
+            background: $primaryDisable;
+            border-radius: 0px 0px 16px 16px;
+            padding: 10px 20px;
+
+        }
+    }
+
+    .continueBtn {
+        margin: 10px 0px 0px 325px;
+        @include flex;
+        justify-content: space-around;
+    }
+
+    .pickupCalender {
+        display: flex;
+    }
+
+    .homePickup {
+        width: 100%;
+        @include flexJustifyBetween;
+        padding: 10px 22px;
+        max-width: 481px;
+        min-height: 39px;
+        margin-top: 20px;
+        background: $bgSecondaryGrey;
+        border-radius: 17px 17px 0px 0px;
+
+        .homecouponText {
+            @include fonts-property;
+        }
+
+        .legend {
+            padding: 4px 6px;
+            width: 100%;
+            max-width: 119px;
+            border-radius: 6px;
+            background: $darkGray;
+            cursor: pointer;
+            @include flexJustifyCenter;
+
+        }
+    }
+
+    .rightSide {
+        margin-left: 48px;
+    }
+
+    .homeCalc {
+        width: 100%;
+        max-width: 481px;
+        margin-top: 4px;
+    }
+}
+
+// home scc end
+
+//  edit model scc start
+.modelMain {
+    width: 100%;
+    max-width: 575px;
+    .homeUserLogo {
+        text-align: center;
+        margin-top: 19px;
+
+            .btncamera {
+                width: 100%;
+                max-width: 58px;
+                height: 58px;
+                position: absolute;
+                left: 326px;
+                top: 123px;
+                color: $textWhite;
+                font-size: 32px;
+                padding: 20px;
+                @include flexJustifyCenter;
+                background: $solidPrimary;
+                border-radius: 50%;
+            }
+    }
+
+    .sideModel {
+        width: 100%;
+        max-width: 415px;
+        margin: 35px auto 31px auto;
+
+        .editor {
+            cursor: pointer;
+        }
+
+        .modelText {
+            @include fonts-property;
+
+        }
+
+        .textModel {
+            @include fonts-property;
+            @include flexJustifyBetween;
+        }
+    }
+
+    .savebtn {
+        text-align: center;
+        margin: 11px 0px 60px 0px;
+    }
+}
+
+//  edit model scc end
+// Login css start
+.Login {
+    max-width: 394px;
+    margin: 0 auto;
+    text-align: center;
+    @include fonts-property;
+
+    .LoginTextEmail {
+        @include Text-afterLogo;
+        margin: 35px 0 35px 0;
+    }
+
+    .loginEmail {
+        margin: 0 0 16px 0;
+
+        .eText {
+            @include LabelText;
+            display: flex;
+            margin: 0 0px 10px 0px;
+
+        }
+    }
+
+    .logo {
+        margin: 65px 0 0 0;
+    }
+
+    .loginPassword {
+        margin: 0px 0 45px 0;
+
+        .passText {
+            @include LabelText;
+            display: flex;
+            margin: 0 0px 10px 0px;
+        }
+    }
+
+    .forget {
+        @include flexJustifyCenter;
+        margin: 45px 0px;
+        color: $solidPrimary;
+        font-size: 18px;
+        letter-spacing: 0.015em;
+    }
+}
+
+// Login css end 
+// Account-Type css start 
+.AccountTypeMain {
+    max-width: 394px;
+    margin: 0 auto;
+    @include fonts-property;
+
+    .logo {
+        text-align: center;
+        margin: 65px 0 0 0;
+    }
+
+    .serviceText {
+        text-align: center;
+        margin: 35px 0 40px 0;
+    }
+
+    .account {
+        margin: 0 0 10px 0;
+
+        .accountText {
+            @include Text-afterLogo;
+            font-size: $font-lg;
+            text-align: center;
+            margin: 35px 0 40px 0;
+        }
+    }
+
+    .labelStar {
+        color: $primary-labelColor;
+    }
+
+    .radiobtn {
+        display: flex;
+        margin: 0 0 50px 0px;
+
+        .radioText {
+            margin: 0 12px 0 10px;
+        }
+
+        .radioTextTwo {
+            margin: 0 12px 0 10px;
+        }
+
+        input[name="radio"] {
+            accent-color: $SeondaryTextColor;
+            cursor: pointer;
+            border: 1px solid $SeondaryTextColor;
+            width: 16px;
+            height: 16px;
+        }
+
+        input[type="radio"]:checked:before {
+            background: $SeondaryTextColor;
+        }
+    }
+
+    .AccountInputMain {
+        position: relative;
+
+        .zipInput {
+            max-width: 133px;
+            width: 100%;
+            margin-bottom: 107px;
+        }
+
+        .zipMain {
+            margin: 0 0 80px 0px;
+            box-sizing: border-box;
+            z-index: 111;
+            position: absolute;
+            top: 45px;
+            left: 0px;
+            width: 100%;
+            max-width: 147px;
+            background: $mainbgAlert;
+            border-radius: 5px;
+            filter: $dropShadow;
+            cursor: pointer;
+
+            .zipOne {
+                position: relative;
+                width: 100%;
+                @include flexJustifyBetween;
+                padding: 16px 20px;
+
+                .rightIcon {
+                    position: absolute;
+                    right: 16px;
+                    font-size: 12px;
+                    color: $textPrimary;
+                }
+            }
+
+            .zipTwo {
+                position: relative;
+                border-top: 1.01102px solid $primaryDisable;
+                width: 100%;
+                @include flexJustifyBetween;
+                padding: 16px 20px;
+
+                .actionIcon {
+                    position: absolute;
+                    right: 16px;
+                    font-size: 12px;
+                    color: $textPrimary;
+
+                }
+            }
+
+        }
+    }
+
+    // button div scss
+    .btn {
+        text-align: center;
+        margin: 0 0 45px 0;
+    }
+
+}
+
+// Account-Type css end 
+// Zipcode css start
+.ZipcodeCheck {
+    margin: 0px auto;
+    @include fonts-property;
+
+    .zipCode {
+        color: $zipHeadingColor;
+        text-align: center;
+        font-family: $sansPro;
+        width: 311px;
+        margin: 0px 0px 0px 30px;
+    }
+
+    .headTwo {
+        @include flex;
+
+        .test {
+            width: 100%;
+        }
+
+        .logo {
+            margin: 20px 0px 0px 26px;
+        }
+    }
+
+    .zipmainText {
+        margin: 55px 105px;
+    }
+
+    .zipMain {
+        .accountText {
+            text-align: center;
+            background: $bgAlertSecondary;
+            width: 120px;
+            padding: 12px 28px;
+        }
+
+        .zip {
+            @include flexJustifyBetween;
+        }
+
+        .Alert {
+            width: 330px;
+            padding: 19px 10px 17px 25px;
+            background: $bgAlertSecondary;
+            border-radius: 12px;
+            font-weight: 400;
+            margin: 0px auto;
+            font-size: 18px;
+            color: $textPrimary;
+        }
+
+        .btn {
+            text-align: center;
+            margin: 97px 0px 44px 0px;
+
+        }
+    }
+}
+
+.primaryBtn {
+    background-color: $solidPrimary;
+}
+
+// Zipcode css end 
+// Zipcode check Section 
+.ZipcodeCheck {
+    @include fonts-property;
+
+    .head {
+        color: $zipHeadingColor;
+        width: 100%;
+        text-align: center;
+        padding-right: 89px;
+        font-family: $sansPro;
+    }
+
+    .headOne {
+        @include flex;
+        justify-content: flex-start;
+
+        .logo {
+            margin: 20px 0px 0px 20px;
+        }
+    }
+
+    .zipMain {
+        margin: 0 auto;
+
+        .accountText {
+            text-align: center;
+            font-size: 16px;
+            background: $bgAlertSecondary;
+            width: 120px;
+            padding: 12px 28px;
+            font-weight: 600;
+        }
+
+        .codemainText {
+            margin: 0px auto;
+            padding: 10px;
+            max-width: 413px;
+            margin-top: 31px;
+            margin-bottom: 26px;
+
+            .LoginText {
+                text-align: center;
+                font-family: $sansPro;
+                font-size: 18px;
+                color: $zipHeadingColor;
+            }
+        }
+
+        .zip {
+            @include flexJustifyCenter;
+
+        }
+
+        .Alert {
+            width: 330px;
+            padding: 19px 10px 17px 25px;
+            background: #F5FAF4;
+            border-radius: 12px;
+            font-weight: 400;
+            margin: 0px auto;
+            font-size: 16px;
+            color: $textPrimary;
+        }
+
+        .success {
+            max-width: 330px;
+            width: 100%;
+            margin: 13px 123px 29px 118px;
+            border: $border-color;
+            border-radius: 10px;
+            padding: 17px 6px 17px 16px;
+        }
+
+        .btn {
+            text-align: center;
+            margin: 29px 0px 15px 0px;
+
+            .disableBtn {
+                margin: 15px 0px 41px 0px;
+            }
+        }
+    }
+}
+
+// Zipcode check section end 
+// Receive service updates start 
+.receiveMain {
+    @include receiveService;
+
+    .success {
+        max-width: 357px;
+        width: 100%;
+        margin: 55px 0px 52px 22px;
+        border: $border-color;
+        padding: 12px 16px 12px 19px;
+        text-align: left;
+        font-size: 34px;
+        border-radius: 18px;
+    }
+}
+
+// Receive service updates end 
+// Create account css start 
+.modal {
+    padding: 22px 22px 0px 22px;
+
+    .logoText {
+        @include flexJustifyBetween;
+        max-width: 342px;
+        width: 100%;
+    }
+
+    .headText {
+        color: $SeondaryTextColor;
+        font-weight: 700;
+        font-size: $font-xxl;
+        margin-bottom: 10px;
+    }
+
+    .signUp {
+        max-width: 394px;
+        @include fonts-property;
+        margin: 0 auto;
+
+        .LoginText {
+            @include Text-afterLogo;
+        }
+
+        .mainHead {
+            padding-top: 16px;
+        }
+
+        .inputHead {
+            padding-top: 19px;
+        }
+
+        .check {
+            @include flex;
+            padding-top: 25px;
+
+            .checkInput {
+                width: 24px;
+                height: 24px;
+                background-color: $primaryColor;
+            }
+
+            .checkTxt {
+                padding-left: 9px;
+                color: $SeondaryTextColor;
+            }
+        }
+
+        .signUpBtm {
+            max-width: 287px;
+            font-weight: 400;
+            font-size: 18px;
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 35px;
+        }
+
+        .checkboxTxt {
+            color: $inputTextBorder;
+            text-decoration-line: underline;
+            text-align: center;
+        }
+
+        .modalText {
+            font-size: 16.6px;
+            line-height: 19px;
+        }
+
+        .editTxt {
+            font-size: 14px;
+            line-height: 120%;
+            padding-left: 19px;
+        }
+
+        .textInput {
+            width: 100%;
+            max-width: 395px;
+            margin-top: 7px;
+        }
+
+        .userInput {
+            width: 100%;
+            max-width: 395px;
+            margin-top: 2px;
+        }
+
+        .inputText {
+            color: $SeondaryTextColor;
+        }
+
+        .codeType {
+            @include flex;
+            padding-top: 33px;
+        }
+
+        .zip {
+            @include flex;
+            background: $solidPrimary;
+            border-radius: 6px;
+            width: 238px;
+            padding: 10px 0;
+            justify-content: space-around;
+        }
+
+        .seprateLine {
+            height: 39px;
+            border: $border-color;
+        }
+
+        .acTypeTxt {
+            color: $textWhite;
+            font-weight: 700;
+            font-size: $font-xs;
+        }
+
+        .numTxt {
+            color: $textWhite;
+            font-weight: 400;
+            font-size: $font-lg;
+            padding-top: 3px;
+        }
+
+        .verifyTxt {
+            font-weight: 400;
+            font-size: $font-msm;
+            color: $SeondaryTextColor;
+        }
+
+        .editBtn {
+            cursor: pointer;
+        }
+
+        .chngModel {
+            position: absolute;
+            left: 10%;
+            width: 100%;
+            max-width: 330px;
+            background: $whiteColor;
+            border: $border-color;
+            border-radius: 16px;
+            cursor: pointer;
+            padding: 20px 18px;
+        }
+
+        .boxCroseIcon {
+            padding-top: 15px;
+            padding-bottom: 35px;
+        }
+
+        .boxSpanText {
+            max-width: 280px;
+            margin: 0 auto;
+        }
+
+        .modelPos {
+            position: absolute;
+            left: 102%;
+            top: 0;
+            width: 330px;
+
+            .changeBtn {
+                margin-top: 45px;
+            }
+        }
+
+        .btnClose {
+            position: absolute;
+            cursor: pointer;
+            top: 13px;
+            right: 17px;
+            background: transparent;
+            color: $inputTextBorder;
+            border-radius: 1px;
+        }
+
+        .btnMain {
+            width: 292px;
+            margin: 45px 18px 22px 18px;
+            background-color: $solidPrimary;
+            color: $bgAlert;
+            max-width: 100%;
+            min-width: 180px;
+            height: 48px;
+            font-size: $font-xxl;
+            border-radius: 12px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+    }
+
+    .btn {
+        @include flexJustifyBetween;
+        padding: 0px 30px 30px 30px;
+    }
+}
+
+// Create account css end 
+// Account details css start 
+.modalBox {
+    .BgMain {
+        .main {
+            .Close {
+                display: none !important;
+            }
+        }
+    }
+}
+
+.icoHide {
+    display: none !important;
+}
+
+.modal {
+    padding: 22px 8px 30px 20px;
+
+    .scrollBehavior {
+        overflow-x: hidden;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+        height: 80vh;
+    }
+
+    .scrollWeb::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px $wbBoxShadow;
+        box-shadow: inset 0 0 6px $wbBoxShadow;
+        background-color: $scrollBgColor;
+        border-radius: 14px;
+    }
+
+    .scrollWeb::-webkit-scrollbar {
+        width: 14px;
+        background-color: $inputTextBackground;
+        width: 20px;
+    }
+
+    .scrollWeb::-webkit-scrollbar-thumb {
+        background-color: $inputTextBackground;
+        border-radius: 9px;
+        -webkit-box-shadow: inset 0 0 6px $wbBoxShadow2;
+        box-shadow: inset 0 0 6px $wbBoxShadow2;
+    }
+
+    .bottmMain input[type="radio"]:checked+.btmRadio .btmIcon {
+        cursor: pointer;
+        background-color: $textWhite;
+
+        .badgeColor {
+            color: $SeondaryTextColor;
+        }
+
+        .ecoColor {
+            color: $textPrimary;
+        }
+
+        .recycleColor {
+            color: $recycleColor;
+        }
+
+        .leadColor {
+            color: $leadColor;
+        }
+
+        .carbonColor {
+            color: $carbonColor;
+        }
+
+        .circle {
+            color: $textPrimary;
+        }
+
+        img {
+            filter: grayscale(0);
+        }
+    }
+
+    .imageText {
+        @include flex;
+        width: 100%;
+    }
+
+    .headText {
+        color: $SeondaryTextColor;
+        font-weight: 700;
+        font-size: $font-xxl;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .accountDetail {
+        max-width: 394px;
+        @include fonts-property;
+        margin: 0 auto;
+
+        .LoginText {
+            @include Text-afterLogo;
+        }
+
+        .mainHead {
+            padding-top: 16px;
+        }
+
+        .stateHead {
+            padding-top: 16px;
+            max-width: 156px;
+        }
+
+        .mainTxt {
+            padding-top: 38px;
+            color: $SeondaryTextColor;
+            font-size: $font-lg;
+        }
+
+        .mainState {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 54px;
+            border-bottom: 1px solid $bgStateBorder;
+        }
+
+        .inputHead {
+            padding-top: 19px;
+        }
+
+        .check {
+            @include flex;
+            padding-top: 30px;
+
+            .checkInput {
+                width: 24px;
+                height: 24px;
+                background-color: $primaryColor;
+            }
+
+            .checkTxt {
+                padding-left: 9px;
+                color: $SeondaryTextColor;
+            }
+        }
+
+        .btmTxt {
+            padding: 49px 0px 32px 0px;
+
+            .checkboxTxt {
+                padding-top: 11px;
+                padding-bottom: 43px;
+                color: $inputTextBorder;
+                font-size: $font-lg;
+                text-align: left;
+            }
+
+            .presetTxt {
+                color: $SeondaryTextColor;
+                font-weight: 600;
+                font-size: $font-lg;
+            }
+        }
+
+        .modalText {
+            font-size: 16.6px;
+            line-height: 19px;
+        }
+
+        .editTxt {
+            font-size: 14px;
+            line-height: 120%;
+            padding-left: 19px;
+        }
+
+        .textInput {
+            width: 100%;
+            max-width: 395px;
+            margin-top: 7px;
+        }
+
+        .userInput {
+            width: 100%;
+            max-width: 395px;
+            margin-top: 2px;
+        }
+
+        .inputText {
+            color: $SeondaryTextColor;
+        }
+
+        .codeType {
+            @include flex;
+            padding: 42px 0px 38px 0px;
+        }
+
+        .zip {
+            @include flex;
+            background: $solidPrimary;
+            border-radius: 6px;
+            width: 238px;
+            height: 61px;
+            justify-content: space-around;
+        }
+
+        .acTypeTxt {
+            color: $bgAlert;
+            font-weight: 700;
+            font-size: $font-xs;
+        }
+
+        .numTxt {
+            color: $bgAlert;
+            font-weight: 400;
+            font-size: $font-lg;
+            padding-top: 3px;
+        }
+
+        .verifyTxt {
+            font-weight: 400;
+            font-size: $font-msm;
+            color: $SeondaryTextColor;
+        }
+
+        .editBtn {
+            cursor: pointer;
+        }
+
+        .chngModel {
+            position: absolute;
+            left: 10%;
+            width: 100%;
+            max-width: 330px;
+            background: $whiteColor;
+            border: $border-color;
+            border-radius: 16px;
+            cursor: pointer;
+            padding: 20px 18px;
+        }
+
+        .boxCroseIcon {
+            padding-top: 15px;
+            padding-bottom: 35px;
+        }
+
+        .boxSpanText {
+            max-width: 280px;
+            margin: 0 auto;
+        }
+
+        .modelPos {
+            position: absolute;
+            left: 102%;
+            top: 0;
+            width: 330px;
+
+            .changeBtn {
+                margin-top: 45px;
+            }
+        }
+
+        .btnClose {
+            position: absolute;
+            cursor: pointer;
+            top: 13px;
+            right: 17px;
+            background: transparent;
+            color: $inputTextBorder;
+            border-radius: 1px;
+        }
+
+        .btnMain {
+            width: 292px;
+            margin: 45px 18px 22px 18px;
+            background-color: $solidPrimary;
+            color: $bgAlert;
+            max-width: 100%;
+            min-width: 180px;
+            height: 48px;
+            font-size: $font-xxl;
+            border-radius: 12px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .bottmMain {
+            position: relative;
+            display: flex;
+            justify-content: center;
+
+            .addText {
+                padding-left: 17px;
+                font-weight: 700;
+                color: $inputTextBorder;
+            }
+
+            input[name="radio"] {
+                accent-color: $SeondaryTextColor;
+                cursor: pointer;
+                border: 1px solid $SeondaryTextColor;
+
+            }
+
+            input[type="radio"] {
+                width: 18px;
+                height: 18px;
+                position: absolute;
+                left: 0;
+                top: 36px;
+            }
+
+            input[type="radio"]:checked:before {
+                background: $tertiaryColor01;
+            }
+        }
+
+        .bottmMarg {
+            margin-top: 20px;
+            margin-bottom: 60px;
+        }
+
+        .btmRadio {
+            width: 292px;
+            background: $bgColor;
+            border: 1px solid $bgColor;
+            border-radius: 16px;
+            padding: 16px 16px 16px 16px;
+
+            .btmIcon {
+                margin-top: 5px;
+                display: flex;
+                text-align: left;
+                background-color: $radioDisable;
+                border-radius: 10px;
+                padding: 10px 13px 10px 10px;
+                align-items: center;
+                cursor: pointer;
+
+                img {
+                    width: 28px;
+                    height: 28px;
+                    filter: grayscale(100%);
+                }
+
+                .circle {
+                    color: $SeondaryTextColor;
+                    margin-left: auto;
+                }
+            }
+        }
+    }
+
+    .btn {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 30px 0 30px;
+    }
+}
+
+// Account details css end 
+// Address details css start
+.modal {
+    padding: 22px 25px 30px 21px;
+
+    .evtekimageText {
+        @include flex;
+        width: 100%;
+
+        .headText {
+            color: $SeondaryTextColor;
+            font-weight: 700;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+    }
+
+    .radioBtn {
+        @include flex;
+        justify-content: center;
+        padding-top: 40px;
+        padding-bottom: 75px;
+    }
+
+    .addressMain {
+        max-width: 394px;
+        @include fonts-property;
+        margin: 0 auto;
+
+        .headTxt {
+            padding-top: 38px;
+        }
+
+        .mainTxt {
+            color: $SeondaryTextColor;
+            font-size: 16px;
+        }
+
+        .radioHead input[type="radio"]:checked+.radioMain {
+            background-color: $bgColor;
+            cursor: pointer;
+            background: $bgColor;
+            border-radius: 16px;
+        }
+
+        .radioHead input[type="radio"]:checked+.radioMain {
+            cursor: pointer;
+        }
+
+        .radioHead {
+            @include flex;
+            padding-top: 46px;
+
+            input[name="radio"] {
+                accent-color: $SeondaryTextColor;
+                cursor: pointer;
+                border: 1px solid $SeondaryTextColor;
+                width: 16px;
+                height: 16px;
+            }
+
+            input[type="radio"]:checked:before {
+                background: $tertiaryColor01;
+
+            }
+
+            .radioMain {
+                margin-left: 22px;
+                padding: 28px 73px 28px 17px;
+
+            }
+        }
+
+        .inputHead {
+            padding-top: 19px;
+        }
+
+        .radioText {
+            font-size: 16px;
+            color: $SeondaryTextColor;
+            font-weight: 400;
+            cursor: pointer;
+        }
+
+        .addressTxt {
+            color: $SeondaryTextColor;
+            font-weight: 600;
+            font-size: 16px;
+            padding-top: 15px;
+            max-width: 150px;
+            width: 100%;
+        }
+
+        .addressChange {
+            max-width: 150px;
+            width: 100%;
+            margin-top: 16px;
+        }
+
+        .addressLine {
+            max-width: 195px;
+            width: 100%;
+            margin-top: 16px;
+        }
+    }
+
+    .btn {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+// Address details css end 
+// Email css start 
+.email {
+    padding: 26px 21px;
+
+    .emailHead {
+        width: 100%;
+        max-width: 320px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .emailContent {
+        width: 100%;
+        @include flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 40px 0 20px 0;
+        line-height: 120%;
+        font-size: $font-lg;
+        font-family: $sansPro;
+    }
+
+    .emailIdTxt {
+        font-weight: 700;
+    }
+
+    .textInput {
+        max-width: 180px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        margin-bottom: 25px;
+        line-height: 25px;
+        text-transform: uppercase;
+        letter-spacing: 0.525em;
+        padding: 8px 35px;
+        font-size: $font-xxxl;
+        border: 1px solid $disabledButton;
+        font-weight: 600;
+        border-radius: 6px;
+    }
+
+    .emailCaptcha {
+        padding: 12px 12px;
+        max-width: 260px;
+        margin: 0 auto;
+        background-color: $textWhite;
+        box-shadow: 0px 0px 3.8px 0.9px $box-shadowColor;
+        border-radius: 5.35714px;
+    }
+
+    .emailCaptchaText {
+        font-size: $font-xs;
+    }
+
+    .captchaCode {
+        margin: 50px auto;
+    }
+
+    .emailCaptchaInfo {
+        width: 100%;
+        @include flex;
+        justify-content: space-between;
+        position: relative;
+
+        .captchaInput {
+            max-width: 80px;
+            color: $SeondaryTextColor;
+            font-size: $font-xs;
+            border: 1px solid $bgStateBorder;
+            padding: 10px;
+        }
+    }
+
+    .emailCaptchaResend {
+        margin: 50px auto;
+        @include flex;
+        justify-content: center;
+    }
+
+    a {
+        background-color: $primaryDisable;
+        color: $textPrimary  !important;
+        max-width: 180px;
+        width: 100%;
+        font-size: $font-xxl;
+        border-radius: 8px;
+        @include raleway;
+        border: none;
+        cursor: pointer;
+        padding: 15px 20px;
+        position: absolute !important;
+        bottom: 0px !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+    }
+
+    .successImg {
+        width: 30px;
+        font-size: 25px;
+        color: $solidPrimary;
+        position: absolute;
+        top: 0;
+        right: 40px;
+        height: 30px;
+    }
+
+    .showMsg {
+        padding: 10px 0px;
+    }
+}
+
+// Email css end 
+// Phone css start
+.phoneBtnContent {
+    margin: 190px 0 20px 0 !important;
+    flex-direction: column;
+}
+
+.phoneResendBtn {
+    margin: 20px 0 50px 0 !important;
+}
+
+// Phone css end 
+// Congratulations css start 
+.congrats {
+    max-width: 394px;
+    margin: 0 auto;
+    text-align: center;
+    @include fonts-property;
+
+    .LoginText {
+        @include Text-afterLogo;
+        margin: 90px 0 23px 0;
+        font-weight: 400;
+        font-size: 18px;
+
+        .headText {
+            color: $textPrimary;
+            font-weight: 400;
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+    }
+
+    .logo {
+        margin: 65px 0 0 0;
+    }
+
+    .Alert {
+        width: 330px;
+        padding: 19px 10px 17px 25px;
+        background: $bgAlert;
+        border-radius: 12px;
+        font-weight: 400;
+        margin: 0px auto;
+        font-size: 18px;
+        color: $textPrimary;
+    }
+
+    .btn {
+        margin: 40px 0px 50px 0px;
+    }
+}
+
+// Congratulations css end 
+// Reset password css start
+.Login {
+    max-width: 394px;
+    margin: 0 auto;
+    @include fonts-property;
+
+    .logo {
+        text-align: center;
+        margin: 65px 0 0 0;
+    }
+
+    .heading {
+        text-align: center;
+        margin: 35px 0 8px 0;
+    }
+
+    .LoginText {
+        margin: 0px 0 40px 0px;
+        text-align: left;
+    }
+
+    .LogInEmail {
+        margin: 0 0 66px 0;
+
+        .eText {
+            @include LabelText;
+            display: flex;
+            margin: 0 0px 10px 0px;
+        }
+    }
+
+    .btn {
+        text-align: center;
+        margin: 0 0 33px 0;
+    }
+
+    .resendLink {
+        color: $solidPrimary;
+        display: flex;
+        text-align: center;
+        margin: 33px 0 35px 0;
+        font-size: $font-xxl;
+        line-height: 23px;
+        letter-spacing: 0.015em;
+    }
+
+    .pass {
+        margin: 0px 0 16px 0;
+
+        .passText {
+            @include LabelText;
+            display: flex;
+            padding: 0 0px 10px 0px;
+        }
+    }
+
+    .rePassword {
+        margin: 0px 0 46px 0;
+
+        .passText {
+            @include LabelText;
+            display: flex;
+            padding: 0 0px 10px 0px;
+        }
+    }
+
+    .passSuccess {
+        @include Text-afterLogo;
+        text-align: center;
+        margin: 90px 0 115px 0;
+    }
+}
+
+// Reset password Css end 
+// tutorial navbar content css start
+
+.navbar {
+    width: 100%;
+    height: 100vh;
+    margin-left: 366px;
+    display: flex;
+
+    .navbarMain {
+        width: 100%;
+        max-width: 225px;
+        height: 100vh;
+        background: $navyBlue01;
+        margin: 12px 0px 17px 0px;
+        border-radius: 14px;
+        display: grid;
+        align-content: space-between;
+        padding: 12px;
+
+        .skipText {
+            margin: 10px 0px 31px;
+            text-align: right;
+            cursor: pointer;
+        }
+
+        .navContent {
+            width: 100%;
+            max-width: 159px;
+            margin-left: 10px;
+        }
+
+        .accountBtn {
+            margin-top: 34px;
+            @include flexJustifyBetween;
+        }
+    }
+}
+
+// Tutorial navbar content css end
+// Tutorial Profile Model content css start
+
+.profileMain {
+    position: absolute;
+    right: 252px;
+    top: 23px;
+
+    @include md {
+        right: 90px;
+    }
+
+    @include xmd {
+        right: 155px;
+    }
+
+    .profileContent {
+        width: 100%;
+        max-width: 338px;
+
+        @include md {
+            max-width: 251px;
+        }
+    }
+}
+
+// Tutorial Profile Model content css start
+// Tutorial Metrics Model content css start
+
+.metricsMain {
+    width: 100%;
+    margin: 228px 0px 0px 90px;
+    @include flex;
+    justify-content: space-around;
+
+    @include md {
+        margin: 228px 0px 0px 250px;
+
+    }
+
+    @include xmd {
+        margin: 228px 0px 0px 250px;
+
+    }
+}
+
+// Tutorial Metrics Model content css end
+// Tutorial impact Model content css start
+.impactMain {
+    width: 100%;
+    margin: 518px 0px 0px 90px;
+    display: flex;
+    justify-content: space-around;
+
+    @include md {
+        margin: 518px 0px 0px 270px;
+
+    }
+
+    @include xmd {
+        margin: 518px 0px 0px 170px;
+
+    }
+
+    .impactContent {
+        display: grid;
+        min-height: 313px;
+    }
+}
+
+// Tutorial impact Model content css end
+// Tutorial carousel Model content css start
+
+.carouselMain {
+    width: 100%;
+    margin: 206px 0px 0px 450px;
+    display: flex;
+}
+
+// Tutorial carousel Model content css end
+// Tutorial scheduler Model content css start
+
+.schedulerMain {
+    width: 100%;
+    margin: 550px 0px 0px 450px;
+    display: flex;
+}
+
+// Tutorial scheduler Model content css end
+// Tutorial pickup Model content css start
+
+.pickupMain {
+    position: absolute;
+    right: 400px;
+    top: 98px;
+}
+
+// Tutorial pickup Model content css start
+
+.zIndex {
+    z-index: 99999;
+    position: relative;
+}
+
+.layoutindex {
+    z-index: 999;
+    position: static !important;
+    max-width: 324px;
+    width: 100%;
+}

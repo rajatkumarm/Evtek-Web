@@ -1,0 +1,30 @@
+@import '../../../assets//scss//variables.scss';
+
+.canclePickup {
+  width: 100%;
+  max-width: 352px;
+  background: $textWhite;
+  border-radius: 18px;
+  border: 1px solid $rgbColor;
+
+  .mainBox {
+    margin: 25px 20px 20px 20px;
+
+    .headingBox {
+      margin-left: 15px;
+
+      .cnfText {
+        margin-top: 15px;
+      }
+    }
+
+    .mainBtn {
+      display: flex;
+      padding: 69px 18px 18px 5px;
+
+      .cnfBtn {
+        margin-left: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,173 @@
+@import "../../../assets/scss/variables.scss";
+@import "../../../assets/scss/mixins.scss";
+
+.smcheckbox{
+  width: 11px;
+  height: 11px;
+  cursor: pointer;
+  &:checked {
+   
+    position: relative;
+  }
+  
+  &:checked::before {
+    content: "\2714";
+    position: absolute;
+    top: -4px;
+    right: -1px;
+    color: $textPrimary;
+    font-size: 10px;
+  }
+
+}
+
+.greyPrimary {
+  &[type='checkbox'] {
+    border: 3px solid $tertiaryColor01;
+    &:checked::before {
+      color: $tertiaryColor01;
+    }
+  }
+}
+.greySecondary {
+  &[type='checkbox'] {
+    border: 1px solid $tertiaryColor01;
+    &:checked::before {
+      color: $tertiaryColor01;
+    }
+  }
+  &:checked::before {
+    top: -3px;
+    right: 1px;
+
+  }
+}
+
+.mdcheckbox {
+  width: 12px;
+  height: 12px;
+  &:checked {
+   
+    position: relative;
+  }
+  
+  &:checked::before {
+    content: "\2714";
+    position: absolute;
+    top: -4px;
+    right: -1px;
+    color: $textPrimary;
+    font-size: 10px;
+  }
+
+}
+
+.lgcheckbox {
+  width: 14px;
+  height: 14px;
+  &:checked {
+   
+    position: relative;
+  }
+  
+  &:checked::before {
+    content: "\2714";
+    position: absolute;
+    top: -3px;
+    right: 0px;
+    color: $textPrimary;
+    font-size: 10px;
+  }
+}
+
+.xlgcheckbox {
+  width: 16px;
+  height: 16px;
+  &:checked {
+   
+    position: relative;
+  }
+  
+  &:checked::before {
+    content: "\2714";
+    position: absolute;
+    color:$textPrimary;
+    top: -5px;
+    left: 0px;
+    font-size: 13px;
+
+  }
+}
+
+.xxlgcheckbox {
+  width: 18px;
+  height: 18px;
+}
+
+.xxxlgcheckbox {
+  width: 20px;
+  height: 20px;
+  
+  &:checked {
+   
+    position: relative;
+  }
+  
+  &:checked::before {
+    content: "\2714";
+    position: absolute;
+    color:$textPrimary;
+    top: -4px;
+    left: 1px;
+    font-size: 15px;
+  }
+
+}
+
+
+.xxxlg2checkbox {
+  width: 21px;
+  height: 21px;
+  
+  &:checked {
+   
+    position: relative;
+  }
+  
+  &:checked::before {
+    content: "\2714";
+    position: absolute;
+    top: -4px;
+    left: 1px;
+    font-size: 15px;
+  }
+
+}
+
+
+
+
+.checkboxBtn {
+@include flex;
+}
+
+
+.Checktext {
+  font-size: $font-lg;
+  color: $SeondaryTextColor;
+  margin-left: 10px;
+}
+
+input[type='checkbox'] {
+  -webkit-appearance: none;
+  outline: none;
+  border: 3px solid $textPrimary;
+  
+}
+
+.Checkbox{
+  display: flex;
+  align-items: center;
+}
+
+

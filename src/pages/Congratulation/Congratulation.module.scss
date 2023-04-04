@@ -1,0 +1,43 @@
+@import '../../assets//scss//variables.scss';
+@import '../../assets//scss/mixins.scss';
+
+.congrats {
+    max-width: 394px;
+    margin: 0 auto;
+    text-align: center;
+    @include fonts-property;
+
+
+    .LoginBox{
+        @include Text-afterLogo;
+        margin: 90px 0 23px 0;
+        font-weight: 400;
+        font-size: 24px;
+
+        .headText {
+            color: $textPrimary;
+          
+        }
+
+
+    }
+
+    .logo {
+        margin: 65px 0 0 0;
+    }
+
+    .Alert {
+        width: 330px;
+        padding: 19px 10px 17px 25px;
+        background: $bgAlert;
+        border-radius: 12px;
+        font-weight: 400;
+        margin: 0px auto;
+        font-size: 18px;
+        color: $textPrimary;
+    }
+
+    .btn {
+        margin: 40px 0px 50px 0px;
+    }
+}

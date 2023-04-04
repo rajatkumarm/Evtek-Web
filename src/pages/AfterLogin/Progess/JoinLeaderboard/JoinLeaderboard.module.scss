@@ -1,0 +1,36 @@
+@import '../../../../assets//scss//variables.scss';
+@import '../../../../assets//scss/mixins.scss';
+
+.container {
+    @include fonts-property;
+
+    .textContent {
+        max-width: 551px;
+        width: 100%;
+        margin: 71px 0px 58px;
+
+        .textJoining {
+            margin-top: 23px;
+        }
+    }
+
+    .tabFirst {
+        max-width: 631px;
+        width: 100%;
+        background: $bgAlert;
+        border-radius: 18px;
+        padding: 25px 0px 25px 22px;
+        margin-bottom: 26px;
+        cursor: pointer;
+    }
+
+    .tabSecond {
+        max-width: 631px;
+        width: 100%;
+        background: $bgColor;
+        border-radius: 18px;
+        padding: 25px 0px 25px 22px;
+        cursor: pointer;
+
+    }
+}

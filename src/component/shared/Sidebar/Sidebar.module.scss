@@ -1,0 +1,232 @@
+@import '../../../assets/scss/variables.scss';
+@import '../../../assets/scss/mixins.scss';
+
+.sideMain {
+  @include fonts-property;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 324px;
+  min-height: 100vh;
+  background: $textPrimary;
+  z-index: 11111111111;
+  padding-top: 70px;
+  padding-left: 25px;
+
+  .menu {
+    position: relative;
+    list-style-type: none;
+    width: 100%;
+    max-width: 326px;
+    border-radius: 20px;
+    box-sizing: border-box;
+
+
+    & li a {
+      @include flex;
+      position: relative;
+      padding: 20px 0px 20px 20px;
+      border-radius: 40px 0 0 40px;
+      color: $bgAlertSecondary;
+      font-size: 24px;
+      cursor: pointer;
+      box-sizing: border-box;
+      margin: 2px 0px;
+
+      .infoRecycleIcon {
+        font-size: 25px;
+        cursor: pointer;
+        margin-left: 85px;
+      }
+
+      .leafIcon {
+        font-size: 40px;
+        margin-right: 20px;
+      }
+
+      .leaf {
+        font-size: 40px;
+        margin-right: 30px;
+        margin-left: 10px;
+      }
+
+      &[class="active"] {
+        background: $textWhite;
+        color: $textPrimary;
+      }
+
+      &[class="active"] .home {
+        content: url(../../../../public/images/homeActive.svg);
+      }
+
+      &[class="active"]:after,
+      &[class="active"]:before {
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        right: 0px;
+        top: 80px;
+      }
+
+      &[class="active"]:after {
+        top: -40px;
+        background: radial-gradient(circle at top left, #5eba7d00 40px, $textWhite 41px);
+      }
+
+      &[class="active"]:before {
+        bottom: -10px;
+        background: radial-gradient(circle at bottom left, #5eba7d00 40px, $textWhite 41px);
+      }
+
+      &:hover {
+        background: $textWhite;
+        color: $textPrimary;
+
+        .leaf {
+          font-size: 40px;
+          margin-right: 30px;
+          margin-left: 10px;
+        }
+      }
+
+      &:hover .home {
+        content: url(../../../../public/images/homeActive.svg);
+      }
+
+
+      &:hover:after,
+      &:hover:before {
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        right: 0px;
+        top: 80px;
+      }
+
+      &:hover:after {
+        top: -40px;
+        background: radial-gradient(circle at top left, #5eba7d00 40px, $textWhite 41px);
+      }
+
+      &:hover:before {
+        bottom: -10px;
+        background: radial-gradient(circle at bottom left, #5eba7d00 40px, $textWhite 41px);
+      }
+    }
+
+    .home {
+      margin-right: 20px;
+      height: 40px;
+    }
+
+    .RecycleClick {
+      margin: 0px 0px 16px 45px;
+
+      .pickUpMain {
+        margin: 4px 0 16px 0px;
+        @include flex;
+        color: $textWhite;
+        cursor: pointer;
+
+        & a {
+          color: $textWhite;
+          font-size: 24px;
+
+          &[class="active"] {
+            background: $textWhite;
+            color: $textPrimary;
+            border-radius: 29px;
+            padding: 0px 15px;
+          }
+        }
+
+      }
+
+      .dropOffMain {
+        margin: 0px 0 16px 0px;
+        @include flex;
+        cursor: pointer;
+
+        & a {
+          color: $textWhite;
+          font-size: 24px;
+
+          &[class="active"] {
+            background: $textWhite;
+            color: $textPrimary;
+            border-radius: 29px;
+            padding: 0px 15px;
+          }
+        }
+      }
+
+      .recycleActivityMain {
+        margin: 0px 0 16px 0px;
+        @include flex;
+        cursor: pointer;
+
+        & a {
+          color: $textWhite;
+          font-size: 24px;
+
+          &[class="active"] {
+            background: $textWhite;
+            color: $textPrimary;
+            border-radius: 29px;
+            padding: 0px 15px;
+          }
+        }
+      }
+
+    }
+
+    .shopMain {
+      padding-bottom: 100px;
+
+      .shop {
+        margin-left: 5px;
+      }
+    }
+  }
+
+  .shopBorder {
+    border: 2px solid $textWhite;
+    background: $textWhite;
+    width: 100%;
+    max-width: 268px;
+  }
+
+  .sidebarFooter {
+    margin-top: 37px;
+    height: 100vh;
+
+    .accountMain {
+      margin-bottom: 22px;
+      display: flex;
+
+      .AccountIcon {
+        color: $textWhite;
+        font-size: 24px;
+      }
+
+      .accountText {
+        color: $textWhite;
+        margin-left: 16px;
+      }
+    }
+
+    .backtoevtekText {
+      color: $textWhite;
+    }
+
+    .logOutMain {
+      margin-top: 16px;
+
+      .LogoutText {
+        color: $textWhite;
+      }
+    }
+  }
+}

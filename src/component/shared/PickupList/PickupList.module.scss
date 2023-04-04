@@ -1,0 +1,157 @@
+@import "../../../assets//scss//variables.scss";
+@import "../../../assets//scss/mixins.scss";
+
+.pickupScheduled {
+  display: flex;
+  width: 100%;
+  max-width: 570px;
+  background-color: $bgAlertSecondary;
+  justify-content: space-around;
+  margin: 20px 0px 0px 0px;
+  @include fonts-property;
+
+  .editText {
+    cursor: pointer;
+    margin-right: 10px;
+    border-bottom: 0.5px solid $darkGray;
+  }
+
+  .bulkText {
+    cursor: pointer;
+  }
+
+  .firstText {
+    margin-left: 8px;
+
+    .headText {
+      color: $SeondaryTextColor;
+    }
+
+    .iconWeb {
+      width: 20px;
+    }
+  }
+
+  .icon {
+    text-align: center;
+  }
+
+  .mainText {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 15px 15px 8px;
+
+    .clickIcon {
+      cursor: pointer;
+    }
+
+    .headText {
+      font-size: 10px;
+    }
+  }
+
+  .sScheduled {
+    max-width: 570px;
+
+    .editMain {
+     @include flex;
+    }
+
+    icon {
+      text-align: center;
+    }
+  }
+
+  .border {
+    border-top: 6px solid $teritaryDanger01;
+    width: 21px;
+    margin: 15px 0px 0px 8px;
+  }
+
+  .Scheduled {
+    background: $primaryDisable;
+    text-align: center;
+    padding: 31px 43px;
+    min-width: 161px;
+    border-radius: 6px 6px 0px 0px;
+    .iconEditTwo {
+      font-size: 19px;
+      margin-top: 10px;
+      color: $SeondaryTextColor;
+    }
+  }
+
+  .Text {
+    color: $darkGray;
+  }
+}
+
+.sScheduled {
+  width: 100%;
+  max-width: 570px;
+
+  .Text {
+    color: $SeondaryTextColor;
+  }
+}
+
+.PickupHeading {
+  margin: 30px 0px 50px 105px;
+}
+
+.second {
+  width: 100%;
+  max-width: 570px;
+  background: $bgAlert;
+  margin-left: 49px;
+  border-top: 2px solid $primaryDisable;
+
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 44px 22px 25px 22px;
+  }
+
+  .secondContent {
+    padding: 19px 20px 0px 20px;
+  }
+
+  .InptText {
+    margin: 12px auto;
+
+    .donateText {
+     @include flex;
+    }
+   .sureText {
+      @include flexJustifyEvenly;
+      align-items: center;
+      width: 100%;
+      max-width: 150px;
+      background: $primaryDisable;
+      border-radius: 4px;
+      color: $solidPrimary;
+      padding: 5px 6px 5px 6px;
+      margin-left: 13px;
+      cursor: pointer;
+
+    }
+
+    .fillIcon {
+      margin: 0px 6px 0px 29px;
+      font-size: 15px;
+    }
+
+    input {
+      background: $mainbgAlert;
+      border: 1px solid $placeholderColor;
+      border-radius: 12px;
+      width: 197px;
+      font-size: 11px;
+    }
+    .myText {
+      color: $solidPrimary;
+    }
+  }
+
+}

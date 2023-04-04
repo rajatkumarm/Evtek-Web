@@ -1,0 +1,119 @@
+@import '../../assets/scss/variables.scss';
+@import '../../assets/scss/mixins.scss';
+
+.AccountTypeMain {
+    max-width: 394px;
+    margin: 0 auto;
+    @include fonts-property;
+    .errorMsg {
+        margin-top: 10px;
+        text-align: left;
+        color:$redColor;
+     }
+    .logo {
+        text-align: center;
+        margin: 65px 0 0 0;
+    }
+
+    .serviceText {
+        text-align: center;
+        margin: 35px 0 40px 0;
+    }
+
+    .account {
+        margin: 0 0 10px 0;
+
+        .accountText {
+            @include Text-afterLogo;
+            font-size: $font-lg;
+            text-align: center;
+            margin: 35px 0 40px 0;
+        }
+    }
+
+    .labelStar {
+        color: $primary-labelColor;
+    }
+
+    .radiobtn {
+        display: grid;
+        margin: 0 0 50px 0px;
+        @include radioGrey;
+        .radioContent {
+            display: flex;
+        }
+        .radioText {
+            margin: 0 12px 0 10px;
+        }
+
+        .radioTextTwo {
+            margin: 0 12px 0 10px;
+        }
+
+    }
+
+    .AccountInputMain {
+        position: relative;
+        margin-bottom: 107px;
+
+        .zipInput {
+            max-width: 133px;
+            width: 100%;
+        }
+
+        .zipMain {
+            // position: absolute;
+            margin: 0 0 80px 0px;
+            box-sizing: border-box;
+            z-index: 111;
+            position: absolute;
+            top: 45px;
+            left: 0px;
+            width: 100%;
+            max-width: 147px;
+            background: $mainbgAlert;
+            border-radius: 5px;
+            filter: drop-shadow(0px 5.39211px 5.39211px rgba(0, 0, 0, 0.25));
+
+            .zipOne {
+                position: relative;
+                width: 100%;
+             @include flexJustifyBetween;
+                padding: 16px 20px;
+
+                .rightIcon {
+                    position: absolute;
+                    right: 16px;
+                    font-size: 12px;
+                    color: $textPrimary;
+                }
+            }
+
+            .zipTwo {
+                position: relative;
+                border-top: 1.01102px solid $primaryDisable;
+                width: 100%;
+                @include flexJustifyBetween;
+                padding: 16px 20px;
+
+                .actionIcon {
+                    position: absolute;
+                    right: 16px;
+                    font-size: 12px;
+                    color: $textPrimary;
+
+                }
+            }
+
+        }
+    }
+
+}
+
+
+
+// button div scss
+.btn {
+    text-align: center;
+    margin: 0 0 45px 0;
+}
